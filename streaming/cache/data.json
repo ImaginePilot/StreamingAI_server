@@ -1,0 +1,725 @@
+{
+  "conversations": [],
+  "clips": [
+    {
+      "clip_path": "/home/ling/main/cache/clip_1767940572_1767940577_tmp.avi",
+      "start_ts": 1767940572.7448368,
+      "end_ts": 1767940577.7448368,
+      "duration": 5.0,
+      "text": "\u8fc7\u6765\u6765\u5e2e\u6211\u505a\u4e2a\u6d4b\u8bd5\u597d\u4e86\u3002 \u660e\u5929\u665a\u4e0a\u51e0\u70b9\u949f\u7761\u89c9\u554a\uff1f",
+      "speakers": [
+        "SPK_0001"
+      ],
+      "yolo": [],
+      "faces": [],
+      "source_audio": "fragment_20260109_063612_0000.wav",
+      "source_video": []
+    },
+    {
+      "clip_path": "/home/ling/main/cache/clip_1767940581_1767940586.mp4",
+      "start_ts": 1767940581.6223207,
+      "end_ts": 1767940586.6223207,
+      "duration": 5.0,
+      "text": "\ubab0\ub77c\uc6b8\ub77c\uc6b8\ub77c\u3002",
+      "speakers": [
+        "SPK_0002"
+      ],
+      "yolo": [
+        {
+          "class": "person",
+          "class_id": 0,
+          "confidence": 0.888,
+          "box": {
+            "x": 0,
+            "y": 77,
+            "width": 909,
+            "height": 2302
+          },
+          "center": {
+            "x": 454,
+            "y": 1228
+          }
+        },
+        {
+          "class": "person",
+          "class_id": 0,
+          "confidence": 0.906,
+          "box": {
+            "x": 0,
+            "y": 285,
+            "width": 882,
+            "height": 2079
+          },
+          "center": {
+            "x": 441,
+            "y": 1324
+          }
+        },
+        {
+          "class": "person",
+          "class_id": 0,
+          "confidence": 0.934,
+          "box": {
+            "x": 0,
+            "y": 412,
+            "width": 814,
+            "height": 1962
+          },
+          "center": {
+            "x": 407,
+            "y": 1393
+          }
+        },
+        {
+          "class": "person",
+          "class_id": 0,
+          "confidence": 0.925,
+          "box": {
+            "x": 17,
+            "y": 416,
+            "width": 889,
+            "height": 1954
+          },
+          "center": {
+            "x": 461,
+            "y": 1393
+          }
+        },
+        {
+          "class": "person",
+          "class_id": 0,
+          "confidence": 0.908,
+          "box": {
+            "x": 97,
+            "y": 425,
+            "width": 886,
+            "height": 1945
+          },
+          "center": {
+            "x": 540,
+            "y": 1397
+          }
+        },
+        {
+          "class": "person",
+          "class_id": 0,
+          "confidence": 0.931,
+          "box": {
+            "x": 128,
+            "y": 452,
+            "width": 887,
+            "height": 1924
+          },
+          "center": {
+            "x": 571,
+            "y": 1414
+          }
+        },
+        {
+          "class": "person",
+          "class_id": 0,
+          "confidence": 0.919,
+          "box": {
+            "x": 174,
+            "y": 502,
+            "width": 867,
+            "height": 1871
+          },
+          "center": {
+            "x": 607,
+            "y": 1437
+          }
+        },
+        {
+          "class": "person",
+          "class_id": 0,
+          "confidence": 0.926,
+          "box": {
+            "x": 196,
+            "y": 548,
+            "width": 851,
+            "height": 1826
+          },
+          "center": {
+            "x": 621,
+            "y": 1461
+          }
+        },
+        {
+          "class": "person",
+          "class_id": 0,
+          "confidence": 0.902,
+          "box": {
+            "x": 236,
+            "y": 664,
+            "width": 790,
+            "height": 1709
+          },
+          "center": {
+            "x": 631,
+            "y": 1518
+          }
+        },
+        {
+          "class": "person",
+          "class_id": 0,
+          "confidence": 0.907,
+          "box": {
+            "x": 246,
+            "y": 727,
+            "width": 716,
+            "height": 1651
+          },
+          "center": {
+            "x": 604,
+            "y": 1552
+          }
+        },
+        {
+          "class": "person",
+          "class_id": 0,
+          "confidence": 0.92,
+          "box": {
+            "x": 18,
+            "y": 495,
+            "width": 675,
+            "height": 1877
+          },
+          "center": {
+            "x": 355,
+            "y": 1433
+          }
+        }
+      ],
+      "faces": [
+        {
+          "age": {
+            "probability": 0.9999114274978638,
+            "high": 20,
+            "low": 15
+          },
+          "gender": {
+            "probability": 0.7634133696556091,
+            "value": "male"
+          },
+          "box": {
+            "probability": 0.83498,
+            "x_max": 955,
+            "y_max": 851,
+            "x_min": 438,
+            "y_min": 163
+          },
+          "subjects": [
+            {
+              "subject": "face_8255a55e",
+              "similarity": 0.97944
+            }
+          ],
+          "landmarks": [
+            [
+              673,
+              401
+            ],
+            [
+              829,
+              468
+            ],
+            [
+              740,
+              524
+            ],
+            [
+              624,
+              628
+            ],
+            [
+              736,
+              680
+            ]
+          ],
+          "execution_time": {
+            "age": 37.0,
+            "gender": 43.0,
+            "detector": 129.0,
+            "calculator": 62.0
+          }
+        },
+        {
+          "age": {
+            "probability": 0.5836120843887329,
+            "high": 32,
+            "low": 25
+          },
+          "gender": {
+            "probability": 0.9999994039535522,
+            "value": "female"
+          },
+          "box": {
+            "probability": 0.99207,
+            "x_max": 859,
+            "y_max": 1085,
+            "x_min": 375,
+            "y_min": 472
+          },
+          "subjects": [
+            {
+              "subject": "face_8255a55e",
+              "similarity": 0.99772
+            }
+          ],
+          "landmarks": [
+            [
+              598,
+              680
+            ],
+            [
+              732,
+              747
+            ],
+            [
+              654,
+              788
+            ],
+            [
+              554,
+              877
+            ],
+            [
+              650,
+              925
+            ]
+          ],
+          "execution_time": {
+            "age": 61.0,
+            "gender": 33.0,
+            "detector": 144.0,
+            "calculator": 205.0
+          }
+        },
+        {
+          "age": {
+            "probability": 0.9868130087852478,
+            "high": 20,
+            "low": 15
+          },
+          "gender": {
+            "probability": 0.9981977343559265,
+            "value": "female"
+          },
+          "box": {
+            "probability": 0.98308,
+            "x_max": 966,
+            "y_max": 1108,
+            "x_min": 476,
+            "y_min": 464
+          },
+          "subjects": [
+            {
+              "subject": "face_8255a55e",
+              "similarity": 0.99683
+            }
+          ],
+          "landmarks": [
+            [
+              710,
+              676
+            ],
+            [
+              844,
+              743
+            ],
+            [
+              773,
+              792
+            ],
+            [
+              665,
+              888
+            ],
+            [
+              766,
+              933
+            ]
+          ],
+          "execution_time": {
+            "age": 33.0,
+            "gender": 34.0,
+            "detector": 130.0,
+            "calculator": 62.0
+          }
+        },
+        {
+          "age": {
+            "probability": 0.7210618257522583,
+            "high": 32,
+            "low": 25
+          },
+          "gender": {
+            "probability": 0.9898668527603149,
+            "value": "female"
+          },
+          "box": {
+            "probability": 0.98895,
+            "x_max": 1030,
+            "y_max": 1130,
+            "x_min": 539,
+            "y_min": 494
+          },
+          "subjects": [
+            {
+              "subject": "face_8255a55e",
+              "similarity": 0.99804
+            }
+          ],
+          "landmarks": [
+            [
+              773,
+              706
+            ],
+            [
+              903,
+              773
+            ],
+            [
+              836,
+              821
+            ],
+            [
+              732,
+              911
+            ],
+            [
+              829,
+              955
+            ]
+          ],
+          "execution_time": {
+            "age": 34.0,
+            "gender": 35.0,
+            "detector": 141.0,
+            "calculator": 61.0
+          }
+        },
+        {
+          "age": {
+            "probability": 0.9569085836410522,
+            "high": 20,
+            "low": 15
+          },
+          "gender": {
+            "probability": 0.8710808753967285,
+            "value": "female"
+          },
+          "box": {
+            "probability": 0.98333,
+            "x_max": 1022,
+            "y_max": 1126,
+            "x_min": 554,
+            "y_min": 513
+          },
+          "subjects": [
+            {
+              "subject": "face_8255a55e",
+              "similarity": 0.99523
+            }
+          ],
+          "landmarks": [
+            [
+              762,
+              717
+            ],
+            [
+              896,
+              773
+            ],
+            [
+              821,
+              833
+            ],
+            [
+              721,
+              925
+            ],
+            [
+              818,
+              963
+            ]
+          ],
+          "execution_time": {
+            "age": 693.0,
+            "gender": 105.0,
+            "detector": 186.0,
+            "calculator": 120.0
+          }
+        },
+        {
+          "age": {
+            "probability": 0.9916573762893677,
+            "high": 43,
+            "low": 38
+          },
+          "gender": {
+            "probability": 0.6492949724197388,
+            "value": "male"
+          },
+          "box": {
+            "probability": 0.99277,
+            "x_max": 1048,
+            "y_max": 1137,
+            "x_min": 602,
+            "y_min": 542
+          },
+          "subjects": [
+            {
+              "subject": "face_8255a55e",
+              "similarity": 0.99717
+            }
+          ],
+          "landmarks": [
+            [
+              799,
+              740
+            ],
+            [
+              937,
+              795
+            ],
+            [
+              855,
+              840
+            ],
+            [
+              758,
+              929
+            ],
+            [
+              862,
+              974
+            ]
+          ],
+          "execution_time": {
+            "age": 42.0,
+            "gender": 35.0,
+            "detector": 178.0,
+            "calculator": 63.0
+          }
+        },
+        {
+          "age": {
+            "probability": 0.5189629793167114,
+            "high": 20,
+            "low": 15
+          },
+          "gender": {
+            "probability": 0.9999934434890747,
+            "value": "female"
+          },
+          "box": {
+            "probability": 0.99143,
+            "x_max": 1097,
+            "y_max": 1163,
+            "x_min": 650,
+            "y_min": 587
+          },
+          "subjects": [
+            {
+              "subject": "face_8255a55e",
+              "similarity": 0.99725
+            }
+          ],
+          "landmarks": [
+            [
+              862,
+              784
+            ],
+            [
+              989,
+              847
+            ],
+            [
+              918,
+              873
+            ],
+            [
+              814,
+              963
+            ],
+            [
+              911,
+              1015
+            ]
+          ],
+          "execution_time": {
+            "age": 36.0,
+            "gender": 33.0,
+            "detector": 131.0,
+            "calculator": 59.0
+          }
+        },
+        {
+          "age": {
+            "probability": 0.7092571258544922,
+            "high": 20,
+            "low": 15
+          },
+          "gender": {
+            "probability": 0.9999998807907104,
+            "value": "female"
+          },
+          "box": {
+            "probability": 0.98355,
+            "x_max": 1004,
+            "y_max": 1230,
+            "x_min": 606,
+            "y_min": 710
+          },
+          "subjects": [
+            {
+              "subject": "face_8255a55e",
+              "similarity": 0.9982
+            }
+          ],
+          "landmarks": [
+            [
+              788,
+              885
+            ],
+            [
+              911,
+              933
+            ],
+            [
+              833,
+              970
+            ],
+            [
+              751,
+              1056
+            ],
+            [
+              840,
+              1097
+            ]
+          ],
+          "execution_time": {
+            "age": 36.0,
+            "gender": 72.0,
+            "detector": 130.0,
+            "calculator": 62.0
+          }
+        },
+        {
+          "age": {
+            "probability": 0.5196515917778015,
+            "high": 20,
+            "low": 15
+          },
+          "gender": {
+            "probability": 0.9715045690536499,
+            "value": "female"
+          },
+          "box": {
+            "probability": 0.97267,
+            "x_max": 821,
+            "y_max": 1212,
+            "x_min": 479,
+            "y_min": 762
+          },
+          "subjects": [
+            {
+              "subject": "face_8255a55e",
+              "similarity": 0.99427
+            }
+          ],
+          "landmarks": [
+            [
+              609,
+              929
+            ],
+            [
+              717,
+              955
+            ],
+            [
+              650,
+              1011
+            ],
+            [
+              598,
+              1078
+            ],
+            [
+              676,
+              1100
+            ]
+          ],
+          "execution_time": {
+            "age": 38.0,
+            "gender": 37.0,
+            "detector": 162.0,
+            "calculator": 62.0
+          }
+        },
+        {
+          "age": {
+            "probability": 0.9999580383300781,
+            "high": 32,
+            "low": 25
+          },
+          "gender": {
+            "probability": 0.9999892711639404,
+            "value": "female"
+          },
+          "box": {
+            "probability": 0.93721,
+            "x_max": 554,
+            "y_max": 978,
+            "x_min": 238,
+            "y_min": 554
+          },
+          "subjects": [
+            {
+              "subject": "face_8255a55e",
+              "similarity": 0.95553
+            }
+          ],
+          "landmarks": [
+            [
+              338,
+              714
+            ],
+            [
+              446,
+              732
+            ],
+            [
+              360,
+              792
+            ],
+            [
+              323,
+              866
+            ],
+            [
+              409,
+              881
+            ]
+          ],
+          "execution_time": {
+            "age": 45.0,
+            "gender": 38.0,
+            "detector": 126.0,
+            "calculator": 60.0
+          }
+        }
+      ],
+      "source_audio": "fragment_20260109_063621_0001.wav",
+      "source_video": [
+        "fragment_20260109_063617_0000.avi"
+      ]
+    }
+  ],
+  "updated": "2026-01-09T06:36:35.618232",
+  "total_clips": 2,
+  "max_clips": 50
+}

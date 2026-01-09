@@ -1,0 +1,31 @@
+{
+  "updated": "2026-01-09T06:36:20.898705",
+  "total_fragments": 2,
+  "max_fragments": 200,
+  "fragments": [
+    {
+      "filename": "fragment_20260109_063320_0000.avi",
+      "filepath": "/home/ling/main/videostream/cache/fragment_20260109_063320_0000.avi",
+      "frames": 52,
+      "duration": 5.2,
+      "timestamp": 1767940400.768249,
+      "created": "2026-01-09T06:33:20.768249"
+    },
+    {
+      "filename": "fragment_20260109_063617_0000.avi",
+      "filepath": "/home/ling/main/videostream/cache/fragment_20260109_063617_0000.avi",
+      "frames": 122,
+      "duration": 10.166666666666666,
+      "timestamp": 1767940577.179403,
+      "created": "2026-01-09T06:36:17.179403"
+    }
+  ],
+  "latest": {
+    "filename": "fragment_20260109_063617_0000.avi",
+    "filepath": "/home/ling/main/videostream/cache/fragment_20260109_063617_0000.avi",
+    "frames": 122,
+    "duration": 10.166666666666666,
+    "timestamp": 1767940577.179403,
+    "created": "2026-01-09T06:36:17.179403"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "updated": "2026-01-09T06:36:21.036127",
+  "total_fragments": 3,
+  "max_fragments": 200,
+  "fragments": [
+    {
+      "filename": "fragment_20260109_063322_0000.wav",
+      "filepath": "/home/ling/main/audiostream/cache/fragment_20260109_063322_0000.wav",
+      "start_time": "2026-01-09T06:33:22.377152",
+      "end_time": "2026-01-09T06:33:26.806358",
+      "duration_seconds": 4.429206349206349,
+      "timestamp": 1767940402.377152
+    },
+    {
+      "filename": "fragment_20260109_063612_0000.wav",
+      "filepath": "/home/ling/main/audiostream/cache/fragment_20260109_063612_0000.wav",
+      "start_time": "2026-01-09T06:36:12.477618",
+      "end_time": "2026-01-09T06:36:17.516348",
+      "duration_seconds": 5.038730158730159,
+      "timestamp": 1767940572.477618
+    },
+    {
+      "filename": "fragment_20260109_063621_0001.wav",
+      "filepath": "/home/ling/main/audiostream/cache/fragment_20260109_063621_0001.wav",
+      "start_time": "2026-01-09T06:36:21.034477",
+      "end_time": "2026-01-09T06:36:25.626223",
+      "duration_seconds": 4.591746031746032,
+      "timestamp": 1767940581.034477
+    }
+  ],
+  "latest": {
+    "filename": "fragment_20260109_063621_0001.wav",
+    "filepath": "/home/ling/main/audiostream/cache/fragment_20260109_063621_0001.wav",
+    "start_time": "2026-01-09T06:36:21.034477",
+    "end_time": "2026-01-09T06:36:25.626223",
+    "duration_seconds": 4.591746031746032,
+    "timestamp": 1767940581.034477
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "transcriptions": [
+    {
+      "file": "/home/ling/main/audiostream/cache/fragment_20260109_063612_0000.wav",
+      "hash": "cb1f522999446ad0d70362d591516be7",
+      "timestamp": "2026-01-09T06:36:16.696643",
+      "duration": 5.038730158730159,
+      "speakers": [
+        "SPK_0001"
+      ],
+      "segments": [
+        {
+          "start_time": 0.26721875,
+          "end_time": 2.0559687500000003,
+          "speaker_id": "SPK_0001",
+          "speaker_label": null,
+          "text": "\u8fc7\u6765\u6765\u5e2e\u6211\u505a\u4e2a\u6d4b\u8bd5\u597d\u4e86\u3002",
+          "confidence": 0.9,
+          "language": "zh",
+          "emotion": "neutral",
+          "audio_type": null
+        },
+        {
+          "start_time": 2.15721875,
+          "end_time": 4.63784375,
+          "speaker_id": "SPK_0001",
+          "speaker_label": null,
+          "text": "\u660e\u5929\u665a\u4e0a\u51e0\u70b9\u949f\u7761\u89c9\u554a\uff1f",
+          "confidence": 0.9,
+          "language": "zh",
+          "emotion": "neutral",
+          "audio_type": null
+        }
+      ]
+    },
+    {
+      "file": "/home/ling/main/audiostream/cache/fragment_20260109_063621_0001.wav",
+      "hash": "ff87e22465a241afbb34ec2889760ec5",
+      "timestamp": "2026-01-09T06:36:24.599464",
+      "duration": 4.591746031746032,
+      "speakers": [
+        "SPK_0002"
+      ],
+      "segments": [
+        {
+          "start_time": 0.58784375,
+          "end_time": 2.44409375,
+          "speaker_id": "SPK_0002",
+          "speaker_label": null,
+          "text": "\ubab0\ub77c\uc6b8\ub77c\uc6b8\ub77c\u3002",
+          "confidence": 0.9,
+          "language": "zh",
+          "emotion": null,
+          "audio_type": null
+        }
+      ]
+    }
+  ],
+  "processed_hashes": [
+    "cb1f522999446ad0d70362d591516be7",
+    "ff87e22465a241afbb34ec2889760ec5"
+  ],
+  "updated": "2026-01-09T06:36:24.599567"
+}
