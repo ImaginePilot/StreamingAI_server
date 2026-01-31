@@ -2,7 +2,7 @@
   "conversations": [],
   "clips": [
     {
-      "clip_path": "/home/ling/main/cache/clip_1767940572_1767940577_tmp.avi",
+      "clip_path": "/home/ling/main/streaming/cache/clip_1767940572_1767940577_tmp.avi",
       "start_ts": 1767940572.7448368,
       "end_ts": 1767940577.7448368,
       "duration": 5.0,
@@ -16,7 +16,7 @@
       "source_video": []
     },
     {
-      "clip_path": "/home/ling/main/cache/clip_1767940581_1767940586.mp4",
+      "clip_path": "/home/ling/main/streaming/cache/clip_1767940581_1767940586.mp4",
       "start_ts": 1767940581.6223207,
       "end_ts": 1767940586.6223207,
       "duration": 5.0,
