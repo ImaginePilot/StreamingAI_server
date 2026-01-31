@@ -124,5 +124,532 @@
     "create_time": 1769870728,
     "update_time": 1769870728,
     "_id": "Tomorrow"
+  },
+  "SPK_0012": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894",
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 2,
+    "create_time": 1769878974,
+    "update_time": 1769878974,
+    "_id": "SPK_0012"
+  },
+  "SPK_0013": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878974,
+    "update_time": 1769878974,
+    "_id": "SPK_0013"
+  },
+  "SPK_0014": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878974,
+    "update_time": 1769878974,
+    "_id": "SPK_0014"
+  },
+  "SPK_0015": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878974,
+    "update_time": 1769878974,
+    "_id": "SPK_0015"
+  },
+  "SPK_0016": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878974,
+    "update_time": 1769878974,
+    "_id": "SPK_0016"
+  },
+  "TEMP_SPEAKER_01": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878974,
+    "update_time": 1769878974,
+    "_id": "TEMP_SPEAKER_01"
+  },
+  "SPK_0017": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878974,
+    "update_time": 1769878974,
+    "_id": "SPK_0017"
+  },
+  "SPK_0019": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878974,
+    "update_time": 1769878974,
+    "_id": "SPK_0019"
+  },
+  "SPK_0020": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878974,
+    "update_time": 1769878974,
+    "_id": "SPK_0020"
+  },
+  "Dual-Monitor Setup": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878974,
+    "update_time": 1769878974,
+    "_id": "Dual-Monitor Setup"
+  },
+  "Desk": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878975,
+    "update_time": 1769878975,
+    "_id": "Desk"
+  },
+  "Model Airplane": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894",
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 2,
+    "create_time": 1769878975,
+    "update_time": 1769878975,
+    "_id": "Model Airplane"
+  },
+  "Colorful Circular Object": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894",
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 2,
+    "create_time": 1769878975,
+    "update_time": 1769878975,
+    "_id": "Colorful Circular Object"
+  },
+  "Essential Oil Bottles": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878975,
+    "update_time": 1769878975,
+    "_id": "Essential Oil Bottles"
+  },
+  "Hard Drive": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878975,
+    "update_time": 1769878975,
+    "_id": "Hard Drive"
+  },
+  "Microphone Arm": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894",
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 2,
+    "create_time": 1769878975,
+    "update_time": 1769878975,
+    "_id": "Microphone Arm"
+  },
+  "White Cat": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878975,
+    "update_time": 1769878975,
+    "_id": "White Cat"
+  },
+  "White Dog Figurine": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878975,
+    "update_time": 1769878975,
+    "_id": "White Dog Figurine"
+  },
+  "Circular Digital Device": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878975,
+    "update_time": 1769878975,
+    "_id": "Circular Digital Device"
+  },
+  "Plain Wall": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878975,
+    "update_time": 1769878975,
+    "_id": "Plain Wall"
+  },
+  "Curved Monitor": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894",
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 2,
+    "create_time": 1769878975,
+    "update_time": 1769878975,
+    "_id": "Curved Monitor"
+  },
+  "Flat Monitor": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878976,
+    "update_time": 1769878976,
+    "_id": "Flat Monitor"
+  },
+  "macOS Dock": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878976,
+    "update_time": 1769878976,
+    "_id": "macOS Dock"
+  },
+  "Code Editor": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878976,
+    "update_time": 1769878976,
+    "_id": "Code Editor"
+  },
+  "File Manager": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878976,
+    "update_time": 1769878976,
+    "_id": "File Manager"
+  },
+  "Code/Text Editing": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878976,
+    "update_time": 1769878976,
+    "_id": "Code/Text Editing"
+  },
+  "Circular Green-Patterned Object": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878976,
+    "update_time": 1769878976,
+    "_id": "Circular Green-Patterned Object"
+  },
+  "Circular Artwork": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878976,
+    "update_time": 1769878976,
+    "_id": "Circular Artwork"
+  },
+  "Unknown Male": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878976,
+    "update_time": 1769878976,
+    "_id": "Unknown Male"
+  },
+  "Unknown Female": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878976,
+    "update_time": 1769878976,
+    "_id": "Unknown Female"
+  },
+  "SPK_0001": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878976,
+    "update_time": 1769878976,
+    "_id": "SPK_0001"
+  },
+  "SPK_0002": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878977,
+    "update_time": 1769878977,
+    "_id": "SPK_0002"
+  },
+  "SPK_0003": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878977,
+    "update_time": 1769878977,
+    "_id": "SPK_0003"
+  },
+  "SPK_0006": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878977,
+    "update_time": 1769878977,
+    "_id": "SPK_0006"
+  },
+  "SPK_0008": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878977,
+    "update_time": 1769878977,
+    "_id": "SPK_0008"
+  },
+  "SPK_0009": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878977,
+    "update_time": 1769878977,
+    "_id": "SPK_0009"
+  },
+  "SPK_0010": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878977,
+    "update_time": 1769878977,
+    "_id": "SPK_0010"
+  },
+  "SPK_0011": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878977,
+    "update_time": 1769878977,
+    "_id": "SPK_0011"
+  },
+  "Indoor Office Setting": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878977,
+    "update_time": 1769878977,
+    "_id": "Indoor Office Setting"
+  },
+  "Window View": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878977,
+    "update_time": 1769878977,
+    "_id": "Window View"
+  },
+  "Desk Setup": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878977,
+    "update_time": 1769878977,
+    "_id": "Desk Setup"
+  },
+  "Samsung Monitor": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878978,
+    "update_time": 1769878978,
+    "_id": "Samsung Monitor"
+  },
+  "White Fox Figurine": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878978,
+    "update_time": 1769878978,
+    "_id": "White Fox Figurine"
+  },
+  "Air France Model Airplane": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878978,
+    "update_time": 1769878978,
+    "_id": "Air France Model Airplane"
+  },
+  "White Electronic Device With Dial": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878978,
+    "update_time": 1769878978,
+    "_id": "White Electronic Device With Dial"
+  },
+  "Partial CD Drive": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878978,
+    "update_time": 1769878978,
+    "_id": "Partial CD Drive"
+  },
+  "Circular Map‑Like Object": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878978,
+    "update_time": 1769878978,
+    "_id": "Circular Map‑Like Object"
+  },
+  "Exposed Hard Drive": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878978,
+    "update_time": 1769878978,
+    "_id": "Exposed Hard Drive"
+  },
+  "Dual Monitors": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878978,
+    "update_time": 1769878978,
+    "_id": "Dual Monitors"
+  },
+  "Small Bottles": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878978,
+    "update_time": 1769878978,
+    "_id": "Small Bottles"
+  },
+  "Patterned Container": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878978,
+    "update_time": 1769878978,
+    "_id": "Patterned Container"
+  },
+  "Cables": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878979,
+    "update_time": 1769878979,
+    "_id": "Cables"
+  },
+  "Data Table": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878979,
+    "update_time": 1769878979,
+    "_id": "Data Table"
+  },
+  "List Interface": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878979,
+    "update_time": 1769878979,
+    "_id": "List Interface"
+  },
+  "Spreadsheet/Chat": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878979,
+    "update_time": 1769878979,
+    "_id": "Spreadsheet/Chat"
+  },
+  "Code Document": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878979,
+    "update_time": 1769878979,
+    "_id": "Code Document"
+  },
+  "Wall": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878979,
+    "update_time": 1769878979,
+    "_id": "Wall"
+  },
+  "Planet‑Like Decorative Object": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878979,
+    "update_time": 1769878979,
+    "_id": "Planet‑Like Decorative Object"
   }
 }

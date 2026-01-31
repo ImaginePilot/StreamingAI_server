@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-31T14:11:26.346540",
-  "count": 1,
+  "last_updated": "2026-01-31T19:09:11.710773",
+  "count": 169,
   "results": {
     "/home/ling/main/streaming/cache/clip_1767940581_1767940586.mp4:1767940581.6223207": {
       "clip_path": "/home/ling/main/streaming/cache/clip_1767940581_1767940586.mp4",
@@ -17,6 +17,2699 @@
       "summary": "A person in a white t-shirt stands in a kitchen, hands behind back, speaking a Korean phrase.",
       "processed_at": "2026-01-31T14:11:26.345921",
       "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873063_1769873068.mp4:1769873063.7243698": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873063_1769873068.mp4",
+      "start_ts": 1769873063.7243698,
+      "end_ts": 1769873068.7243698,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0001"
+      ],
+      "transcription": "我的电信。 不しな。",
+      "vl_analysis": "**Scene**: Desk with Samsung monitor displaying a data table; white fox figurine, Air France model airplane, and partial view of a white electronic device with a dial.  \n**Speech**: SPK_0001 says \"我的电信。 不しな。\" (My telecom. Not doing it.)  \n**Summary**: A desk setup with a monitor showing data, a white fox figurine, and a model airplane, while SPK_0001 speaks about telecom.",
+      "scene": "Desk with Samsung monitor displaying a data table; white fox figurine, Air France model airplane, and partial view of a white electronic device with a dial.",
+      "speech": "SPK_0001 says \"我的电信。 不しな。\" (My telecom. Not doing it.)",
+      "summary": "A desk setup with a monitor showing data, a white fox figurine, and a model airplane, while SPK_0001 speaks about telecom.",
+      "processed_at": "2026-01-31T15:24:46.072872",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873066_1769873071.mp4:1769873066.1359067": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873066_1769873071.mp4",
+      "start_ts": 1769873066.1359067,
+      "end_ts": 1769873071.1359067,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0002"
+      ],
+      "transcription": "hello. hello.",
+      "vl_analysis": "**Scene**: Desk with Samsung monitor displaying a list interface, white fox figurine, model airplane, and a small white device with a dial; background is plain wall.  \n**Speech**: SPK_0002 said \"hello. hello.\"  \n**Summary**: A desk setup with tech items and figurines is shown while audio is tested with \"hello. hello.\"",
+      "scene": "Desk with Samsung monitor displaying a list interface, white fox figurine, model airplane, and a small white device with a dial; background is plain wall.",
+      "speech": "SPK_0002 said \"hello. hello.\"",
+      "summary": "A desk setup with tech items and figurines is shown while audio is tested with \"hello. hello.\"",
+      "processed_at": "2026-01-31T15:24:55.829256",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873071_1769873076.mp4:1769873071.2389848": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873071_1769873076.mp4",
+      "start_ts": 1769873071.2389848,
+      "end_ts": 1769873076.2389848,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0003"
+      ],
+      "transcription": "can you hear me?",
+      "vl_analysis": "**Scene**: Desk with Samsung monitor showing spreadsheet/chat, white fox figurine, small airplane model, partial CD drive; no visible people.  \n**Speech**: \"can you hear me?\" (audible but no speaker visible)  \n**Summary**: A static desk setup with computer and figurines as audio asks if someone can hear.",
+      "scene": "Desk with Samsung monitor showing spreadsheet/chat, white fox figurine, small airplane model, partial CD drive; no visible people.",
+      "speech": "\"can you hear me?\" (audible but no speaker visible)",
+      "summary": "A static desk setup with computer and figurines as audio asks if someone can hear.",
+      "processed_at": "2026-01-31T15:25:06.281022",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873293_1769873298.mp4:1769873293.0748796": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873293_1769873298.mp4",
+      "start_ts": 1769873293.0748796,
+      "end_ts": 1769873298.0748796,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0006"
+      ],
+      "transcription": "自己在说什么？",
+      "vl_analysis": "**Scene**: Computer monitor shows code/docs, desk has model airplane, circular map-like object, exposed hard drive, and microphone arm. Cables and wall in background.  \n**Speech**: SPK_0006: \"自己在说什么？\" (What am I saying?)  \n**Summary**: A person questions their own speech while recording with a mic, showing a tech-focused desk setup.",
+      "scene": "Computer monitor shows code/docs, desk has model airplane, circular map-like object, exposed hard drive, and microphone arm. Cables and wall in background.",
+      "speech": "SPK_0006: \"自己在说什么？\" (What am I saying?)",
+      "summary": "A person questions their own speech while recording with a mic, showing a tech-focused desk setup.",
+      "processed_at": "2026-01-31T15:28:28.807590",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873306_1769873311.mp4:1769873306.3558996": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873306_1769873311.mp4",
+      "start_ts": 1769873306.3558996,
+      "end_ts": 1769873311.3558996,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0008"
+      ],
+      "transcription": "做呢？",
+      "vl_analysis": "**Scene**: Desk with dual monitors (one displaying code), microphone on boom arm, small model airplane, circular decorative object (resembling a planet), exposed hard drive components, and tangled cables. No people visible.  \n**Speech**: SPK_0008 said \"做呢？\" (casual, inquisitive tone)  \n**Summary**: A workspace with tech gear is shown while someone asks \"What are you doing?\" in a casual tone.",
+      "scene": "Desk with dual monitors (one displaying code), microphone on boom arm, small model airplane, circular decorative object (resembling a planet), exposed hard drive components, and tangled cables. No people visible.",
+      "speech": "SPK_0008 said \"做呢？\" (casual, inquisitive tone)",
+      "summary": "A workspace with tech gear is shown while someone asks \"What are you doing?\" in a casual tone.",
+      "processed_at": "2026-01-31T15:28:46.736843",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873311_1769873316.mp4:1769873311.904832": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873311_1769873316.mp4",
+      "start_ts": 1769873311.904832,
+      "end_ts": 1769873316.904832,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0009"
+      ],
+      "transcription": "你感觉好慢？ 他延迟。",
+      "vl_analysis": "**Scene**: Dual monitors display code/document; desk has model plane, circular decor, hard drive, bottle, mic arm.  \n**Speech**: \"你感觉好慢？ 他延迟。\" (Tone: concerned/explaining delay)  \n**Summary**: A tech workspace user discusses lag while interacting with dual monitors showing code.",
+      "scene": "Dual monitors display code/document; desk has model plane, circular decor, hard drive, bottle, mic arm.",
+      "speech": "\"你感觉好慢？ 他延迟。\" (Tone: concerned/explaining delay)",
+      "summary": "A tech workspace user discusses lag while interacting with dual monitors showing code.",
+      "processed_at": "2026-01-31T15:28:57.041801",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873318_1769873323.mp4:1769873318.5360327": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873318_1769873323.mp4",
+      "start_ts": 1769873318.5360327,
+      "end_ts": 1769873323.5360327,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0010"
+      ],
+      "transcription": "延迟感觉。 很长。",
+      "vl_analysis": "**Scene**: Curved monitor shows code/text files; desk holds model plane, patterned container, hard drive, small bottles, mic arm; cables visible behind desk.  \n**Speech**: SPK_0010 says \"延迟感觉。 很长。\" (feeling of delay, very long)  \n**Summary**: A workspace with a large monitor and desk items where someone expresses frustration about a delay.",
+      "scene": "Curved monitor shows code/text files; desk holds model plane, patterned container, hard drive, small bottles, mic arm; cables visible behind desk.",
+      "speech": "SPK_0010 says \"延迟感觉。 很长。\" (feeling of delay, very long)",
+      "summary": "A workspace with a large monitor and desk items where someone expresses frustration about a delay.",
+      "processed_at": "2026-01-31T15:29:18.499803",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873322_1769873327.mp4:1769873322.8654847": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873322_1769873327.mp4",
+      "start_ts": 1769873322.8654847,
+      "end_ts": 1769873327.8654847,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0011"
+      ],
+      "transcription": "不知道为什么？",
+      "vl_analysis": "**Scene**: Curved monitor setup (two screens visible), main screen displays code/document, desk holds model airplane, microphone arm, hard drive, small bottles, and decorative object.  \n**Speech**: SPK_0011: \"不知道为什么？\" (tone: questioning/confused)  \n**Summary**: A person at a multi-monitor workstation speaks in confusion while working with code/document on screen.",
+      "scene": "Curved monitor setup (two screens visible), main screen displays code/document, desk holds model airplane, microphone arm, hard drive, small bottles, and decorative object.",
+      "speech": "SPK_0011: \"不知道为什么？\" (tone: questioning/confused)",
+      "summary": "A person at a multi-monitor workstation speaks in confusion while working with code/document on screen.",
+      "processed_at": "2026-01-31T15:29:29.531408",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873333_1769873338.mp4:1769873333.9419506": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873333_1769873338.mp4",
+      "start_ts": 1769873333.9419506,
+      "end_ts": 1769873338.9419506,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0012"
+      ],
+      "transcription": "我上哪搞上上去的？ .",
+      "vl_analysis": "**Scene**: Dual-monitor setup with code editor on main screen, small model airplane, colorful circular object, bottles, hard drive, and microphone arm on desk; plain wall background.  \n**Speech**: SPK_0012 asks, \"我上哪搞上上去的？\" (Where did I get it to go up?)—tone suggests confusion.  \n**Summary**: A person in a workspace questions where they sourced an item for upload while working on code.",
+      "scene": "Dual-monitor setup with code editor on main screen, small model airplane, colorful circular object, bottles, hard drive, and microphone arm on desk; plain wall background.",
+      "speech": "SPK_0012 asks, \"我上哪搞上上去的？\" (Where did I get it to go up?)—tone suggests confusion.",
+      "summary": "A person in a workspace questions where they sourced an item for upload while working on code.",
+      "processed_at": "2026-01-31T15:29:39.180767",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873342_1769873347.mp4:1769873342.8281348": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873342_1769873347.mp4",
+      "start_ts": 1769873342.8281348,
+      "end_ts": 1769873347.8281348,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0013"
+      ],
+      "transcription": "我感觉。",
+      "vl_analysis": "**Scene**: Dual monitors display code/file management; desk holds model airplane, essential oil bottles, hard drive, and microphone arm; no people visible.  \n**Speech**: SPK_0013 said \"我感觉。\" (neutral tone).  \n**Summary**: A person speaks \"I feel\" while working at a dual-monitor desk with various items.",
+      "scene": "Dual monitors display code/file management; desk holds model airplane, essential oil bottles, hard drive, and microphone arm; no people visible.",
+      "speech": "SPK_0013 said \"我感觉。\" (neutral tone).",
+      "summary": "A person speaks \"I feel\" while working at a dual-monitor desk with various items.",
+      "processed_at": "2026-01-31T15:29:54.456543",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873345_1769873350.mp4:1769873345.4606347": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873345_1769873350.mp4",
+      "start_ts": 1769873345.4606347,
+      "end_ts": 1769873350.4606347,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0013"
+      ],
+      "transcription": "这个延迟。",
+      "vl_analysis": "**Scene**: Curved monitor displays code/text, lower monitor shows file manager; desk holds model airplane, circular green-patterned object, exposed hard drive, and microphone arm. Background is plain wall.  \n**Speech**: SPK_0013: \"这个延迟。\" (neutral tone)  \n**Summary**: A person discusses a delay while working at a tech-filled desk with multiple monitors and gadgets.",
+      "scene": "Curved monitor displays code/text, lower monitor shows file manager; desk holds model airplane, circular green-patterned object, exposed hard drive, and microphone arm. Background is plain wall.",
+      "speech": "SPK_0013: \"这个延迟。\" (neutral tone)",
+      "summary": "A person discusses a delay while working at a tech-filled desk with multiple monitors and gadgets.",
+      "processed_at": "2026-01-31T15:30:03.849061",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873350_1769873355.mp4:1769873350.9425557": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873350_1769873355.mp4",
+      "start_ts": 1769873350.9425557,
+      "end_ts": 1769873355.9425557,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0014"
+      ],
+      "transcription": "三十来。",
+      "vl_analysis": "**Scene**: Desk with dual monitors (main display shows code/terminal, top monitor shows macOS dock), model airplane, circular artwork, small bottles, hard drive, and microphone arm.  \n**Speech**: SPK_0014 said \"三十来。\" (neutral tone).  \n**Summary**: A workspace with dual monitors displaying code is shown while a speaker says \"三十来.\"",
+      "scene": "Desk with dual monitors (main display shows code/terminal, top monitor shows macOS dock), model airplane, circular artwork, small bottles, hard drive, and microphone arm.",
+      "speech": "SPK_0014 said \"三十来。\" (neutral tone).",
+      "summary": "A workspace with dual monitors displaying code is shown while a speaker says \"三十来.\"",
+      "processed_at": "2026-01-31T15:30:14.638408",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873346_1769873351.mp4:1769873346.6731806": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873346_1769873351.mp4",
+      "start_ts": 1769873346.6731806,
+      "end_ts": 1769873351.6731806,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0014"
+      ],
+      "transcription": "已经奔着。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T15:30:25.887300",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873351_1769873356.mp4:1769873351.7089076": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873351_1769873356.mp4",
+      "start_ts": 1769873351.7089076,
+      "end_ts": 1769873356.7089076,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0015"
+      ],
+      "transcription": "四十秒去的？",
+      "vl_analysis": "**Scene**: Dual monitors (curved top, flat lower) show code/text editing; desk has white cat, model airplane, circular digital device, small bottles, hard drive, and microphone arm; wall is plain.  \n**Speech**: SPK_0015: \"四十秒去的？\" (Went 40 seconds ago?) — questioning tone.  \n**Summary**: A workspace with dual monitors, a cat, and desk items where someone asks if an action occurred 40 seconds ago.",
+      "scene": "Dual monitors (curved top, flat lower) show code/text editing; desk has white cat, model airplane, circular digital device, small bottles, hard drive, and microphone arm; wall is plain.",
+      "speech": "SPK_0015: \"四十秒去的？\" (Went 40 seconds ago?) — questioning tone.",
+      "summary": "A workspace with dual monitors, a cat, and desk items where someone asks if an action occurred 40 seconds ago.",
+      "processed_at": "2026-01-31T15:30:42.286454",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873359_1769873364.mp4:1769873359.930709": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873359_1769873364.mp4",
+      "start_ts": 1769873359.930709,
+      "end_ts": 1769873364.930709,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0016",
+        "TEMP_SPEAKER_01"
+      ],
+      "transcription": "可能因为模型上。 可能因为模型上。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T15:30:56.899367",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873361_1769873366.mp4:1769873361.7812617": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873361_1769873366.mp4",
+      "start_ts": 1769873361.7812617,
+      "end_ts": 1769873366.7812617,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0017"
+      ],
+      "transcription": "重复。 山仔的原 应该是。",
+      "vl_analysis": "**Scene**: Two curved monitors show coding/text files; a white cat rests on the desk beside a model airplane, with a microphone arm, small bottles, a hard drive, and a circular decorative item visible.  \n**Speech**: SPK_0017: \"重复。 山仔的原 应该是。\" (neutral tone, explaining a repetition or original version)  \n**Summary**: A person works at a dual-monitor setup with a cat nearby while discussing a repetition or original version.",
+      "scene": "Two curved monitors show coding/text files; a white cat rests on the desk beside a model airplane, with a microphone arm, small bottles, a hard drive, and a circular decorative item visible.",
+      "speech": "SPK_0017: \"重复。 山仔的原 应该是。\" (neutral tone, explaining a repetition or original version)",
+      "summary": "A person works at a dual-monitor setup with a cat nearby while discussing a repetition or original version.",
+      "processed_at": "2026-01-31T15:31:09.352391",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873391_1769873396.mp4:1769873391.3138068": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873391_1769873396.mp4",
+      "start_ts": 1769873391.3138068,
+      "end_ts": 1769873396.3138068,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0019"
+      ],
+      "transcription": "他是。",
+      "vl_analysis": "**Scene**: Desk with dual monitors (one displays code/docs, one shows macOS dock), small white model dog, airplane model, colorful circular object, oil bottles, hard drive, and microphone arm; no people visible.  \n**Speech**: A person says \"他是.\" (He is.)  \n**Summary**: A person speaks \"He is\" while the camera shows a workspace with dual monitors and various desk items.",
+      "scene": "Desk with dual monitors (one displays code/docs, one shows macOS dock), small white model dog, airplane model, colorful circular object, oil bottles, hard drive, and microphone arm; no people visible.",
+      "speech": "A person says \"他是.\" (He is.)",
+      "summary": "A person speaks \"He is\" while the camera shows a workspace with dual monitors and various desk items.",
+      "processed_at": "2026-01-31T15:31:29.681378",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873392_1769873397.mp4:1769873392.2056909": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873392_1769873397.mp4",
+      "start_ts": 1769873392.2056909,
+      "end_ts": 1769873397.2056909,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0020"
+      ],
+      "transcription": "三十秒左右。",
+      "vl_analysis": "**Scene**: A multi-monitor workspace with code/text on the main screen, app icons on a curved secondary monitor; desk holds a white dog figurine, model airplane, circular decorative item, two small bottles, hard drive, and a microphone arm.  \n**Speech**: SPK_0020 said \"三十秒左右\" (about thirty seconds).  \n**Summary**: A person mentions timing while working at a tech-focused desk setup.",
+      "scene": "A multi-monitor workspace with code/text on the main screen, app icons on a curved secondary monitor; desk holds a white dog figurine, model airplane, circular decorative item, two small bottles, hard drive, and a microphone arm.",
+      "speech": "SPK_0020 said \"三十秒左右\" (about thirty seconds).",
+      "summary": "A person mentions timing while working at a tech-focused desk setup.",
+      "processed_at": "2026-01-31T15:31:37.104930",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873395_1769873400.mp4:1769873395.614441": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873395_1769873400.mp4",
+      "start_ts": 1769873395.614441,
+      "end_ts": 1769873400.614441,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0020"
+      ],
+      "transcription": "就是。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T15:31:49.442638",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873397_1769873402.mp4:1769873397.0480478": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873397_1769873402.mp4",
+      "start_ts": 1769873397.0480478,
+      "end_ts": 1769873402.0480478,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0022",
+        "SPK_0021"
+      ],
+      "transcription": "个比较。 个比较。 个比较。 然后同时。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T15:32:01.200311",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873405_1769873410.mp4:1769873405.2093568": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873405_1769873410.mp4",
+      "start_ts": 1769873405.2093568,
+      "end_ts": 1769873410.2093568,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0023"
+      ],
+      "transcription": "同时弄了一下。",
+      "vl_analysis": "**Scene**: Dual monitors display code/documents; desk holds white cat figurine, model airplane, circular decor, microphone arm, and small bottles. No people visible.  \n**Speech**: [SPK_0023] \"同时弄了一下。\" (Tone: casual)  \n**Summary**: A person multitasks at a dual-monitor desk, with speech indicating simultaneous actions.",
+      "scene": "Dual monitors display code/documents; desk holds white cat figurine, model airplane, circular decor, microphone arm, and small bottles. No people visible.",
+      "speech": "[SPK_0023] \"同时弄了一下。\" (Tone: casual)",
+      "summary": "A person multitasks at a dual-monitor desk, with speech indicating simultaneous actions.",
+      "processed_at": "2026-01-31T15:32:11.367241",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873409_1769873414.mp4:1769873409.3299637": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873409_1769873414.mp4",
+      "start_ts": 1769873409.3299637,
+      "end_ts": 1769873414.3299637,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0024"
+      ],
+      "transcription": "模型本身好像是好的。",
+      "vl_analysis": "**Scene**: Desk with large monitor showing code, white fox figurine, miniature airplane, circular forest art, microphone stand; light wall background.  \n**Speech**: SPK_0024: \"模型本身好像是好的.\" (Tone: neutral)  \n**Summary**: A speaker assesses a model while working at a desk with coding monitors and decor.",
+      "scene": "Desk with large monitor showing code, white fox figurine, miniature airplane, circular forest art, microphone stand; light wall background.",
+      "speech": "SPK_0024: \"模型本身好像是好的.\" (Tone: neutral)",
+      "summary": "A speaker assesses a model while working at a desk with coding monitors and decor.",
+      "processed_at": "2026-01-31T15:32:23.286066",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873438_1769873443.mp4:1769873438.2454708": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873438_1769873443.mp4",
+      "start_ts": 1769873438.2454708,
+      "end_ts": 1769873443.2454708,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0027"
+      ],
+      "transcription": "不是的。",
+      "vl_analysis": "**Scene**: Multiple monitors display code editors, a TP-LINK login interface, and app icons; desk holds a white wolf figurine, model airplane, small bottles, hard drive, and microphone arm.  \n**Speech**: SPK_0027: \"不是的。\" (neutral tone).  \n**Summary**: A workspace with multi-monitor tech tools is shown while a voice says \"No.\"",
+      "scene": "Multiple monitors display code editors, a TP-LINK login interface, and app icons; desk holds a white wolf figurine, model airplane, small bottles, hard drive, and microphone arm.",
+      "speech": "SPK_0027: \"不是的。\" (neutral tone).",
+      "summary": "A workspace with multi-monitor tech tools is shown while a voice says \"No.\"",
+      "processed_at": "2026-01-31T15:32:34.386169",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873446_1769873451.mp4:1769873446.6264687": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873446_1769873451.mp4",
+      "start_ts": 1769873446.6264687,
+      "end_ts": 1769873451.6264687,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0028"
+      ],
+      "transcription": "不是啊你。 说。",
+      "vl_analysis": "**Scene**: Dual monitors show coding interface (TP-Link panel, code editor) and macOS desktop. Desk has white fox figurine, airplane model, circular art, microphone arm, small bottles.  \n**Speech**: SPK_0028: \"不是啊你。 说。\" (neutral tone, fragmented)  \n**Summary**: A workspace with dual monitors displaying code/network settings, desk decor, and a speaker issuing a short, clipped statement.",
+      "scene": "Dual monitors show coding interface (TP-Link panel, code editor) and macOS desktop. Desk has white fox figurine, airplane model, circular art, microphone arm, small bottles.",
+      "speech": "SPK_0028: \"不是啊你。 说。\" (neutral tone, fragmented)",
+      "summary": "A workspace with dual monitors displaying code/network settings, desk decor, and a speaker issuing a short, clipped statement.",
+      "processed_at": "2026-01-31T15:32:52.176232",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873448_1769873453.mp4:1769873448.2677348": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873448_1769873453.mp4",
+      "start_ts": 1769873448.2677348,
+      "end_ts": 1769873453.2677348,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0029"
+      ],
+      "transcription": "说话。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T15:33:04.439848",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873454_1769873459.mp4:1769873454.6055558": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873454_1769873459.mp4",
+      "start_ts": 1769873454.6055558,
+      "end_ts": 1769873459.6055558,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0030"
+      ],
+      "transcription": "奇怪。",
+      "vl_analysis": "**Scene**: Multi-monitor setup shows TP-Link router login page, code editor with lines of text, white cat figurine, small airplane model, aurora-themed circular decor, microphone arm; light wall background.  \n**Speech**: SPK_0030: \"奇怪\" (strange)  \n**Summary**: A tech workspace scene with multi-monitor coding/network tools where someone says \"strange\".",
+      "scene": "Multi-monitor setup shows TP-Link router login page, code editor with lines of text, white cat figurine, small airplane model, aurora-themed circular decor, microphone arm; light wall background.",
+      "speech": "SPK_0030: \"奇怪\" (strange)",
+      "summary": "A tech workspace scene with multi-monitor coding/network tools where someone says \"strange\".",
+      "processed_at": "2026-01-31T15:33:14.639650",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769873463_1769873468.mp4:1769873463.3876286": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769873463_1769873468.mp4",
+      "start_ts": 1769873463.3876286,
+      "end_ts": 1769873468.3876286,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0031"
+      ],
+      "transcription": "嗯，先这样吧。",
+      "vl_analysis": "**Scene**: Desk with dual monitors (one showing code/docs, one with app icons), white cat, model airplane, circular nature print, small bottle, hard drive, mic arm; background is light-colored wall.  \n**Speech**: SPK_0031 says \"Hmm, let's leave it at that for now.\" (neutral tone)  \n**Summary**: A person working at a tech desk decides to pause their task.",
+      "scene": "Desk with dual monitors (one showing code/docs, one with app icons), white cat, model airplane, circular nature print, small bottle, hard drive, mic arm; background is light-colored wall.",
+      "speech": "SPK_0031 says \"Hmm, let's leave it at that for now.\" (neutral tone)",
+      "summary": "A person working at a tech desk decides to pause their task.",
+      "processed_at": "2026-01-31T15:33:32.249629",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874159_1769874164.mp4:1769874159.7580907": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874159_1769874164.mp4",
+      "start_ts": 1769874159.7580907,
+      "end_ts": 1769874164.7580907,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0034"
+      ],
+      "transcription": "什么惊攻一批？",
+      "vl_analysis": "**Scene**: Large curved Samsung monitor displays code/text editor; desk below holds model airplane, white figurine, circular decor, small bottles, hard drive, soundbar; no people visible.  \n**Speech**: SPK_0034 said \"什么惊攻一批？\" (unclear phrase).  \n**Summary**: A person works at a coding setup with desk decor while speaking an unclear phrase.",
+      "scene": "Large curved Samsung monitor displays code/text editor; desk below holds model airplane, white figurine, circular decor, small bottles, hard drive, soundbar; no people visible.",
+      "speech": "SPK_0034 said \"什么惊攻一批？\" (unclear phrase).",
+      "summary": "A person works at a coding setup with desk decor while speaking an unclear phrase.",
+      "processed_at": "2026-01-31T15:42:55.799264",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874171_1769874176.mp4:1769874171.5413017": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874171_1769874176.mp4",
+      "start_ts": 1769874171.5413017,
+      "end_ts": 1769874176.5413017,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0036"
+      ],
+      "transcription": "觉得没有回复。",
+      "vl_analysis": "**Scene**: Curved Samsung monitor displays code/developer tools; desk holds model plane, white figurine, circular decor, small bottles, external drive, and a blue-lit device. No people visible.  \n**Speech**: SPK_0036: \"觉得没有回复.\" (feels like no reply)  \n**Summary**: A developer’s workspace shows code on a monitor while SPK_0036 notes a lack of response.",
+      "scene": "Curved Samsung monitor displays code/developer tools; desk holds model plane, white figurine, circular decor, small bottles, external drive, and a blue-lit device. No people visible.",
+      "speech": "SPK_0036: \"觉得没有回复.\" (feels like no reply)",
+      "summary": "A developer’s workspace shows code on a monitor while SPK_0036 notes a lack of response.",
+      "processed_at": "2026-01-31T15:43:10.413915",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874211_1769874216.mp4:1769874211.8559728": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874211_1769874216.mp4",
+      "start_ts": 1769874211.8559728,
+      "end_ts": 1769874216.8559728,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0039"
+      ],
+      "transcription": "先把电信拿了。",
+      "vl_analysis": "**Scene**: Single large Samsung monitor displays code; desk holds model airplane, white figurine, round decor, small bottles, and external hard drive. No people visible.  \n**Speech**: SPK_0039 said \"先把电信拿了.\"  \n**Summary**: A person is working on code while giving instructions to handle telecom-related items.",
+      "scene": "Single large Samsung monitor displays code; desk holds model airplane, white figurine, round decor, small bottles, and external hard drive. No people visible.",
+      "speech": "SPK_0039 said \"先把电信拿了.\"",
+      "summary": "A person is working on code while giving instructions to handle telecom-related items.",
+      "processed_at": "2026-01-31T15:43:56.450747",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874217_1769874222.mp4:1769874217.954954": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874217_1769874222.mp4",
+      "start_ts": 1769874217.954954,
+      "end_ts": 1769874222.954954,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0040"
+      ],
+      "transcription": "还是没懂他为什么没有病性？",
+      "vl_analysis": "**Scene**: Curved Samsung monitor displays code/terminal; desk holds model airplane, white figurine, circular decor, two bottles, hard drive, soundbar with colored buttons, Logitech device (blue light); macOS dock visible at top.  \n**Speech**: SPK_0040: \"还是没懂他为什么没有病性？\"  \n**Summary**: A workspace with a large monitor showing code is shown as someone questions why a subject lacks \"illness nature\".",
+      "scene": "Curved Samsung monitor displays code/terminal; desk holds model airplane, white figurine, circular decor, two bottles, hard drive, soundbar with colored buttons, Logitech device (blue light); macOS dock visible at top.",
+      "speech": "SPK_0040: \"还是没懂他为什么没有病性？\"",
+      "summary": "A workspace with a large monitor showing code is shown as someone questions why a subject lacks \"illness nature\".",
+      "processed_at": "2026-01-31T15:44:08.583823",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874224_1769874229.mp4:1769874224.4153597": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874224_1769874229.mp4",
+      "start_ts": 1769874224.4153597,
+      "end_ts": 1769874229.4153597,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0041"
+      ],
+      "transcription": "让我先把连线拉了，我去。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T15:44:22.182708",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874621_1769874626.mp4:1769874621.1149197": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874621_1769874626.mp4",
+      "start_ts": 1769874621.1149197,
+      "end_ts": 1769874626.1149197,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0044"
+      ],
+      "transcription": "and see what's happening right now? if everything's going okay?",
+      "vl_analysis": "**Scene**: Desk with Samsung monitor showing code/docs, two white keyboards (one with red backlighting), white fox figurine, small white fan/speaker, model airplane, brown bottle, tangled cables, clear plastic case; background has light curtains.  \n**Speech**: SPK_0044: \"and see what's happening right now? if everything's going okay?\" (neutral tone, checking status)  \n**Summary**: A person monitors a tech workspace via screen while asking about system status.",
+      "scene": "Desk with Samsung monitor showing code/docs, two white keyboards (one with red backlighting), white fox figurine, small white fan/speaker, model airplane, brown bottle, tangled cables, clear plastic case; background has light curtains.",
+      "speech": "SPK_0044: \"and see what's happening right now? if everything's going okay?\" (neutral tone, checking status)",
+      "summary": "A person monitors a tech workspace via screen while asking about system status.",
+      "processed_at": "2026-01-31T15:50:44.449640",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874633_1769874638.mp4:1769874633.9504876": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874633_1769874638.mp4",
+      "start_ts": 1769874633.9504876,
+      "end_ts": 1769874638.9504876,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0045"
+      ],
+      "transcription": "and currently.",
+      "vl_analysis": "**Scene**: Dual monitors display code/docs (bottom) and terminal/Word (top); desk holds white fox figurine, model plane, circular aurora-decor, and microphone.  \n**Speech**: SPK_0",
+      "scene": "Dual monitors display code/docs (bottom) and terminal/Word (top); desk holds white fox figurine, model plane, circular aurora-decor, and microphone.",
+      "speech": "SPK_0",
+      "summary": "",
+      "processed_at": "2026-01-31T15:50:58.204207",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874635_1769874640.mp4:1769874635.7630627": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874635_1769874640.mp4",
+      "start_ts": 1769874635.7630627,
+      "end_ts": 1769874640.7630627,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0046"
+      ],
+      "transcription": "calculating how long the first.",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T15:51:12.790350",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874640_1769874645.mp4:1769874640.8032336": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874640_1769874645.mp4",
+      "start_ts": 1769874640.8032336,
+      "end_ts": 1769874645.8032336,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0047"
+      ],
+      "transcription": "yeah, they are trans transmitted to the alama.",
+      "vl_analysis": "**Scene**: Two curved monitors display code and documents; desk features a white fox figurine, model airplane, and plush toy. No people visible.  \n**",
+      "scene": "Two curved monitors display code and documents; desk features a white fox figurine, model airplane, and plush toy. No people visible. **",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T15:51:24.103715",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874646_1769874651.mp4:1769874646.1206148": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874646_1769874651.mp4",
+      "start_ts": 1769874646.1206148,
+      "end_ts": 1769874651.1206148,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0048"
+      ],
+      "transcription": "serv can. you determine how long it is?",
+      "vl_analysis": "**Scene**: Dual monitors show coding/text editing; desk has white fox figurine, model airplane, green plush toy; no people visible.  \n**Speech**: \"serv can. you determine how long it is?\" (neutral tone, likely asking about task duration)  \n**Summary**: A person is coding on dual monitors while a voice asks about the duration of an activity.",
+      "scene": "Dual monitors show coding/text editing; desk has white fox figurine, model airplane, green plush toy; no people visible.",
+      "speech": "\"serv can. you determine how long it is?\" (neutral tone, likely asking about task duration)",
+      "summary": "A person is coding on dual monitors while a voice asks about the duration of an activity.",
+      "processed_at": "2026-01-31T15:51:33.932982",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874654_1769874659.mp4:1769874654.6655777": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874654_1769874659.mp4",
+      "start_ts": 1769874654.6655777,
+      "end_ts": 1769874659.6655777,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0049"
+      ],
+      "transcription": "i have to make sure.",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T15:51:45.384337",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874655_1769874660.mp4:1769874655.9165666": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874655_1769874660.mp4",
+      "start_ts": 1769874655.9165666,
+      "end_ts": 1769874660.9165666,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0050"
+      ],
+      "transcription": "y currently. processinging streamlined.",
+      "vl_analysis": "**Scene**: Dual-monitor setup with code/terminal windows; desk has white fox figurine, small airplane model, and green circular object.  \n**Speech**: SPK_0050 says \"currently. processinging streamlined.\"  \n**Summary**: A developer works at a dual-monitor setup while a speaker mentions processing streamlined.",
+      "scene": "Dual-monitor setup with code/terminal windows; desk has white fox figurine, small airplane model, and green circular object.",
+      "speech": "SPK_0050 says \"currently. processinging streamlined.\"",
+      "summary": "A developer works at a dual-monitor setup while a speaker mentions processing streamlined.",
+      "processed_at": "2026-01-31T15:51:52.951746",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874676_1769874681.mp4:1769874676.0745986": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874676_1769874681.mp4",
+      "start_ts": 1769874676.0745986,
+      "end_ts": 1769874681.0745986,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0051"
+      ],
+      "transcription": "memory doesn't.",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T15:52:06.768029",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874682_1769874687.mp4:1769874682.9519167": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874682_1769874687.mp4",
+      "start_ts": 1769874682.9519167,
+      "end_ts": 1769874687.9519167,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0047"
+      ],
+      "transcription": "s. it should be fine, but i like.",
+      "vl_analysis": "**Scene**: Dual monitors display code editor (left) and file manager/terminal (top); desk holds white wolf figurine, model airplane, circular decor, small bottles.  \n**Speech**: SPK_0047 says \"s. it should be fine, but i like\" (neutral).  \n**Summary**: A developer works at a dual-monitor setup while a speaker comments on a task.",
+      "scene": "Dual monitors display code editor (left) and file manager/terminal (top); desk holds white wolf figurine, model airplane, circular decor, small bottles.",
+      "speech": "SPK_0047 says \"s. it should be fine, but i like\" (neutral).",
+      "summary": "A developer works at a dual-monitor setup while a speaker comments on a task.",
+      "processed_at": "2026-01-31T15:52:19.042164",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874686_1769874691.mp4:1769874686.1444347": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874686_1769874691.mp4",
+      "start_ts": 1769874686.1444347,
+      "end_ts": 1769874691.1444347,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0052"
+      ],
+      "transcription": "学。",
+      "vl_analysis": "**Scene**: Dual monitors display code/docs (bottom) and file manager/terminal (top); desk holds white cat figurine, model airplane, blue-green round decor, two small",
+      "scene": "Dual monitors display code/docs (bottom) and file manager/terminal (top); desk holds white cat figurine, model airplane, blue-green round decor, two small",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T15:52:31.554069",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874699_1769874704.mp4:1769874699.9394228": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874699_1769874704.mp4",
+      "start_ts": 1769874699.9394228,
+      "end_ts": 1769874704.9394228,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0053"
+      ],
+      "transcription": "じゃんがさん。",
+      "vl_analysis": "**Scene**: Curved Samsung monitor displays code/docs, smaller monitor above shows terminal, desk holds white fox figurine, model airplane, green round object, small bottles, and hard drive.  \n**Speech**: SPK_0053 says \"じゃんがさん\" (casual tone).  \n**Summary**: A workspace with dual monitors showing code is greeted by SPK_00",
+      "scene": "Curved Samsung monitor displays code/docs, smaller monitor above shows terminal, desk holds white fox figurine, model airplane, green round object, small bottles, and hard drive.",
+      "speech": "SPK_0053 says \"じゃんがさん\" (casual tone).",
+      "summary": "A workspace with dual monitors showing code is greeted by SPK_00",
+      "processed_at": "2026-01-31T15:52:45.607715",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874702_1769874707.mp4:1769874702.2794988": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874702_1769874707.mp4",
+      "start_ts": 1769874702.2794988,
+      "end_ts": 1769874707.2794988,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0041"
+      ],
+      "transcription": "我把电线杆从野外直接接到城里去了。",
+      "vl_analysis": "**Scene**: Desk with dual monitors (one Samsung, one curved) showing code/docs; small white fox figurine, model airplane, two bottles, circular object, and hard drive on desk. No people visible.  \n**Speech**: SPK_0041 says \"I connected the utility pole from the wilderness directly to the city\" (matter-of-fact tone).  \n**Summary**: A speaker discusses connecting a utility pole while the camera shows a desk with dual monitors displaying code and small objects.",
+      "scene": "Desk with dual monitors (one Samsung, one curved) showing code/docs; small white fox figurine, model airplane, two bottles, circular object, and hard drive on desk. No people visible.",
+      "speech": "SPK_0041 says \"I connected the utility pole from the wilderness directly to the city\" (matter-of-fact tone).",
+      "summary": "A speaker discusses connecting a utility pole while the camera shows a desk with dual monitors displaying code and small objects.",
+      "processed_at": "2026-01-31T15:52:55.181806",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874712_1769874717.mp4:1769874712.0014658": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874712_1769874717.mp4",
+      "start_ts": 1769874712.0014658,
+      "end_ts": 1769874717.0014658,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0054"
+      ],
+      "transcription": "everything.",
+      "vl_analysis": "**Scene**: Multiple monitors display code/docs; desk has model plane, white dog figurine, circular object, small bottles. No people visible.  \n**Speech**: SPK_0054 said \"everything\" (tone unclear).  \n**Summary**: A computer workspace with multiple monitors showing technical content is shown while SPK_0054 says \"everything\".",
+      "scene": "Multiple monitors display code/docs; desk has model plane, white dog figurine, circular object, small bottles. No people visible.",
+      "speech": "SPK_0054 said \"everything\" (tone unclear).",
+      "summary": "A computer workspace with multiple monitors showing technical content is shown while SPK_0054 says \"everything\".",
+      "processed_at": "2026-01-31T15:53:05.297092",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874715_1769874720.mp4:1769874715.0220907": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874715_1769874720.mp4",
+      "start_ts": 1769874715.0220907,
+      "end_ts": 1769874720.0220907,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0054"
+      ],
+      "transcription": "ship比啥应该？",
+      "vl_analysis": "**Scene**: Dual monitors show code/docs; desk has model plane, white figurine, round case, small bottles",
+      "scene": "Dual monitors show code/docs; desk has model plane, white figurine, round case, small bottles",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T15:53:18.623267",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874718_1769874723.mp4:1769874718.1683137": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874718_1769874723.mp4",
+      "start_ts": 1769874718.1683137,
+      "end_ts": 1769874723.1683137,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0055"
+      ],
+      "transcription": "ha have content these swaps.",
+      "vl_analysis": "**Scene**: Two curved monitors display code/docs; desk holds white fox figurine, model airplane, small bottles, hard drive, round green decor. Top monitor shows macOS dock with apps, terminal, spreadsheet.  \n**Speech**: SPK_0055 said \"ha have content these swaps\" (casual tone, fragmented phrasing).  \n**Summary**: A workspace with dual monitors showing coding work and desk decor, while SPK_0055 speaks about content swaps.",
+      "scene": "Two curved monitors display code/docs; desk holds white fox figurine, model airplane, small bottles, hard drive, round green decor. Top monitor shows macOS dock with apps, terminal, spreadsheet.",
+      "speech": "SPK_0055 said \"ha have content these swaps\" (casual tone, fragmented phrasing).",
+      "summary": "A workspace with dual monitors showing coding work and desk decor, while SPK_0055 speaks about content swaps.",
+      "processed_at": "2026-01-31T15:53:28.712568",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874721_1769874726.mp4:1769874721.8467376": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874721_1769874726.mp4",
+      "start_ts": 1769874721.8467376,
+      "end_ts": 1769874726.8467376,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0056"
+      ],
+      "transcription": "i'm not so sure anyway.",
+      "vl_analysis": "**Scene**: Dual monitors display code/docs; desk has model plane, white fox figurine, green circular object, small bottles, hard drive, and keyboard. No people visible.  \n**Speech**: \"i'm not so sure anyway.\"  \n**Summary**: A workspace with dual monitors showing code/docs and desk items is shown while a speaker expresses uncertainty.",
+      "scene": "Dual monitors display code/docs; desk has model plane, white fox figurine, green circular object, small bottles, hard drive, and keyboard. No people visible.",
+      "speech": "\"i'm not so sure anyway.\"",
+      "summary": "A workspace with dual monitors showing code/docs and desk items is shown while a speaker expresses uncertainty.",
+      "processed_at": "2026-01-31T15:53:39.157005",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874729_1769874734.mp4:1769874729.7557359": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874729_1769874734.mp4",
+      "start_ts": 1769874729.7557359,
+      "end_ts": 1769874734.7557359,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0057"
+      ],
+      "transcription": "那应该是四。",
+      "vl_analysis": "**Scene**: Dual monitors (Samsung curved below, another above) show code/docs/terminal; desk has white fox figurine, model airplane, round blue item, small bottles, hard drive.  \n**Speech**: SPK_0057: \"那应该是四\" (casual confirmation tone)  \n**Summary**: A workspace with dual monitors and desk items, while someone confirms a number via speech.",
+      "scene": "Dual monitors (Samsung curved below, another above) show code/docs/terminal; desk has white fox figurine, model airplane, round blue item, small bottles, hard drive.",
+      "speech": "SPK_0057: \"那应该是四\" (casual confirmation tone)",
+      "summary": "A workspace with dual monitors and desk items, while someone confirms a number via speech.",
+      "processed_at": "2026-01-31T15:53:48.173047",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874731_1769874736.mp4:1769874731.9296427": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874731_1769874736.mp4",
+      "start_ts": 1769874731.9296427,
+      "end_ts": 1769874736.9296427,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0058"
+      ],
+      "transcription": "九四五。 七零四七零七。",
+      "vl_analysis": "**Scene**: Dual monitors show code/text; desk has white fox figurine, model airplane, small bottles, hard drive.  \n**Speech**: SPK_0058 says \"九四五。 七零四七零七。\" (945. 704707.)  \n**Summary**: A person speaks numbers while working at a dual-monitor desk with code displayed.",
+      "scene": "Dual monitors show code/text; desk has white fox figurine, model airplane, small bottles, hard drive.",
+      "speech": "SPK_0058 says \"九四五。 七零四七零七。\" (945. 704707.)",
+      "summary": "A person speaks numbers while working at a dual-monitor desk with code displayed.",
+      "processed_at": "2026-01-31T15:53:56.739279",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874737_1769874742.mp4:1769874737.8779788": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874737_1769874742.mp4",
+      "start_ts": 1769874737.8779788,
+      "end_ts": 1769874742.8779788,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0059"
+      ],
+      "transcription": "so in the school session i process.",
+      "vl_analysis": "**Scene**: Curved Samsung monitor displays code/docs; secondary monitor shows terminal. Desk holds white fox figurine, model airplane, dark circular object, two bottles, keyboard with colored keys.  \n**Speech**: SPK_0059 (neutral tone): \"so in the school session i process.\"  \n**Summary**: Developer workspace with dual monitors showing code, while a speaker discusses school session processing.",
+      "scene": "Curved Samsung monitor displays code/docs; secondary monitor shows terminal. Desk holds white fox figurine, model airplane, dark circular object, two bottles, keyboard with colored keys.",
+      "speech": "SPK_0059 (neutral tone): \"so in the school session i process.\"",
+      "summary": "Developer workspace with dual monitors showing code, while a speaker discusses school session processing.",
+      "processed_at": "2026-01-31T15:54:07.566802",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874748_1769874753.mp4:1769874748.9210467": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874748_1769874753.mp4",
+      "start_ts": 1769874748.9210467,
+      "end_ts": 1769874753.9210467,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0061"
+      ],
+      "transcription": "是 也什么？",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T15:54:19.987430",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874766_1769874771.mp4:1769874766.477742": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874766_1769874771.mp4",
+      "start_ts": 1769874766.477742,
+      "end_ts": 1769874771.477742,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0063"
+      ],
+      "transcription": "不要吃。",
+      "vl_analysis": "**Scene**: Desk with dual monitors (Samsung curved + secondary) showing code/docs; model plane, white figurine, blue-green round item, small bottles, hard drive, and keyboard with colorful keys on desk; microphone visible. No people/faces.  \n**Speech**: SPK_0063 says \"Don't eat.\" (direct tone)  \n**Summary**: A workspace with dual monitors displaying code is accompanied by a warning to not eat.",
+      "scene": "Desk with dual monitors (Samsung curved + secondary) showing code/docs; model plane, white figurine, blue-green round item, small bottles, hard drive, and keyboard with colorful keys on desk; microphone visible. No people/faces.",
+      "speech": "SPK_0063 says \"Don't eat.\" (direct tone)",
+      "summary": "A workspace with dual monitors displaying code is accompanied by a warning to not eat.",
+      "processed_at": "2026-01-31T15:54:29.482143",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874767_1769874772.mp4:1769874767.1978436": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874767_1769874772.mp4",
+      "start_ts": 1769874767.1978436,
+      "end_ts": 1769874772.1978436,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0059"
+      ],
+      "transcription": "是。 延迟已经奔着二三十秒走了。",
+      "vl_analysis": "**Scene**: Multi-monitor workspace with code editor on main screen, terminal on top monitor; desk holds model plane, small white figurine, circular decor, small bottles, hard drive, and keyboard with colored keys.  \n**Speech**: SPK_0059: \"是。 延迟已经奔着二三十秒走了。\" (Tone: matter-of-fact).  \n**Summary**: A person confirms a 20–30 second delay while working at a multi-monitor coding setup.",
+      "scene": "Multi-monitor workspace with code editor on main screen, terminal on top monitor; desk holds model plane, small white figurine, circular decor, small bottles, hard drive, and keyboard with colored keys.",
+      "speech": "SPK_0059: \"是。 延迟已经奔着二三十秒走了。\" (Tone: matter-of-fact).",
+      "summary": "A person confirms a 20–30 second delay while working at a multi-monitor coding setup.",
+      "processed_at": "2026-01-31T15:54:40.282323",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874780_1769874785.mp4:1769874780.5053797": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874780_1769874785.mp4",
+      "start_ts": 1769874780.5053797,
+      "end_ts": 1769874785.5053797,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0065"
+      ],
+      "transcription": "已经七三六了。",
+      "vl_analysis": "**Scene**: Curved Samsung monitor displays code/docs; desk holds white fox figurine, small airplane model, circular green decor, three bottles; wall in background.  \n**Speech**: SPK_0065: \"It's already 7:36\" (neutral tone).  \n**Summary**: A workspace with a curved monitor showing code, desk items, and a speaker noting the time as 7:36.",
+      "scene": "Curved Samsung monitor displays code/docs; desk holds white fox figurine, small airplane model, circular green decor, three bottles; wall in background.",
+      "speech": "SPK_0065: \"It's already 7:36\" (neutral tone).",
+      "summary": "A workspace with a curved monitor showing code, desk items, and a speaker noting the time as 7:36.",
+      "processed_at": "2026-01-31T15:54:53.937504",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769874777_1769874782.mp4:1769874777.2822547": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769874777_1769874782.mp4",
+      "start_ts": 1769874777.2822547,
+      "end_ts": 1769874782.2822547,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0065"
+      ],
+      "transcription": "两分钟走了。",
+      "vl_analysis": "**Scene**: Dual-monitor setup; curved Samsung display shows code/documentation, secondary screen has terminal/code. Desk holds white cat figurine, model airplane, circular green-patterned decor, small bottles. No birds visible; \"17x tv\" likely error (2 monitors).  \n**Speech**: SPK_0065: \"两分钟走了\" (left in two minutes), neutral tone.  \n**Summary**: A workspace with dual monitors displaying code is shown as a speaker announces departure in two minutes.",
+      "scene": "Dual-monitor setup; curved Samsung display shows code/documentation, secondary screen has terminal/code. Desk holds white cat figurine, model airplane, circular green-patterned decor, small bottles. No birds visible; \"17x tv\" likely error (2 monitors).",
+      "speech": "SPK_0065: \"两分钟走了\" (left in two minutes), neutral tone.",
+      "summary": "A workspace with dual monitors displaying code is shown as a speaker announces departure in two minutes.",
+      "processed_at": "2026-01-31T15:55:03.255686",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769875154_1769875159.mp4:1769875154.7373357": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769875154_1769875159.mp4",
+      "start_ts": 1769875154.7373357,
+      "end_ts": 1769875159.7373357,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0068"
+      ],
+      "transcription": "再来。",
+      "vl_analysis": "**Scene**: A Samsung monitor displays coding/terminal interfaces; desk holds a white fox figurine, small airplane model, blue patterned object, white device (likely speaker), and cables.  \n**Speech**: SPK_0068 said \"再来\" (Again) — tone appears instructional/repetitive.  \n**Summary**: A person says \"Again\" while working at a desk with a computer and decorative items visible.",
+      "scene": "A Samsung monitor displays coding/terminal interfaces; desk holds a white fox figurine, small airplane model, blue patterned object, white device (likely speaker), and cables.",
+      "speech": "SPK_0068 said \"再来\" (Again) — tone appears instructional/repetitive.",
+      "summary": "A person says \"Again\" while working at a desk with a computer and decorative items visible.",
+      "processed_at": "2026-01-31T15:59:35.254424",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769875160_1769875165.mp4:1769875160.6913269": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769875160_1769875165.mp4",
+      "start_ts": 1769875160.6913269,
+      "end_ts": 1769875165.6913269,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0017"
+      ],
+      "transcription": "我实在想不出来说啥了，所以就。",
+      "vl_analysis": "**Scene**: Desk with large Samsung monitor showing code/terminal windows; small white fox figurine, model airplane, patterned pouch, and bottles on desk; background has another screen with app icons.  \n**Speech**: SPK_0017 says \"I really can't think of what to say, so...\" (hesitant tone).  \n**Summary**: A workspace with monitors and desk items is shown as a speaker expresses uncertainty about what to say.",
+      "scene": "Desk with large Samsung monitor showing code/terminal windows; small white fox figurine, model airplane, patterned pouch, and bottles on desk; background has another screen with app icons.",
+      "speech": "SPK_0017 says \"I really can't think of what to say, so...\" (hesitant tone).",
+      "summary": "A workspace with monitors and desk items is shown as a speaker expresses uncertainty about what to say.",
+      "processed_at": "2026-01-31T15:59:43.076717",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769875169_1769875174.mp4:1769875169.0567927": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769875169_1769875174.mp4",
+      "start_ts": 1769875169.0567927,
+      "end_ts": 1769875174.0567927,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0069"
+      ],
+      "transcription": "合成的话。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T15:59:59.063217",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769875165_1769875170.mp4:1769875165.0236678": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769875165_1769875170.mp4",
+      "start_ts": 1769875165.0236678,
+      "end_ts": 1769875170.0236678,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0069"
+      ],
+      "transcription": "随便叨那两句。",
+      "vl_analysis": "**Scene**: Desk with Samsung monitor showing terminal/code, white fox figurine, small airplane model, green patterned item, and bottles; smaller screen above displays app icons; wooden desk surface.  \n**Speech**: SPK_0069 says \"随便叨那两句\" (casual, musing tone).  \n**Summary**: A person works on code at a desk while making a casual verbal comment.",
+      "scene": "Desk with Samsung monitor showing terminal/code, white fox figurine, small airplane model, green patterned item, and bottles; smaller screen above displays app icons; wooden desk surface.",
+      "speech": "SPK_0069 says \"随便叨那两句\" (casual, musing tone).",
+      "summary": "A person works on code at a desk while making a casual verbal comment.",
+      "processed_at": "2026-01-31T16:00:08.735010",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769875169_1769875174.mp4:1769875169.8583467": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769875169_1769875174.mp4",
+      "start_ts": 1769875169.8583467,
+      "end_ts": 1769875174.8583467,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0070"
+      ],
+      "transcription": "大概是十秒钟。 首个处理。",
+      "vl_analysis": "**Scene**: Samsung monitor displays terminal and code editor; desk holds white fox figurine, small airplane model, blue-green glove, two small bottles, external hard drive, and black device with blue light.  \n**Speech**: SPK_0070: “大概是十秒钟。 首个处理。” (Tone: neutral, informative)  \n**Summary**: A workspace setup with tech and decorative items is shown while a speaker describes a timing step in a process.",
+      "scene": "Samsung monitor displays terminal and code editor; desk holds white fox figurine, small airplane model, blue-green glove, two small bottles, external hard drive, and black device with blue light.",
+      "speech": "SPK_0070: “大概是十秒钟。 首个处理。” (Tone: neutral, informative)",
+      "summary": "A workspace setup with tech and decorative items is shown while a speaker describes a timing step in a process.",
+      "processed_at": "2026-01-31T16:00:19.410459",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769875176_1769875181.mp4:1769875176.5911906": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769875176_1769875181.mp4",
+      "start_ts": 1769875176.5911906,
+      "end_ts": 1769875181.5911906,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0071"
+      ],
+      "transcription": "大约是三十秒。",
+      "vl_analysis": "**Scene**: Desk with large monitor showing coding interfaces (terminal, code editor), white fox figurine, model airplane, blue patterned item, small bottles, and tech devices (USB drive with blue light).  \n**Speech**: SPK_0071 said \"大约是三十秒\" (about thirty seconds) — neutral tone.  \n**Summary**: A person works at a desk with coding screens while a voice notes a thirty-second duration.",
+      "scene": "Desk with large monitor showing coding interfaces (terminal, code editor), white fox figurine, model airplane, blue patterned item, small bottles, and tech devices (USB drive with blue light).",
+      "speech": "SPK_0071 said \"大约是三十秒\" (about thirty seconds) — neutral tone.",
+      "summary": "A person works at a desk with coding screens while a voice notes a thirty-second duration.",
+      "processed_at": "2026-01-31T16:00:27.905419",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769875179_1769875184.mp4:1769875179.9319336": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769875179_1769875184.mp4",
+      "start_ts": 1769875179.9319336,
+      "end_ts": 1769875184.9319336,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0072"
+      ],
+      "transcription": "本身可能是。",
+      "vl_analysis": "**Scene**: Workspace with dual monitors (one showing code/terminal, another with macOS app icons), wooden desk holding white fox figurine, small airplane model, blue-green patterned circular object, two small bottles, and external hard drive; laptop below monitor with visible cables.  \n**Speech**: SPK_0072: 本身可能是。  \n**Summary**: A person works at a dual-monitor desk with tech tools and figurines while a voice states \"It might be itself.\"",
+      "scene": "Workspace with dual monitors (one showing code/terminal, another with macOS app icons), wooden desk holding white fox figurine, small airplane model, blue-green patterned circular object, two small bottles, and external hard drive; laptop below monitor with visible cables.",
+      "speech": "SPK_0072: 本身可能是。",
+      "summary": "A person works at a dual-monitor desk with tech tools and figurines while a voice states \"It might be itself.\"",
+      "processed_at": "2026-01-31T16:00:38.885557",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769875188_1769875193.mp4:1769875188.2276177": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769875188_1769875193.mp4",
+      "start_ts": 1769875188.2276177,
+      "end_ts": 1769875193.2276177,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0073"
+      ],
+      "transcription": "大家还是不是比。",
+      "vl_analysis": "**Scene**: Workspace with large Samsung monitor showing code (terminal + code editor), white fox figurine, small airplane model, green circular item, small bottles, external drive on desk; graphics tablet below monitor. No people visible.  \n**Speech**: SPK_0073 said \"大家还是不是比.\"  \n**Summary**: A person works at a computer with code displayed while SPK_0073 speaks.",
+      "scene": "Workspace with large Samsung monitor showing code (terminal + code editor), white fox figurine, small airplane model, green circular item, small bottles, external drive on desk; graphics tablet below monitor. No people visible.",
+      "speech": "SPK_0073 said \"大家还是不是比.\"",
+      "summary": "A person works at a computer with code displayed while SPK_0073 speaks.",
+      "processed_at": "2026-01-31T16:00:49.280634",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769875184_1769875189.mp4:1769875184.9707427": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769875184_1769875189.mp4",
+      "start_ts": 1769875184.9707427,
+      "end_ts": 1769875189.9707427,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0073"
+      ],
+      "transcription": "十秒钟。",
+      "vl_analysis": "**Scene**: Dual monitors display coding terminals/docs; desk holds white fox figurine, small airplane model, green-patterned object, bottles, hard drive, and black device with blue light. Terminal window shows command output.  \n**Speech**: SPK_0073 said \"Ten seconds.\" (neutral tone)  \n**Summary**: A person times a task for ten seconds while working at a dual-monitor desk setup.",
+      "scene": "Dual monitors display coding terminals/docs; desk holds white fox figurine, small airplane model, green-patterned object, bottles, hard drive, and black device with blue light. Terminal window shows command output.",
+      "speech": "SPK_0073 said \"Ten seconds.\" (neutral tone)",
+      "summary": "A person times a task for ten seconds while working at a dual-monitor desk setup.",
+      "processed_at": "2026-01-31T16:01:00.131362",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769875190_1769875195.mp4:1769875190.0138466": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769875190_1769875195.mp4",
+      "start_ts": 1769875190.0138466,
+      "end_ts": 1769875195.0138466,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0074"
+      ],
+      "transcription": "对，所以。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:01:11.835191",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769875193_1769875198.mp4:1769875193.1863468": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769875193_1769875198.mp4",
+      "start_ts": 1769875193.1863468,
+      "end_ts": 1769875198.1863468,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0074"
+      ],
+      "transcription": "像是明星的。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:01:23.376200",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769875199_1769875204.mp4:1769875199.2682717": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769875199_1769875204.mp4",
+      "start_ts": 1769875199.2682717,
+      "end_ts": 1769875204.2682717,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0075"
+      ],
+      "transcription": "所以。",
+      "vl_analysis": "**Scene**: Curved monitor displays code/terminal; desk holds white fox figurine, small plane model, blue-green circular object, small bottles, external drive; monitor stand, keyboard visible.  \n**Speech**: 所以 (neutral tone)  \n**Summary**: A person is working at a computer setup with a curved monitor showing code, surrounded by desk items like a fox figurine and plane model.",
+      "scene": "Curved monitor displays code/terminal; desk holds white fox figurine, small plane model, blue-green circular object, small bottles, external drive; monitor stand, keyboard visible.",
+      "speech": "所以 (neutral tone)",
+      "summary": "A person is working at a computer setup with a curved monitor showing code, surrounded by desk items like a fox figurine and plane model.",
+      "processed_at": "2026-01-31T16:01:32.935172",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769875196_1769875201.mp4:1769875196.3320217": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769875196_1769875201.mp4",
+      "start_ts": 1769875196.3320217,
+      "end_ts": 1769875201.3320217,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0075"
+      ],
+      "transcription": "不是命行。",
+      "vl_analysis": "**Scene**: Desk with Samsung monitor showing code/terminal, below it a shelf with white wolf figurine, small airplane model, blue-green circular object, two bottles, and a hard drive; multiple monitor setup visible.  \n**Speech**: SPK_0075 said \"不是命行.\"  \n**Summary**: A workspace with tech items on a desk and someone speaking a phrase.",
+      "scene": "Desk with Samsung monitor showing code/terminal, below it a shelf with white wolf figurine, small airplane model, blue-green circular object, two bottles, and a hard drive; multiple monitor setup visible.",
+      "speech": "SPK_0075 said \"不是命行.\"",
+      "summary": "A workspace with tech items on a desk and someone speaking a phrase.",
+      "processed_at": "2026-01-31T16:01:41.402220",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769875205_1769875210.mp4:1769875205.1326597": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769875205_1769875210.mp4",
+      "start_ts": 1769875205.1326597,
+      "end_ts": 1769875210.1326597,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0077"
+      ],
+      "transcription": "是一个很严重的问题。",
+      "vl_analysis": "**Scene**: Desk with curved monitor showing code/docs; white fox figurine, small airplane model, patterned circular object, bottles, hard drive on desk; laptop/keyboard below monitor.  \n**Speech**: SPK_0077: “是一个很严重的问题” (Tone: serious/concerned)  \n**Summary**: A workspace with code on screen where a speaker states a serious issue.",
+      "scene": "Desk with curved monitor showing code/docs; white fox figurine, small airplane model, patterned circular object, bottles, hard drive on desk; laptop/keyboard below monitor.",
+      "speech": "SPK_0077: “是一个很严重的问题” (Tone: serious/concerned)",
+      "summary": "A workspace with code on screen where a speaker states a serious issue.",
+      "processed_at": "2026-01-31T16:01:47.943447",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769875214_1769875219.mp4:1769875214.2883687": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769875214_1769875219.mp4",
+      "start_ts": 1769875214.2883687,
+      "end_ts": 1769875219.2883687,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0078"
+      ],
+      "transcription": "其实有些时。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:02:00.986051",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769875215_1769875220.mp4:1769875215.9881568": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769875215_1769875220.mp4",
+      "start_ts": 1769875215.9881568,
+      "end_ts": 1769875220.9881568,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0079"
+      ],
+      "transcription": "可能跳果会稍微好一点。",
+      "vl_analysis": "**Scene**: Desk with Samsung monitor showing code/terminal, white fox figurine, model airplane, circular blue-patterned object, small bottles, external hard drive, Logitech device; keyboard partially visible.  \n**Speech**: SPK_0079: \"可能跳果会稍微好一点\" (neutral tone, technical context)  \n**Summary**: A person works at a desk with a coding setup while speaking a technical comment.",
+      "scene": "Desk with Samsung monitor showing code/terminal, white fox figurine, model airplane, circular blue-patterned object, small bottles, external hard drive, Logitech device; keyboard partially visible.",
+      "speech": "SPK_0079: \"可能跳果会稍微好一点\" (neutral tone, technical context)",
+      "summary": "A person works at a desk with a coding setup while speaking a technical comment.",
+      "processed_at": "2026-01-31T16:02:10.329780",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769875223_1769875228.mp4:1769875223.269127": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769875223_1769875228.mp4",
+      "start_ts": 1769875223.269127,
+      "end_ts": 1769875228.269127,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0080"
+      ],
+      "transcription": "不知道。",
+      "vl_analysis": "**Scene**: Desk with white fox figurine, small airplane model, blue-patterned tissue box, small bottles, external drive with blue light, and monitor showing code/PowerShell. Keyboard partially visible below.  \n**Speech**: SPK_0080 says \"不知道\" (don't know).  \n**Summary**: Workspace with coding setup and desk items while SPK_0080 responds \"don't know\" to an off-screen question.",
+      "scene": "Desk with white fox figurine, small airplane model, blue-patterned tissue box, small bottles, external drive with blue light, and monitor showing code/PowerShell. Keyboard partially visible below.",
+      "speech": "SPK_0080 says \"不知道\" (don't know).",
+      "summary": "Workspace with coding setup and desk items while SPK_0080 responds \"don't know\" to an off-screen question.",
+      "processed_at": "2026-01-31T16:02:19.229832",
+      "model": "qwen3-vl:30b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877384_1769877389.mp4:1769877384.8581517": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877384_1769877389.mp4",
+      "start_ts": 1769877384.8581517,
+      "end_ts": 1769877389.8581517,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0084"
+      ],
+      "transcription": "看看现在的延迟大概是多少？",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:36:46.131863",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877392_1769877397.mp4:1769877392.547972": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877392_1769877397.mp4",
+      "start_ts": 1769877392.547972,
+      "end_ts": 1769877397.547972,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0085"
+      ],
+      "transcription": "没事，没跟你说话，没跟你说话。 跟你说话，没跟你说话。 没事，没跟你说话，没跟你说话。 跟你说话，没跟你说话。",
+      "vl_analysis": "**Scene**: Close-up of a Moosno microphone on a desk with a curved monitor displaying code, a small airplane model, and scattered tech items (e.g., bottles, cables).  \n**Speech**: Repetitive Chinese phrases: \"没事，没跟你说话，没跟你说话。跟你说话，没跟你说话。\" (No problem, I wasn’t talking to you, I wasn’t talking to you. I was talking to you, I wasn’t talking to you.)  \n**Summary**: A person is speaking to themselves while recording with a microphone and",
+      "scene": "Close-up of a Moosno microphone on a desk with a curved monitor displaying code, a small airplane model, and scattered tech items (e.g., bottles, cables).",
+      "speech": "Repetitive Chinese phrases: \"没事，没跟你说话，没跟你说话。跟你说话，没跟你说话。\" (No problem, I wasn’t talking to you, I wasn’t talking to you. I was talking to you, I wasn’t talking to you.)",
+      "summary": "A person is speaking to themselves while recording with a microphone and",
+      "processed_at": "2026-01-31T16:36:55.267668",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877398_1769877403.mp4:1769877398.1104429": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877398_1769877403.mp4",
+      "start_ts": 1769877398.1104429,
+      "end_ts": 1769877403.1104429,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0086"
+      ],
+      "transcription": "只是在测试他的。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:37:06.803215",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877409_1769877414.mp4:1769877409.4758348": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877409_1769877414.mp4",
+      "start_ts": 1769877409.4758348,
+      "end_ts": 1769877414.4758348,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0088"
+      ],
+      "transcription": ".",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:37:18.195128",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877414_1769877419.mp4:1769877414.2363257": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877414_1769877419.mp4",
+      "start_ts": 1769877414.2363257,
+      "end_ts": 1769877419.2363257,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0089"
+      ],
+      "transcription": "另外一个东西上。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:37:27.466991",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877410_1769877415.mp4:1769877410.0513256": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877410_1769877415.mp4",
+      "start_ts": 1769877410.0513256,
+      "end_ts": 1769877415.0513256,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0089"
+      ],
+      "transcription": "医疗主要是在。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:37:36.722722",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877415_1769877420.mp4:1769877415.0865896": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877415_1769877420.mp4",
+      "start_ts": 1769877415.0865896,
+      "end_ts": 1769877420.0865896,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0090"
+      ],
+      "transcription": "跑的，所以会稍微好一点。",
+      "vl_analysis": "**Scene**: A cluttered home office workspace with a curved monitor showing code and the \"Qwen3-VL\" interface, a white fox figurine, a model airplane, and desk items like bottles, a hard drive, and cables.  \n**Speech**: SPK_0090 says, \"跑的，所以会稍微好一点。\" (Running, so it's a bit better.)  \n**Summary**: A person is running a process with Qwen3",
+      "scene": "A cluttered home office workspace with a curved monitor showing code and the \"Qwen3-VL\" interface, a white fox figurine, a model airplane, and desk items like bottles, a hard drive, and cables.",
+      "speech": "SPK_0090 says, \"跑的，所以会稍微好一点。\" (Running, so it's a bit better.)",
+      "summary": "A person is running a process with Qwen3",
+      "processed_at": "2026-01-31T16:37:45.824567",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877424_1769877429.mp4:1769877424.180338": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877424_1769877429.mp4",
+      "start_ts": 1769877424.180338,
+      "end_ts": 1769877429.180338,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0091"
+      ],
+      "transcription": "现在。",
+      "vl_analysis": "**Scene**: Cluttered home office workspace with a curved Samsung monitor displaying code (red-highlighted sections), a white keyboard, a professional microphone on a stand (green LED glow), a model airplane, a blue-green tech-themed decor object, two small bottles",
+      "scene": "Cluttered home office workspace with a curved Samsung monitor displaying code (red-highlighted sections), a white keyboard, a professional microphone on a stand (green LED glow), a model airplane, a blue-green tech-themed decor object, two small bottles",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:37:55.346854",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877426_1769877431.mp4:1769877426.0117188": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877426_1769877431.mp4",
+      "start_ts": 1769877426.0117188,
+      "end_ts": 1769877431.0117188,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0092"
+      ],
+      "transcription": "主要还是可以另行处理的。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:38:04.580381",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877434_1769877439.mp4:1769877434.7550907": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877434_1769877439.mp4",
+      "start_ts": 1769877434.7550907,
+      "end_ts": 1769877439.7550907,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0093"
+      ],
+      "transcription": "嗯现在。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:38:13.893999",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877435_1769877440.mp4:1769877435.2510397": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877435_1769877440.mp4",
+      "start_ts": 1769877435.2510397,
+      "end_ts": 1769877440.2510397,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0094"
+      ],
+      "transcription": "是。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:38:22.796605",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877438_1769877443.mp4:1769877438.1366649": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877438_1769877443.mp4",
+      "start_ts": 1769877438.1366649,
+      "end_ts": 1769877443.1366649,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0094"
+      ],
+      "transcription": "四四s.",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:38:32.066402",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877442_1769877447.mp4:1769877442.9868727": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877442_1769877447.mp4",
+      "start_ts": 1769877442.9868727,
+      "end_ts": 1769877447.9868727,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0095"
+      ],
+      "transcription": "已经开始处理了。我说的话刚。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:38:41.276502",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877445_1769877450.mp4:1769877445.3258846": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877445_1769877450.mp4",
+      "start_ts": 1769877445.3258846,
+      "end_ts": 1769877450.3258846,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0096"
+      ],
+      "transcription": "i.",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:38:50.354094",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877452_1769877457.mp4:1769877452.8878856": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877452_1769877457.mp4",
+      "start_ts": 1769877452.8878856,
+      "end_ts": 1769877457.8878856,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0098",
+        "SPK_0097"
+      ],
+      "transcription": "现在已经到四二零了。 现在已经到四二零了。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:38:59.705152",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877458_1769877463.mp4:1769877458.5856698": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877458_1769877463.mp4",
+      "start_ts": 1769877458.5856698,
+      "end_ts": 1769877463.5856698,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0099"
+      ],
+      "transcription": "然后是四。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:39:09.095221",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877460_1769877465.mp4:1769877460.4409897": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877460_1769877465.mp4",
+      "start_ts": 1769877460.4409897,
+      "end_ts": 1769877465.4409897,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0100"
+      ],
+      "transcription": "二九。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:39:18.538075",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877467_1769877472.mp4:1769877467.0109596": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877467_1769877472.mp4",
+      "start_ts": 1769877467.0109596,
+      "end_ts": 1769877472.0109596,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0101"
+      ],
+      "transcription": "确实增加了，那么病情处理以后。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:39:28.220547",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877471_1769877476.mp4:1769877471.0097847": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877471_1769877476.mp4",
+      "start_ts": 1769877471.0097847,
+      "end_ts": 1769877476.0097847,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0102"
+      ],
+      "transcription": "下雨明显刮了好多。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:39:37.696167",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877477_1769877482.mp4:1769877477.4795158": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877477_1769877482.mp4",
+      "start_ts": 1769877477.4795158,
+      "end_ts": 1769877482.4795158,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0103"
+      ],
+      "transcription": "最不会再出现之前那种。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:39:47.237488",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877485_1769877490.mp4:1769877485.1912358": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877485_1769877490.mp4",
+      "start_ts": 1769877485.1912358,
+      "end_ts": 1769877490.1912358,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0104"
+      ],
+      "transcription": "就是。",
+      "vl_analysis": "**Scene**: A close-up of a computer workstation with a large monitor displaying code (some lines highlighted in pink), a white backlit keyboard, a black microphone being adjusted by a hand, and a shelf holding a small airplane model, a green-blue decorative item, and small bottles. The setup suggests a streaming or content creation environment.  \n**Speech**: \"就是。\" (Neutral/confirming tone, likely the speaker is acknowledging something about the setup).  \n**Summary**: Someone adjusts a microphone while reviewing code on a monitor in a home office streaming setup.",
+      "scene": "A close-up of a computer workstation with a large monitor displaying code (some lines highlighted in pink), a white backlit keyboard, a black microphone being adjusted by a hand, and a shelf holding a small airplane model, a green-blue decorative item, and small bottles. The setup suggests a streaming or content creation environment.",
+      "speech": "\"就是。\" (Neutral/confirming tone, likely the speaker is acknowledging something about the setup).",
+      "summary": "Someone adjusts a microphone while reviewing code on a monitor in a home office streaming setup.",
+      "processed_at": "2026-01-31T16:39:54.355628",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877485_1769877490.mp4:1769877485.6370847": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877485_1769877490.mp4",
+      "start_ts": 1769877485.6370847,
+      "end_ts": 1769877490.6370847,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0017"
+      ],
+      "transcription": "处理速度远没有你说话速度快的这种情况。 速度远没有你说话速度。 处理速度远没有你说话速度快的这种情况。 速度远没有你说话速度。",
+      "vl_analysis": "**Scene**: A cluttered home office setup with a large monitor displaying code (highlighted in pink), a backlit keyboard, a mounted microphone with a green light, and shelves holding a model airplane, small bottles, and a blue-green decorative item. A hand adjusts the microphone.  \n**Speech**: Speaker repeats *\"处理速度远没有你说话速度快的这种情况。速度远没有你说话速度。\"* (Processing speed is much slower than your",
+      "scene": "A cluttered home office setup with a large monitor displaying code (highlighted in pink), a backlit keyboard, a mounted microphone with a green light, and shelves holding a model airplane, small bottles, and a blue-green decorative item. A hand adjusts the microphone.",
+      "speech": "Speaker repeats *\"处理速度远没有你说话速度快的这种情况。速度远没有你说话速度。\"* (Processing speed is much slower than your",
+      "summary": "",
+      "processed_at": "2026-01-31T16:40:02.797658",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877491_1769877496.mp4:1769877491.3251848": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877491_1769877496.mp4",
+      "start_ts": 1769877491.3251848,
+      "end_ts": 1769877496.3251848,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0105"
+      ],
+      "transcription": "现在到四十三日。",
+      "vl_analysis": "**Scene**: A cluttered desk with a large monitor displaying code (pink-highlighted sections), a hand adjusting a microphone, and small items like a circular blue-green object, a bottle, and electronic devices on a shelf.  \n**Speech**: \"现在到四十三日。\" (Now it's the 43rd day), neutral tone suggesting a coding/streaming session.  \n**Summary**: Someone adjusts a microphone during a coding or streaming session.",
+      "scene": "A cluttered desk with a large monitor displaying code (pink-highlighted sections), a hand adjusting a microphone, and small items like a circular blue-green object, a bottle, and electronic devices on a shelf.",
+      "speech": "\"现在到四十三日。\" (Now it's the 43rd day), neutral tone suggesting a coding/streaming session.",
+      "summary": "Someone adjusts a microphone during a coding or streaming session.",
+      "processed_at": "2026-01-31T16:40:11.637734",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877496_1769877501.mp4:1769877496.9269998": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877496_1769877501.mp4",
+      "start_ts": 1769877496.9269998,
+      "end_ts": 1769877501.9269998,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0106"
+      ],
+      "transcription": "处理是三者。 我说话到四机了。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:40:20.939144",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877500_1769877505.mp4:1769877500.7486246": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877500_1769877505.mp4",
+      "start_ts": 1769877500.7486246,
+      "end_ts": 1769877505.7486246,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0107"
+      ],
+      "transcription": "四是零。",
+      "vl_analysis": "**Scene**: Cluttered desk with a large monitor displaying code (pink-highlighted sections), a white keyboard, a mounted microphone, a hand adjusting a white device (likely a mouse/controller), and background office elements like a window and shelves with small gadgets.  \n**Speech**: SPK_0107: “四是零。” (Fourth is zero) – technical tone, possibly during coding/debugging.  \n**Summary**: A person adjusts a device on a tech",
+      "scene": "Cluttered desk with a large monitor displaying code (pink-highlighted sections), a white keyboard, a mounted microphone, a hand adjusting a white device (likely a mouse/controller), and background office elements like a window and shelves with small gadgets.",
+      "speech": "SPK_0107: “四是零。” (Fourth is zero) – technical tone, possibly during coding/debugging.",
+      "summary": "A person adjusts a device on a tech",
+      "processed_at": "2026-01-31T16:40:30.212345",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877504_1769877509.mp4:1769877504.7986248": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877504_1769877509.mp4",
+      "start_ts": 1769877504.7986248,
+      "end_ts": 1769877509.7986248,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0107"
+      ],
+      "transcription": "也就是。",
+      "vl_analysis": "**Scene**: A cluttered home office workspace with a large monitor displaying code, a white mechanical keyboard with pink backlighting, a professional microphone on a stand, and desk items including a blue-green decorative object, two small bottles, and a button-equipped device. Natural light streams through a window in the background, and a hand holds a mouse.  \n**Speech**: SPK_0107 says \"也就是。\" (Chinese for \"that is\"/\"in other words\"), likely explaining or clarifying a point.  \n**Summary**: A person is actively coding/streaming at a home office desk while speaking in Chinese.",
+      "scene": "A cluttered home office workspace with a large monitor displaying code, a white mechanical keyboard with pink backlighting, a professional microphone on a stand, and desk items including a blue-green decorative object, two small bottles, and a button-equipped device. Natural light streams through a window in the background, and a hand holds a mouse.",
+      "speech": "SPK_0107 says \"也就是。\" (Chinese for \"that is\"/\"in other words\"), likely explaining or clarifying a point.",
+      "summary": "A person is actively coding/streaming at a home office desk while speaking in Chinese.",
+      "processed_at": "2026-01-31T16:40:39.230364",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877505_1769877510.mp4:1769877505.7885196": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877505_1769877510.mp4",
+      "start_ts": 1769877505.7885196,
+      "end_ts": 1769877510.7885196,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0059",
+        "SPK_0108"
+      ],
+      "transcription": "接近十秒不到的延迟吧，我觉得还好。 演值。 接近十秒不到的延迟吧，我觉得还好。 演值。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:40:48.446206",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877511_1769877516.mp4:1769877511.3752768": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877511_1769877516.mp4",
+      "start_ts": 1769877511.3752768,
+      "end_ts": 1769877516.3752768,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0109"
+      ],
+      "transcription": "基本上我可以算是跟得上。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:40:57.775584",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877516_1769877521.mp4:1769877516.3441536": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877516_1769877521.mp4",
+      "start_ts": 1769877516.3441536,
+      "end_ts": 1769877521.3441536,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0110"
+      ],
+      "transcription": "四十七。 然后。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:41:06.969167",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877520_1769877525.mp4:1769877520.9095867": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877520_1769877525.mp4",
+      "start_ts": 1769877520.9095867,
+      "end_ts": 1769877525.9095867,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0111"
+      ],
+      "transcription": "で往后。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:41:16.153351",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877525_1769877530.mp4:1769877525.9466927": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877525_1769877530.mp4",
+      "start_ts": 1769877525.9466927,
+      "end_ts": 1769877530.9466927,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0112"
+      ],
+      "transcription": "你在看。 前吻的？",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:41:25.420191",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877532_1769877537.mp4:1769877532.5132387": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877532_1769877537.mp4",
+      "start_ts": 1769877532.5132387,
+      "end_ts": 1769877537.5132387,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0113"
+      ],
+      "transcription": "至于。 目标识别还可以。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:41:34.642073",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877546_1769877551.mp4:1769877546.3336728": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877546_1769877551.mp4",
+      "start_ts": 1769877546.3336728,
+      "end_ts": 1769877551.3336728,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0114"
+      ],
+      "transcription": "他没什么问题。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:41:43.859063",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877556_1769877561.mp4:1769877556.1794186": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877556_1769877561.mp4",
+      "start_ts": 1769877556.1794186,
+      "end_ts": 1769877561.1794186,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0115"
+      ],
+      "transcription": "现在是四八二。 处的也是。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:41:53.012781",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877561_1769877566.mp4:1769877561.335588": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877561_1769877566.mp4",
+      "start_ts": 1769877561.335588,
+      "end_ts": 1769877566.335588,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0116"
+      ],
+      "transcription": "四六五。 开始脱节了。 在为。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:42:02.191242",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769877566_1769877571.mp4:1769877566.2577937": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769877566_1769877571.mp4",
+      "start_ts": 1769877566.2577937,
+      "end_ts": 1769877571.2577937,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0117"
+      ],
+      "transcription": "开始脱节了四九零了，已。",
+      "vl_analysis": "**Scene**: A cluttered desk setup with a large monitor displaying code (pink-highlighted lines), a professional microphone on an adjustable arm, a white keyboard with green accents, a small airplane model, a circular blue-decorative object, and various tech accessories like cables and a device with buttons.  \n**Speech**: \"开始脱节了四九零了，已。\" (Technical frustration/ confusion, likely referring to a",
+      "scene": "A cluttered desk setup with a large monitor displaying code (pink-highlighted lines), a professional microphone on an adjustable arm, a white keyboard with green accents, a small airplane model, a circular blue-decorative object, and various tech accessories like cables and a device with buttons.",
+      "speech": "\"开始脱节了四九零了，已。\" (Technical frustration/ confusion, likely referring to a",
+      "summary": "",
+      "processed_at": "2026-01-31T16:42:11.433271",
+      "model": "qwen3-vl:4b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878314_1769878319.mp4:1769878314.8540168": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878314_1769878319.mp4",
+      "start_ts": 1769878314.8540168,
+      "end_ts": 1769878319.8540168,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0017"
+      ],
+      "transcription": "okay? 看一下现在什么？",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:52:13.697177",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878322_1769878327.mp4:1769878322.3229067": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878322_1769878327.mp4",
+      "start_ts": 1769878322.3229067,
+      "end_ts": 1769878327.3229067,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0118"
+      ],
+      "transcription": "处理速度。 真的。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:52:21.953084",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878319_1769878324.mp4:1769878319.0829067": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878319_1769878324.mp4",
+      "start_ts": 1769878319.0829067,
+      "end_ts": 1769878324.0829067,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0118"
+      ],
+      "transcription": "号。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:52:28.003590",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878324_1769878329.mp4:1769878324.1214807": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878324_1769878329.mp4",
+      "start_ts": 1769878324.1214807,
+      "end_ts": 1769878329.1214807,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0119"
+      ],
+      "transcription": "还说。 好像。 没有什么太大的问题。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:52:34.224764",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878332_1769878337.mp4:1769878332.5741796": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878332_1769878337.mp4",
+      "start_ts": 1769878332.5741796,
+      "end_ts": 1769878337.5741796,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0120"
+      ],
+      "transcription": "但是这个as r.",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:52:44.602938",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878337_1769878342.mp4:1769878337.6340418": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878337_1769878342.mp4",
+      "start_ts": 1769878337.6340418,
+      "end_ts": 1769878342.6340418,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0121"
+      ],
+      "transcription": "不是很好用。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:52:50.664841",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878334_1769878339.mp4:1769878334.2084167": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878334_1769878339.mp4",
+      "start_ts": 1769878334.2084167,
+      "end_ts": 1769878339.2084167,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0121"
+      ],
+      "transcription": "感觉还是。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:52:56.725894",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878341_1769878346.mp4:1769878341.6579206": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878341_1769878346.mp4",
+      "start_ts": 1769878341.6579206,
+      "end_ts": 1769878346.6579206,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0122"
+      ],
+      "transcription": "r还是稍微慢了一点。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:53:02.669492",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878358_1769878363.mp4:1769878358.6569428": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878358_1769878363.mp4",
+      "start_ts": 1769878358.6569428,
+      "end_ts": 1769878363.6569428,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0123"
+      ],
+      "transcription": "不知道。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:53:12.981448",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878366_1769878371.mp4:1769878366.6288018": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878366_1769878371.mp4",
+      "start_ts": 1769878366.6288018,
+      "end_ts": 1769878371.6288018,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0124"
+      ],
+      "transcription": "三三七基本上现在也可以。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:53:19.145718",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878370_1769878375.mp4:1769878370.2126927": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878370_1769878375.mp4",
+      "start_ts": 1769878370.2126927,
+      "end_ts": 1769878375.2126927,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0125"
+      ],
+      "transcription": "完整的跟上。 在做呢？",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:53:29.511999",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878511_1769878516.mp4:1769878511.9252238": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878511_1769878516.mp4",
+      "start_ts": 1769878511.9252238,
+      "end_ts": 1769878516.9252238,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0112"
+      ],
+      "transcription": "大概是十秒钟左右。 然后。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:55:31.868911",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878519_1769878524.mp4:1769878519.8800008": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878519_1769878524.mp4",
+      "start_ts": 1769878519.8800008,
+      "end_ts": 1769878524.8800008,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0127"
+      ],
+      "transcription": "系诶，大。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:55:40.265946",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878531_1769878536.mp4:1769878531.8412766": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878531_1769878536.mp4",
+      "start_ts": 1769878531.8412766,
+      "end_ts": 1769878536.8412766,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0130"
+      ],
+      "transcription": "多少？",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:55:50.504869",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878537_1769878542.mp4:1769878537.4958837": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878537_1769878542.mp4",
+      "start_ts": 1769878537.4958837,
+      "end_ts": 1769878542.4958837,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0090"
+      ],
+      "transcription": "一手机可能还是十秒二十秒左右。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:56:00.770410",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878543_1769878548.mp4:1769878543.4972618": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878543_1769878548.mp4",
+      "start_ts": 1769878543.4972618,
+      "end_ts": 1769878548.4972618,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0131"
+      ],
+      "transcription": "也没有。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:56:06.765640",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878562_1769878567.mp4:1769878562.2069116": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878562_1769878567.mp4",
+      "start_ts": 1769878562.2069116,
+      "end_ts": 1769878567.2069116,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0133"
+      ],
+      "transcription": "什么时候？ 可以回我一句话。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:56:21.118221",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878569_1769878574.mp4:1769878569.479914": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878569_1769878574.mp4",
+      "start_ts": 1769878569.479914,
+      "end_ts": 1769878574.479914,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0134"
+      ],
+      "transcription": "二是四十八秒。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:56:27.132076",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878575_1769878580.mp4:1769878575.8181777": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878575_1769878580.mp4",
+      "start_ts": 1769878575.8181777,
+      "end_ts": 1769878580.8181777,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0135"
+      ],
+      "transcription": "的日子。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:56:37.571469",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878579_1769878584.mp4:1769878579.9839466": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878579_1769878584.mp4",
+      "start_ts": 1769878579.9839466,
+      "end_ts": 1769878584.9839466,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0136"
+      ],
+      "transcription": "还算比较事实吧。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:56:47.927779",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878599_1769878604.mp4:1769878599.7434266": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878599_1769878604.mp4",
+      "start_ts": 1769878599.7434266,
+      "end_ts": 1769878604.7434266,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0137"
+      ],
+      "transcription": "那是算然。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:56:53.658124",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878608_1769878613.mp4:1769878608.4195046": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878608_1769878613.mp4",
+      "start_ts": 1769878608.4195046,
+      "end_ts": 1769878613.4195046,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0112"
+      ],
+      "transcription": "咱们现在还是。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:57:06.192308",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878613_1769878618.mp4:1769878613.1010919": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878613_1769878618.mp4",
+      "start_ts": 1769878613.1010919,
+      "end_ts": 1769878618.1010919,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0138"
+      ],
+      "transcription": "有一点慢。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:57:12.073368",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878618_1769878623.mp4:1769878618.4532778": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878618_1769878623.mp4",
+      "start_ts": 1769878618.4532778,
+      "end_ts": 1769878623.4532778,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0059"
+      ],
+      "transcription": "其实他l m本身那没有什么问题，因为。 l m他是。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:57:20.464753",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878622_1769878627.mp4:1769878622.5304987": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878622_1769878627.mp4",
+      "start_ts": 1769878622.5304987,
+      "end_ts": 1769878627.6267488,
+      "duration": 5.096250057220459,
+      "speakers": [
+        "SPK_0139"
+      ],
+      "transcription": "批量处理的。 所以只要。 那个小魔仙跟。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:57:32.858438",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878627_1769878632.mp4:1769878627.5775106": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878627_1769878632.mp4",
+      "start_ts": 1769878627.5775106,
+      "end_ts": 1769878632.6906357,
+      "duration": 5.1131250858306885,
+      "speakers": [
+        "SPK_0139"
+      ],
+      "transcription": "上大东星。 一定可以跟上，因为他可以直接。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:57:38.751173",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878632_1769878637.mp4:1769878632.6136618": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878632_1769878637.mp4",
+      "start_ts": 1769878632.6136618,
+      "end_ts": 1769878637.6136618,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0047"
+      ],
+      "transcription": "跳过。 过程。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:57:51.066959",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878639_1769878644.mp4:1769878639.87915": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878639_1769878644.mp4",
+      "start_ts": 1769878639.87915,
+      "end_ts": 1769878644.87915,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0059"
+      ],
+      "transcription": "九壶九壶，你倒是回我一句话呀。九壶。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:57:57.073302",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878644_1769878649.mp4:1769878644.904147": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878644_1769878649.mp4",
+      "start_ts": 1769878644.904147,
+      "end_ts": 1769878649.904147,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0140"
+      ],
+      "transcription": "你啥时候才能回我一句话呀？",
+      "vl_analysis": "**Scene**: A workspace setup with a Samsung monitor displaying a blue screen showing \"3.VI\" and text, a white airplane model, a globe, small bottles, and a keyboard on a wooden desk.  \n**Speech**: A person asks, \"When will you reply to me a sentence?\"  \n**Summary**: Someone is asking for a reply in a work setup with a computer and desk items.",
+      "scene": "A workspace setup with a Samsung monitor displaying a blue screen showing \"3.VI\" and text, a white airplane model, a globe, small bottles, and a keyboard on a wooden desk.",
+      "speech": "A person asks, \"When will you reply to me a sentence?\"",
+      "summary": "Someone is asking for a reply in a work setup with a computer and desk items.",
+      "processed_at": "2026-01-31T16:58:03.996019",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878664_1769878669.mp4:1769878664.4263248": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878664_1769878669.mp4",
+      "start_ts": 1769878664.4263248,
+      "end_ts": 1769878669.4263248,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0112"
+      ],
+      "transcription": "现在是三次。",
+      "vl_analysis": "**Scene**: A computer workstation with a Samsung monitor displaying code, a white keyboard in the foreground, and a wooden desk holding a model airplane, a decorative round object, and small bottles. The background is a light-colored wall.  \n**Speech**: The speaker says \"Now is three.\"  \n**Summary**: The video shows a computer workstation with a Samsung monitor displaying code, and the speaker states \"Now is three.\"",
+      "scene": "A computer workstation with a Samsung monitor displaying code, a white keyboard in the foreground, and a wooden desk holding a model airplane, a decorative round object, and small bottles. The background is a light-colored wall.",
+      "speech": "The speaker says \"Now is three.\"",
+      "summary": "The video shows a computer workstation with a Samsung monitor displaying code, and the speaker states \"Now is three.\"",
+      "processed_at": "2026-01-31T16:58:18.190440",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878668_1769878673.mp4:1769878668.3279586": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878668_1769878673.mp4",
+      "start_ts": 1769878668.3279586,
+      "end_ts": 1769878673.3279586,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0017"
+      ],
+      "transcription": "处理的话是三二。 三七。",
+      "vl_analysis": "**Scene**: A workspace setup featuring a Samsung monitor displaying code snippets, a white keyboard in the foreground, and a desk with items including a model airplane, a circular decorative object, two small bottles,",
+      "scene": "A workspace setup featuring a Samsung monitor displaying code snippets, a white keyboard in the foreground, and a desk with items including a model airplane, a circular decorative object, two small bottles,",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:58:26.807746",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878674_1769878679.mp4:1769878674.8965347": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878674_1769878679.mp4",
+      "start_ts": 1769878674.8965347,
+      "end_ts": 1769878679.8965347,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0059"
+      ],
+      "transcription": "我觉得已经算非常实实。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:58:37.380594",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878685_1769878690.mp4:1769878685.9372237": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878685_1769878690.mp4",
+      "start_ts": 1769878685.9372237,
+      "end_ts": 1769878690.9372237,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0143"
+      ],
+      "transcription": "出理速度非常快的。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:58:45.715447",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878699_1769878704.mp4:1769878699.9837387": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878699_1769878704.mp4",
+      "start_ts": 1769878699.9837387,
+      "end_ts": 1769878704.9837387,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0144"
+      ],
+      "transcription": "搅和搅和。 一応。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:58:51.848541",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878703_1769878708.mp4:1769878703.1521807": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878703_1769878708.mp4",
+      "start_ts": 1769878703.1521807,
+      "end_ts": 1769878708.1521807,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0145"
+      ],
+      "transcription": "我糊啊。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:59:04.290011",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769878705_1769878710.mp4:1769878705.8521807": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769878705_1769878710.mp4",
+      "start_ts": 1769878705.8521807,
+      "end_ts": 1769878710.8521807,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0145"
+      ],
+      "transcription": "你倒是说一句话。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T16:59:10.327094",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769880872_1769880877.mp4:1769880872.4848647": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769880872_1769880877.mp4",
+      "start_ts": 1769880872.4848647,
+      "end_ts": 1769880877.4848647,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0002"
+      ],
+      "transcription": "效果大概怎么样？ 有什么。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:03:26.576040",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886251_1769886256.mp4:1769886251.5251548": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886251_1769886256.mp4",
+      "start_ts": 1769886251.5251548,
+      "end_ts": 1769886256.5251548,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0149"
+      ],
+      "transcription": "尝试一下。 长时间的对。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:04:41.314995",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886258_1769886263.mp4:1769886258.2747457": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886258_1769886263.mp4",
+      "start_ts": 1769886258.2747457,
+      "end_ts": 1769886263.2747457,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0150"
+      ],
+      "transcription": "不知道你可不可以。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:04:51.573036",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886262_1769886267.mp4:1769886262.7909746": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886262_1769886267.mp4",
+      "start_ts": 1769886262.7909746,
+      "end_ts": 1769886267.7909746,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0151"
+      ],
+      "transcription": "跟我完成一些简单的对话吧。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:05:03.829616",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886280_1769886285.mp4:1769886280.5148008": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886280_1769886285.mp4",
+      "start_ts": 1769886280.5148008,
+      "end_ts": 1769886285.5148008,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0152"
+      ],
+      "transcription": "嗯。",
+      "vl_analysis": "**Scene**: A cluttered desk setup with a large curved monitor displaying code snippets, a white keyboard, a Masono microphone mounted on a stand, and small decorative items (a white cat figurine, a model airplane, and a globe) arranged on the desk. The background is a light-colored wall.  \n**Speech**: (No one is speaking; only the word \"嗯\" is heard, which is a neutral sound.)  \n**Summary**: A person is at a computer workstation with a code-focused setup, featuring various peripherals and small decorative items.",
+      "scene": "A cluttered desk setup with a large curved monitor displaying code snippets, a white keyboard, a Masono microphone mounted on a stand, and small decorative items (a white cat figurine, a model airplane, and a globe) arranged on the desk. The background is a light-colored wall.",
+      "speech": "(No one is speaking; only the word \"嗯\" is heard, which is a neutral sound.)",
+      "summary": "A person is at a computer workstation with a code-focused setup, featuring various peripherals and small decorative items.",
+      "processed_at": "2026-01-31T19:05:17.473585",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886281_1769886286.mp4:1769886281.2109377": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886281_1769886286.mp4",
+      "start_ts": 1769886281.2109377,
+      "end_ts": 1769886286.2903128,
+      "duration": 5.0793750286102295,
+      "speakers": [
+        "SPK_0153"
+      ],
+      "transcription": "目前来说处理速度好像。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:05:33.757800",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886286_1769886291.mp4:1769886286.3478956": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886286_1769886291.mp4",
+      "start_ts": 1769886286.3478956,
+      "end_ts": 1769886291.3478956,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0029"
+      ],
+      "transcription": "点磁在。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:05:47.884120",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886290_1769886295.mp4:1769886290.7522707": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886290_1769886295.mp4",
+      "start_ts": 1769886290.7522707,
+      "end_ts": 1769886295.7522707,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0029"
+      ],
+      "transcription": "哪里的？",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:05:53.893193",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886291_1769886296.mp4:1769886291.5091646": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886291_1769886296.mp4",
+      "start_ts": 1769886291.5091646,
+      "end_ts": 1769886296.5091646,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0154"
+      ],
+      "transcription": "速度是不是有点慢？ 是不是有点。 速度是不是有点慢？ 是不是有点。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:06:03.788048",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886303_1769886308.mp4:1769886303.5850456": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886303_1769886308.mp4",
+      "start_ts": 1769886303.5850456,
+      "end_ts": 1769886308.5850456,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0155"
+      ],
+      "transcription": "man? man?",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:06:16.023814",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886306_1769886311.mp4:1769886306.8741906": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886306_1769886311.mp4",
+      "start_ts": 1769886306.8741906,
+      "end_ts": 1769886311.8741906,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0156"
+      ],
+      "transcription": "认定。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:06:30.350442",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886364_1769886369.mp4:1769886364.2538247": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886364_1769886369.mp4",
+      "start_ts": 1769886364.2538247,
+      "end_ts": 1769886369.2538247,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0157",
+        "SPK_0158"
+      ],
+      "transcription": "and觉。 感觉。 and觉。 感觉。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:06:50.631291",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886368_1769886373.mp4:1769886368.5265088": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886368_1769886373.mp4",
+      "start_ts": 1769886368.5265088,
+      "end_ts": 1769886373.5265088,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0159"
+      ],
+      "transcription": "目前来说还是比较慢。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:07:02.954482",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886381_1769886386.mp4:1769886381.0370157": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886381_1769886386.mp4",
+      "start_ts": 1769886381.0370157,
+      "end_ts": 1769886386.0370157,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0017"
+      ],
+      "transcription": "这个处理速度。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:07:19.231115",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886385_1769886390.mp4:1769886385.4894977": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886385_1769886390.mp4",
+      "start_ts": 1769886385.4894977,
+      "end_ts": 1769886390.4894977,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0160"
+      ],
+      "transcription": "还是完全不够哎。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:07:27.469206",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886418_1769886423.mp4:1769886418.1549318": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886418_1769886423.mp4",
+      "start_ts": 1769886418.1549318,
+      "end_ts": 1769886423.1549318,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0161"
+      ],
+      "transcription": "嗯。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:07:41.762532",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886420_1769886425.mp4:1769886420.5746558": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886420_1769886425.mp4",
+      "start_ts": 1769886420.5746558,
+      "end_ts": 1769886425.5746558,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0162"
+      ],
+      "transcription": "酒胡酒壶。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:07:58.070879",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886424_1769886429.mp4:1769886424.5609317": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886424_1769886429.mp4",
+      "start_ts": 1769886424.5609317,
+      "end_ts": 1769886429.5609317,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0059"
+      ],
+      "transcription": "因为。 讲个笑话呗。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:08:14.432960",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886429_1769886434.mp4:1769886429.1945446": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886429_1769886434.mp4",
+      "start_ts": 1769886429.1945446,
+      "end_ts": 1769886434.1945446,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0163"
+      ],
+      "transcription": "个毛也行。",
+      "vl_analysis": "**Scene**: A cluttered desk setup with a large curved monitor displaying code or text, a black \"Mooono\" microphone mounted on a desk, and various items including a small airplane model, a blue container, and bottles. The background shows a window and part of a room.  \n**Speech**: A person says, \"个毛也行.\" (translated: \"It's fine, it's okay.\")  \n**Summary**: A person is in a workspace with a computer monitor, microphone, and desk items",
+      "scene": "A cluttered desk setup with a large curved monitor displaying code or text, a black \"Mooono\" microphone mounted on a desk, and various items including a small airplane model, a blue container, and bottles. The background shows a window and part of a room.",
+      "speech": "A person says, \"个毛也行.\" (translated: \"It's fine, it's okay.\")",
+      "summary": "A person is in a workspace with a computer monitor, microphone, and desk items",
+      "processed_at": "2026-01-31T19:08:22.536613",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886467_1769886472.mp4:1769886467.5170636": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886467_1769886472.mp4",
+      "start_ts": 1769886467.5170636,
+      "end_ts": 1769886472.5170636,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0164"
+      ],
+      "transcription": "处理速度的话。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:08:36.855676",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886471_1769886476.mp4:1769886471.0898328": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886471_1769886476.mp4",
+      "start_ts": 1769886471.0898328,
+      "end_ts": 1769886476.0898328,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0165"
+      ],
+      "transcription": "都已经四二五了。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:08:47.079703",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886476_1769886481.mp4:1769886476.0580847": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886476_1769886481.mp4",
+      "start_ts": 1769886476.0580847,
+      "end_ts": 1769886481.0580847,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0059"
+      ],
+      "transcription": "最小是四二三。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:08:59.354900",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886484_1769886489.mp4:1769886484.0363147": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886484_1769886489.mp4",
+      "start_ts": 1769886484.0363147,
+      "end_ts": 1769886489.0363147,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0059"
+      ],
+      "transcription": "趁着我有点。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T19:09:11.710387",
+      "model": "qwen3-vl:2b"
     }
   }
 }

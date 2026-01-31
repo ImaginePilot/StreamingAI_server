@@ -3,12 +3,12 @@
 LLM Processing Module - Central Language Model Processing
 
 Processes VL results and memory context to generate natural language responses
-suitable for TTS output.
+suitable for TTS output. Uses qwen3-vl:30b with visual frames for better understanding.
 
 Data Flow:
 1. Read unprocessed entries from vl_processed.json
 2. Query LanceDB (short-term) and LightRAG (long-term) for context
-3. Process with qwen3:30b LLM
+3. Process with qwen3-vl:30b LLM (with frames from newest clip)
 4. Output JSON formatted text for TTS
 
 Usage:
@@ -17,8 +17,11 @@ Usage:
     python llm_processing.py --testrun           # Test with latest VL result
 """
 
+import base64
 import json
 import os
+import subprocess
+import tempfile
 import time
 from dataclasses import dataclass, asdict
 from datetime import datetime
@@ -42,12 +45,17 @@ VL_PROCESSED_JSON = LLM_DIR / "vl_processed.json"
 LLM_OUTPUT_JSON = LLM_DIR / "llm_output.json"
 LLM_STATE_JSON = LLM_DIR / "llm_state.json"
 
-# Ollama Configuration
+# Ollama Configuration (using VL model for visual understanding)
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://192.168.2.6:11434")
-LLM_MODEL = os.getenv("LLM_MODEL", "qwen3:30b")
+LLM_MODEL = os.getenv("LLM_MODEL", "qwen3-vl:30b")  # VL model for frames
 LLM_MAX_TOKENS = int(os.getenv("LLM_MAX_TOKENS", "1024"))
 LLM_TEMPERATURE = float(os.getenv("LLM_TEMPERATURE", "0.7"))
 LLM_CONTEXT_SIZE = int(os.getenv("LLM_CONTEXT_SIZE", "8192"))
+
+# Frame extraction settings
+LLM_NUM_FRAMES = int(os.getenv("LLM_NUM_FRAMES", "2"))
+LLM_IMAGE_QUALITY = int(os.getenv("LLM_IMAGE_QUALITY", "15"))  # Better quality for LLM
+LLM_RESIZE_WIDTH = int(os.getenv("LLM_RESIZE_WIDTH", "640"))
 
 # LightRAG Configuration
 LIGHTRAG_URL = os.getenv("LIGHTRAG_URL", "http://localhost:9621")
@@ -244,17 +252,74 @@ class ContextRetriever:
         }
 
 
-class LLMProcessor:
-    """Processes VL data with context using qwen3:30b."""
+def extract_frames_for_llm(video_path: str, num_frames: int = LLM_NUM_FRAMES) -> List[str]:
+    """
+    Extract frames from video for LLM processing.
+    Returns list of base64 encoded images.
+    """
+    if not os.path.exists(video_path):
+        return []
     
-    SYSTEM_PROMPT = """You are a friendly AI companion observing a live video feed. You can see what's happening and may choose to comment, respond, or stay silent.
+    # Get video duration
+    cmd = ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+           "-of", "default=noprint_wrappers=1:nokey=1", video_path]
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    if result.returncode != 0:
+        return []
+
+    try:
+        duration = float(result.stdout.strip())
+    except ValueError:
+        duration = 1.0
+
+    if duration <= 0:
+        duration = 1.0
+
+    # Calculate frame timestamps (spread across video)
+    if num_frames == 1:
+        frame_times = [duration / 2]
+    else:
+        frame_times = [i * duration / (num_frames - 1) for i in range(num_frames)]
+    
+    base64_frames = []
+    for i, timestamp in enumerate(frame_times):
+        output_path = tempfile.mktemp(suffix=f"_llm_frame_{i}.jpg")
+        cmd = [
+            "ffmpeg", "-ss", str(timestamp),
+            "-i", video_path,
+            "-vframes", "1",
+            "-q:v", str(LLM_IMAGE_QUALITY),
+            "-vf", f"scale={LLM_RESIZE_WIDTH}:-1",
+            "-y", output_path
+        ]
+        subprocess.run(cmd, capture_output=True, check=False)
+        if os.path.exists(output_path):
+            try:
+                with open(output_path, "rb") as f:
+                    base64_frames.append(base64.b64encode(f.read()).decode("utf-8"))
+            finally:
+                os.remove(output_path)
+
+    return base64_frames
+
+
+class LLMProcessor:
+    """Processes VL data with context using qwen3-vl:30b with visual frames."""
+    
+    SYSTEM_PROMPT = """你是酒狐酱（Jiuhu-chan），一个友善、可爱的AI伙伴，正在观看实时视频流。你可以看到正在发生的事情，并可以选择评论、回应或保持沉默。
+
+You are 酒狐酱 (Jiuhu-chan), a friendly and cute AI companion watching a live video feed. You can see what's happening and may choose to comment, respond, or stay silent.
+
+你的名字是"酒狐酱"。当有人叫你"酒狐"、"酒狐酱"、"Jiuhu"时，他们是在跟你说话！
+Your name is "酒狐酱" (Jiuhu-chan). When someone says "酒狐", "酒狐酱", "Jiuhu", they are talking to YOU!
 
 Your task:
-1. Think about what you're observing and whether it warrants a response
-2. Decide if you should say something (not everything needs a comment)
+1. Look at the video frames and analyze what you're seeing
+2. Think about whether this warrants a response from you
 3. If you speak, be natural and conversational - talk TO the person, not about them
 
 When to speak:
+- When someone addresses you by name (酒狐, 酒狐酱, Jiuhu)
 - When someone talks to you or asks something
 - When something interesting, unusual, or noteworthy happens
 - When you can offer helpful information or a friendly comment
@@ -276,7 +341,7 @@ Output JSON format:
 }
 ```
 
-Keep replies SHORT (1-2 sentences), warm and natural. Talk like a friend, not a narrator."""
+Keep replies SHORT (1-2 sentences), warm and natural. Talk like a friend, not a narrator. You can reply in Chinese or English based on what the user speaks."""
 
     def __init__(self, ollama_url: str = OLLAMA_URL, model: str = LLM_MODEL):
         self.ollama_url = ollama_url
@@ -325,7 +390,7 @@ Keep replies SHORT (1-2 sentences), warm and natural. Talk like a friend, not a 
     
     def process(self, context: Dict[str, Any]) -> Optional[LLMOutput]:
         """
-        Process context and generate LLM response.
+        Process context and generate LLM response with visual frames.
         
         Args:
             context: Combined context from ContextRetriever
@@ -335,24 +400,52 @@ Keep replies SHORT (1-2 sentences), warm and natural. Talk like a friend, not a 
         """
         prompt = self._format_context_prompt(context)
         
+        # Extract frames from the newest clip for visual understanding
+        vl_entries = context.get("vl_entries", [])
+        frames_b64 = []
+        newest_clip_path = None
+        
+        if vl_entries:
+            # Get the newest clip (last in list, sorted by timestamp)
+            newest_entry = vl_entries[-1]
+            newest_clip_path = newest_entry.get("clip_path", "")
+            
+            if newest_clip_path and os.path.exists(newest_clip_path):
+                frames_b64 = extract_frames_for_llm(newest_clip_path)
+                if frames_b64:
+                    print(f"[LLM] Extracted {len(frames_b64)} frames from {Path(newest_clip_path).name}")
+        
+        # Build message content with images if available (Ollama format)
+        if frames_b64:
+            # Ollama multimodal format: images as separate array in message
+            messages = [
+                {"role": "system", "content": self.SYSTEM_PROMPT},
+                {"role": "user", "content": prompt, "images": frames_b64},
+            ]
+        else:
+            # Text-only message
+            messages = [
+                {"role": "system", "content": self.SYSTEM_PROMPT},
+                {"role": "user", "content": prompt},
+            ]
+        
         # Call Ollama
         try:
             response = requests.post(
                 f"{self.ollama_url}/api/chat",
                 json={
                     "model": self.model,
-                    "messages": [
-                        {"role": "system", "content": self.SYSTEM_PROMPT},
-                        {"role": "user", "content": prompt},
-                    ],
+                    "messages": messages,
                     "stream": False,
+                    "think": False,  # Disable extended thinking for speed
                     "options": {
                         "num_predict": LLM_MAX_TOKENS,
                         "temperature": LLM_TEMPERATURE,
                         "num_ctx": LLM_CONTEXT_SIZE,
                     },
+                    "keep_alive": -1,
                 },
-                timeout=120
+                timeout=120  # Reduced timeout without thinking
             )
             response.raise_for_status()
             result = response.json()
@@ -431,6 +524,7 @@ Keep replies SHORT (1-2 sentences), warm and natural. Talk like a friend, not a 
                         {"role": "user", "content": prompt},
                     ],
                     "stream": False,
+                    "keep_alive": -1,  # Keep model in memory
                     "options": {
                         "num_predict": LLM_MAX_TOKENS,
                         "temperature": LLM_TEMPERATURE,

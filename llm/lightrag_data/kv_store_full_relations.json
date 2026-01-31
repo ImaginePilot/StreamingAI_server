@@ -78,5 +78,297 @@
     "create_time": 1769870730,
     "update_time": 1769870730,
     "_id": "doc-43efde6574fed7ab9dc475b04f942e5e"
+  },
+  "doc-0bc22d186632be25579910d4ca517f35": {
+    "relation_pairs": [
+      [
+        "Data Table",
+        "Samsung Monitor"
+      ],
+      [
+        "Circular Green-Patterned Object",
+        "Desk"
+      ],
+      [
+        "Dual-Monitor Setup",
+        "SPK_0014"
+      ],
+      [
+        "Curved Monitor",
+        "Dual-Monitor Setup"
+      ],
+      [
+        "Circular Map‑Like Object",
+        "Desk Setup"
+      ],
+      [
+        "Desk Setup",
+        "SPK_0011"
+      ],
+      [
+        "Desk Setup",
+        "Small Bottles"
+      ],
+      [
+        "Desk",
+        "SPK_0017"
+      ],
+      [
+        "Desk Setup",
+        "Model Airplane"
+      ],
+      [
+        "Code Document",
+        "Curved Monitor"
+      ],
+      [
+        "Desk Setup",
+        "SPK_0001"
+      ],
+      [
+        "Code/Text Editing",
+        "Dual-Monitor Setup"
+      ],
+      [
+        "Desk Setup",
+        "Patterned Container"
+      ],
+      [
+        "Desk",
+        "SPK_0014"
+      ],
+      [
+        "Desk",
+        "SPK_0016"
+      ],
+      [
+        "Desk Setup",
+        "Dual Monitors"
+      ],
+      [
+        "Desk",
+        "White Dog Figurine"
+      ],
+      [
+        "Desk Setup",
+        "SPK_0012"
+      ],
+      [
+        "Desk Setup",
+        "Samsung Monitor"
+      ],
+      [
+        "Desk Setup",
+        "SPK_0002"
+      ],
+      [
+        "Model Airplane",
+        "SPK_0016"
+      ],
+      [
+        "Dual-Monitor Setup",
+        "SPK_0020"
+      ],
+      [
+        "Code Document",
+        "Dual Monitors"
+      ],
+      [
+        "Desk",
+        "Microphone Arm"
+      ],
+      [
+        "Dual-Monitor Setup",
+        "macOS Dock"
+      ],
+      [
+        "Dual-Monitor Setup",
+        "SPK_0013"
+      ],
+      [
+        "Desk",
+        "Essential Oil Bottles"
+      ],
+      [
+        "Desk",
+        "Plain Wall"
+      ],
+      [
+        "Desk Setup",
+        "SPK_0003"
+      ],
+      [
+        "Desk",
+        "SPK_0020"
+      ],
+      [
+        "Desk Setup",
+        "White Electronic Device With Dial"
+      ],
+      [
+        "Dual-Monitor Setup",
+        "SPK_0019"
+      ],
+      [
+        "Dual-Monitor Setup",
+        "File Manager"
+      ],
+      [
+        "Dual-Monitor Setup",
+        "SPK_0015"
+      ],
+      [
+        "Desk Setup",
+        "Indoor Office Setting"
+      ],
+      [
+        "Desk",
+        "Model Airplane"
+      ],
+      [
+        "Curved Monitor",
+        "Desk Setup"
+      ],
+      [
+        "Desk",
+        "SPK_0013"
+      ],
+      [
+        "Desk Setup",
+        "SPK_0006"
+      ],
+      [
+        "Desk Setup",
+        "SPK_0009"
+      ],
+      [
+        "Dual-Monitor Setup",
+        "SPK_0012"
+      ],
+      [
+        "Desk",
+        "SPK_0019"
+      ],
+      [
+        "Desk",
+        "SPK_0015"
+      ],
+      [
+        "Air France Model Airplane",
+        "Desk Setup"
+      ],
+      [
+        "Desk Setup",
+        "Partial CD Drive"
+      ],
+      [
+        "Desk",
+        "SPK_0012"
+      ],
+      [
+        "Circular Artwork",
+        "Desk"
+      ],
+      [
+        "Desk Setup",
+        "Exposed Hard Drive"
+      ],
+      [
+        "Desk",
+        "White Cat"
+      ],
+      [
+        "Desk",
+        "Hard Drive"
+      ],
+      [
+        "Indoor Office Setting",
+        "Unknown Male"
+      ],
+      [
+        "Code Editor",
+        "Dual-Monitor Setup"
+      ],
+      [
+        "SPK_0015",
+        "White Cat"
+      ],
+      [
+        "Samsung Monitor",
+        "Spreadsheet/Chat"
+      ],
+      [
+        "Circular Digital Device",
+        "Desk"
+      ],
+      [
+        "Cables",
+        "Desk Setup"
+      ],
+      [
+        "List Interface",
+        "Samsung Monitor"
+      ],
+      [
+        "Desk Setup",
+        "Planet‑Like Decorative Object"
+      ],
+      [
+        "Colorful Circular Object",
+        "Desk Setup"
+      ],
+      [
+        "Desk Setup",
+        "White Fox Figurine"
+      ],
+      [
+        "Desk",
+        "TEMP_SPEAKER_01"
+      ],
+      [
+        "Unknown Female",
+        "Window View"
+      ],
+      [
+        "Colorful Circular Object",
+        "Desk"
+      ],
+      [
+        "Desk Setup",
+        "SPK_0010"
+      ],
+      [
+        "Indoor Office Setting",
+        "Unknown Female"
+      ],
+      [
+        "Dual-Monitor Setup",
+        "Flat Monitor"
+      ],
+      [
+        "Model Airplane",
+        "TEMP_SPEAKER_01"
+      ],
+      [
+        "Desk Setup",
+        "Wall"
+      ],
+      [
+        "Desk Setup",
+        "Microphone Arm"
+      ],
+      [
+        "Dual-Monitor Setup",
+        "SPK_0017"
+      ],
+      [
+        "Desk Setup",
+        "SPK_0008"
+      ]
+    ],
+    "count": 71,
+    "create_time": 1769878987,
+    "update_time": 1769878987,
+    "_id": "doc-0bc22d186632be25579910d4ca517f35"
   }
 }

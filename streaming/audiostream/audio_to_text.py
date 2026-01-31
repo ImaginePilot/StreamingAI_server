@@ -112,26 +112,94 @@ def get_torch():
 
 
 def get_funasr_model():
-    """Lazy load FunASR Paraformer model (Alibaba's ASR, excellent for Chinese)."""
+    """Lazy load FunASR model (supports Fun-ASR-Nano-2512 and SenseVoice models)."""
     global _funasr_model
     if _funasr_model is None:
         from funasr import AutoModel
         
         config = get_config()
-        # Use SenseVoice for multilingual, or Paraformer for Chinese-focused
-        model_name = config.get("models", {}).get(
-            "funasr_model", 
-            "iic/SenseVoiceSmall"  # Multilingual: Chinese, English, Japanese, Korean, Cantonese
-        )
+        models_config = config.get("models", {})
+        model_name = models_config.get("funasr_model", "iic/SenseVoiceSmall")
+        hub = models_config.get("funasr_hub", "ms")  # hf for HuggingFace, ms for ModelScope
         
-        print(f"[INFO] Loading FunASR model: {model_name}")
-        _funasr_model = AutoModel(
-            model=model_name,
-            vad_model="fsmn-vad",
-            punc_model="ct-punc",
-            device="cuda" if get_torch().cuda.is_available() else "cpu",
-            disable_update=True  # Disable update check for faster startup
-        )
+        print(f"[INFO] Loading FunASR model: {model_name} (hub: {hub})")
+        
+        # Check if it's a Fun-ASR model (requires special loading from HuggingFace)
+        is_fun_asr = "Fun-ASR" in model_name or "FunAudioLLM" in model_name
+        
+        device = "cuda" if get_torch().cuda.is_available() else "cpu"
+        
+        if is_fun_asr:
+            # Fun-ASR-Nano-2512 requires direct loading from HuggingFace with remote code
+            # It uses a custom model.py from the repo
+            try:
+                from huggingface_hub import snapshot_download
+                import importlib.util
+                import sys
+                
+                # Download model files from HuggingFace
+                print(f"[INFO] Downloading Fun-ASR model from HuggingFace...")
+                model_path = snapshot_download(repo_id=model_name)
+                
+                # Load the custom model.py from the downloaded repo
+                model_py_path = Path(model_path) / "model.py"
+                if not model_py_path.exists():
+                    raise FileNotFoundError(f"model.py not found in {model_path}")
+                
+                spec = importlib.util.spec_from_file_location("fun_asr_model", model_py_path)
+                fun_asr_module = importlib.util.module_from_spec(spec)
+                sys.modules["fun_asr_model"] = fun_asr_module
+                spec.loader.exec_module(fun_asr_module)
+                
+                # Load model using FunASRNano class from model.py
+                FunASRNano = fun_asr_module.FunASRNano
+                model_obj, kwargs = FunASRNano.from_pretrained(model=model_name, device=device, hub=hub)
+                model_obj.eval()
+                
+                # Wrap in a simple object that has generate() method
+                class FunASRWrapper:
+                    def __init__(self, model, kwargs, language):
+                        self.model = model
+                        self.kwargs = kwargs
+                        self.language = language
+                        
+                    def generate(self, input, **gen_kwargs):
+                        # Use the inference method from FunASRNano
+                        lang = gen_kwargs.get("language", self.language)
+                        results = self.model.inference(
+                            data_in=[input] if isinstance(input, str) else input,
+                            language=lang,
+                            **self.kwargs
+                        )
+                        # Format results to match FunASR output format
+                        return [{"text": r[0].get("text", "") if r else ""} for r in results]
+                
+                language = models_config.get("funasr_language", "中文")
+                _funasr_model = FunASRWrapper(model_obj, kwargs, language)
+                _funasr_model._is_fun_asr = True
+                print("[INFO] Fun-ASR model loaded successfully")
+                
+            except Exception as e:
+                print(f"[WARN] Failed to load Fun-ASR model: {e}")
+                print("[INFO] Falling back to SenseVoiceSmall...")
+                _funasr_model = AutoModel(
+                    model="iic/SenseVoiceSmall",
+                    vad_model="fsmn-vad",
+                    punc_model="ct-punc",
+                    device=device,
+                    disable_update=True,
+                )
+                _funasr_model._is_fun_asr = False
+        else:
+            # Standard SenseVoice/Paraformer models
+            _funasr_model = AutoModel(
+                model=model_name,
+                vad_model="fsmn-vad",
+                punc_model="ct-punc",
+                device=device,
+                disable_update=True,
+            )
+            _funasr_model._is_fun_asr = False
         print("[INFO] FunASR model loaded")
     return _funasr_model
 
@@ -764,8 +832,14 @@ class AudioTranscriber:
             asr_backend = config.get("models", {}).get("asr_backend", "funasr")
             
             if asr_backend == "funasr":
-                print("\n[3/3] Running FunASR transcription (Alibaba Paraformer)...")
+                print("\n[3/3] Running FunASR transcription...")
                 funasr_model = get_funasr_model()
+                
+                # Check if using Fun-ASR model (needs language parameter)
+                models_config = config.get("models", {})
+                funasr_model_name = models_config.get("funasr_model", "")
+                is_fun_asr = "Fun-ASR" in funasr_model_name or "FunAudioLLM" in funasr_model_name
+                funasr_language = models_config.get("funasr_language", "中文")
                 
                 # Helper to parse FunASR outputs into timestamped words
                 def _parse_funasr_items(items, default_window=(0.0, 999999.0)):
@@ -822,56 +896,147 @@ class AudioTranscriber:
                             })
                     return segments
 
-                # FunASR handles language detection automatically
-                result = funasr_model.generate(
-                    input=str(audio_path),
-                    batch_size_s=300,
-                )
-
-                asr_segments = _parse_funasr_items(result)
-
-                # If no timestamps were returned, re-run ASR on each diarization segment
-                if asr_segments and all(seg.get("end", 0) >= 999000 for seg in asr_segments):
-                    print("    No ASR timestamps returned; re-running ASR per diarization segment for alignment...")
+                # For Fun-ASR-Nano, skip full-file ASR and go directly to per-segment processing
+                # This is faster since Fun-ASR doesn't return timestamps anyway
+                is_fun_asr_model = getattr(funasr_model, '_is_fun_asr', False)
+                
+                if is_fun_asr_model and diarization_segments:
+                    # Fun-ASR: Direct per-segment processing with parallelization (skip full file)
                     import tempfile
                     import torchaudio
-
+                    from concurrent.futures import ThreadPoolExecutor, as_completed
+                    import multiprocessing
+                    
+                    # Use half of available CPUs for parallel ASR (leave some for system)
+                    num_workers = max(1, min(len(diarization_segments), multiprocessing.cpu_count() // 2))
+                    print(f"    Processing {len(diarization_segments)} segments in parallel ({num_workers} workers)...")
+                    
                     waveform, sample_rate = torchaudio.load(str(audio_path))
-                    aligned_segments = []
-
-                    for idx, dia_seg in enumerate(diarization_segments):
+                    
+                    def process_segment(args):
+                        """Process a single segment - runs in thread."""
+                        idx, dia_seg = args
                         start_sample = int(dia_seg["start"] * sample_rate)
                         end_sample = int(dia_seg["end"] * sample_rate)
                         start_sample = max(0, start_sample)
                         end_sample = min(waveform.shape[1], end_sample)
-
+                        
                         if end_sample <= start_sample:
-                            continue
-
+                            return idx, []
+                        
                         segment_wave = waveform[:, start_sample:end_sample]
-
                         tmp_path = None
                         try:
                             with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp_wav:
                                 tmp_path = tmp_wav.name
                                 torchaudio.save(tmp_path, segment_wave, sample_rate)
-
-                            seg_result = funasr_model.generate(input=tmp_path, batch_size_s=60)
-                            aligned_segments.extend(
-                                _parse_funasr_items(
-                                    seg_result,
-                                    default_window=(dia_seg["start"], dia_seg["end"])
-                                )
+                            
+                            seg_result = funasr_model.generate(
+                                input=tmp_path,
+                                cache={},
+                                batch_size=1,
+                                language=funasr_language,
+                                itn=True,
                             )
+                            return idx, _parse_funasr_items(
+                                seg_result,
+                                default_window=(dia_seg["start"], dia_seg["end"])
+                            )
+                        except Exception as e:
+                            print(f"    [WARN] Segment {idx} failed: {e}")
+                            return idx, []
                         finally:
                             if tmp_path and Path(tmp_path).exists():
                                 try:
                                     os.unlink(tmp_path)
                                 except Exception:
                                     pass
+                    
+                    # Process segments in parallel using ThreadPoolExecutor
+                    segment_results = {}
+                    with ThreadPoolExecutor(max_workers=num_workers) as executor:
+                        futures = {
+                            executor.submit(process_segment, (idx, seg)): idx 
+                            for idx, seg in enumerate(diarization_segments)
+                        }
+                        for future in as_completed(futures):
+                            idx, result = future.result()
+                            segment_results[idx] = result
+                    
+                    # Combine results in order
+                    asr_segments = []
+                    for idx in sorted(segment_results.keys()):
+                        asr_segments.extend(segment_results[idx])
+                    
+                else:
+                    # Standard path: Run full file ASR first
+                    if is_fun_asr:
+                        result = funasr_model.generate(
+                            input=str(audio_path),
+                            cache={},
+                            batch_size=1,
+                            language=funasr_language,
+                            itn=True,
+                        )
+                    else:
+                        result = funasr_model.generate(
+                            input=str(audio_path),
+                            batch_size_s=300,
+                        )
 
-                    if aligned_segments:
-                        asr_segments = aligned_segments
+                    asr_segments = _parse_funasr_items(result)
+
+                    # If no timestamps were returned, re-run ASR on each diarization segment
+                    if asr_segments and all(seg.get("end", 0) >= 999000 for seg in asr_segments):
+                        print("    No ASR timestamps returned; re-running ASR per diarization segment for alignment...")
+                        import tempfile
+                        import torchaudio
+
+                        waveform, sample_rate = torchaudio.load(str(audio_path))
+                        aligned_segments = []
+
+                        for idx, dia_seg in enumerate(diarization_segments):
+                            start_sample = int(dia_seg["start"] * sample_rate)
+                            end_sample = int(dia_seg["end"] * sample_rate)
+                            start_sample = max(0, start_sample)
+                            end_sample = min(waveform.shape[1], end_sample)
+
+                            if end_sample <= start_sample:
+                                continue
+
+                            segment_wave = waveform[:, start_sample:end_sample]
+
+                            tmp_path = None
+                            try:
+                                with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp_wav:
+                                    tmp_path = tmp_wav.name
+                                    torchaudio.save(tmp_path, segment_wave, sample_rate)
+
+                                if is_fun_asr:
+                                    seg_result = funasr_model.generate(
+                                        input=tmp_path,
+                                        cache={},
+                                        batch_size=1,
+                                        language=funasr_language,
+                                        itn=True,
+                                    )
+                                else:
+                                    seg_result = funasr_model.generate(input=tmp_path, batch_size_s=60)
+                                aligned_segments.extend(
+                                    _parse_funasr_items(
+                                        seg_result,
+                                        default_window=(dia_seg["start"], dia_seg["end"])
+                                    )
+                                )
+                            finally:
+                                if tmp_path and Path(tmp_path).exists():
+                                    try:
+                                        os.unlink(tmp_path)
+                                    except Exception:
+                                        pass
+
+                        if aligned_segments:
+                            asr_segments = aligned_segments
 
                 print(f"    Transcribed: {len(asr_segments)} segments")
                 

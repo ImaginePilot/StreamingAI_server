@@ -46,11 +46,11 @@ CACHE_DIR = STREAMING_DIR / "cache"
 DATA_JSON = CACHE_DIR / "data.json"
 VL_PROCESSED_JSON = BASE_DIR / "llm" / "vl_processed.json"
 
-# Ollama Configuration
-OLLAMA_HOST = os.getenv("OLLAMA_HOST", "192.168.2.6")
-OLLAMA_PORT = int(os.getenv("OLLAMA_PORT", "11434"))
-OLLAMA_BASE_URL = os.getenv("OLLAMA_URL", f"http://{OLLAMA_HOST}:{OLLAMA_PORT}")
-OLLAMA_MODEL = os.getenv("OLLAMA_VL_MODEL", "qwen3-vl:30b")
+# Ollama Configuration (VL uses separate faster server)
+OLLAMA_HOST = os.getenv("OLLAMA_VL_HOST", "192.168.2.5")
+OLLAMA_PORT = int(os.getenv("OLLAMA_VL_PORT", "11434"))
+OLLAMA_BASE_URL = os.getenv("OLLAMA_VL_URL", f"http://{OLLAMA_HOST}:{OLLAMA_PORT}")
+OLLAMA_MODEL = os.getenv("OLLAMA_VL_MODEL", "qwen3-vl:2b")
 
 # Fast mode settings (optimized for continuous processing)
 FAST_MAX_TOKENS = int(os.getenv("VL_MAX_TOKENS", "512"))
@@ -370,6 +370,7 @@ def process_clip_with_vl(clip: ClipData, verbose: bool = True) -> Optional[VLRes
             "messages": messages,
             "stream": False,
             "think": False,  # Disable thinking for speed
+            "keep_alive": -1,  # Keep model in memory indefinitely
             "options": {
                 "num_predict": FAST_MAX_TOKENS,
                 "temperature": TEMPERATURE,

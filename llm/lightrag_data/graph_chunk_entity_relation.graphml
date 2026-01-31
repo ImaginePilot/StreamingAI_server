@@ -139,6 +139,528 @@
   <data key="d5">1769870728</data>
   <data key="d6"></data>
 </node>
+<node id="SPK_0012">
+  <data key="d0">SPK_0012</data>
+  <data key="d1">person</data>
+  <data key="d2">Speaker identified as SPK_0012 who asks where an item was sourced “我上哪搞上上去的？” during a coding session.&lt;SEP&gt;Speaker identified as SPK_0012 who asked a Mandarin question about where something was placed while working at a desk.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894&lt;SEP&gt;chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878974</data>
+  <data key="d6"></data>
+</node>
+<node id="SPK_0013">
+  <data key="d0">SPK_0013</data>
+  <data key="d1">person</data>
+  <data key="d2">Speaker identified as SPK_0013 who said “我感觉。” and “这个延迟。” while at a dual‑monitor workstation.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878974</data>
+  <data key="d6"></data>
+</node>
+<node id="SPK_0014">
+  <data key="d0">SPK_0014</data>
+  <data key="d1">person</data>
+  <data key="d2">Speaker identified as SPK_0014 who uttered “三十来。” and later “已经奔着。” during a workspace recording.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878974</data>
+  <data key="d6"></data>
+</node>
+<node id="SPK_0015">
+  <data key="d0">SPK_0015</data>
+  <data key="d1">person</data>
+  <data key="d2">Speaker identified as SPK_0015 who asked “四十秒去的？” while a white cat was present on the desk.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878974</data>
+  <data key="d6"></data>
+</node>
+<node id="SPK_0016">
+  <data key="d0">SPK_0016</data>
+  <data key="d1">person</data>
+  <data key="d2">Speaker identified as SPK_0016 who contributed to a transcription mentioning a model.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878974</data>
+  <data key="d6"></data>
+</node>
+<node id="TEMP_SPEAKER_01">
+  <data key="d0">TEMP_SPEAKER_01</data>
+  <data key="d1">person</data>
+  <data key="d2">Temporary speaker referenced alongside SPK_0016 in a transcription about a model.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878974</data>
+  <data key="d6"></data>
+</node>
+<node id="SPK_0017">
+  <data key="d0">SPK_0017</data>
+  <data key="d1">person</data>
+  <data key="d2">Speaker identified as SPK_0017 who discussed a repetition and an original version in Mandarin.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878974</data>
+  <data key="d6"></data>
+</node>
+<node id="SPK_0019">
+  <data key="d0">SPK_0019</data>
+  <data key="d1">person</data>
+  <data key="d2">Speaker identified as SPK_0019 who said “他是.” while the workspace was shown.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878974</data>
+  <data key="d6"></data>
+</node>
+<node id="SPK_0020">
+  <data key="d0">SPK_0020</data>
+  <data key="d1">person</data>
+  <data key="d2">Speaker identified as SPK_0020 who mentioned “三十秒左右” and later said “就是.”.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878974</data>
+  <data key="d6"></data>
+</node>
+<node id="Dual-Monitor Setup">
+  <data key="d0">Dual-Monitor Setup</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A workstation configuration with two monitors used across multiple scenes for coding and file management.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878974</data>
+  <data key="d6"></data>
+</node>
+<node id="Desk">
+  <data key="d0">Desk</data>
+  <data key="d1">artifact</data>
+  <data key="d2">The desk surface that holds all items such as models, bottles, hard drive, and microphone arm.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878975</data>
+  <data key="d6"></data>
+</node>
+<node id="Model Airplane">
+  <data key="d0">Model Airplane</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A generic model airplane present on several desk setups.&lt;SEP&gt;A small model airplane placed on the desk in the workspace.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894&lt;SEP&gt;chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878975</data>
+  <data key="d6"></data>
+</node>
+<node id="Colorful Circular Object">
+  <data key="d0">Colorful Circular Object</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A colorful circular decorative object on the desk.&lt;SEP&gt;A colorful circular decorative item observed on the desk.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894&lt;SEP&gt;chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878975</data>
+  <data key="d6"></data>
+</node>
+<node id="Essential Oil Bottles">
+  <data key="d0">Essential Oil Bottles</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Small bottles containing essential oils positioned on the desk.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878975</data>
+  <data key="d6"></data>
+</node>
+<node id="Hard Drive">
+  <data key="d0">Hard Drive</data>
+  <data key="d1">artifact</data>
+  <data key="d2">An exposed hard drive located on the desk.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878975</data>
+  <data key="d6"></data>
+</node>
+<node id="Microphone Arm">
+  <data key="d0">Microphone Arm</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A boom arm holding a microphone used by several speakers.&lt;SEP&gt;A microphone arm situated on the desk.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894&lt;SEP&gt;chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878975</data>
+  <data key="d6"></data>
+</node>
+<node id="White Cat">
+  <data key="d0">White Cat</data>
+  <data key="d1">creature</data>
+  <data key="d2">A white cat seen resting on the desk in several scenes.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878975</data>
+  <data key="d6"></data>
+</node>
+<node id="White Dog Figurine">
+  <data key="d0">White Dog Figurine</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A small white model dog figurine placed on the desk.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878975</data>
+  <data key="d6"></data>
+</node>
+<node id="Circular Digital Device">
+  <data key="d0">Circular Digital Device</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A circular digital device observed on the desk.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878975</data>
+  <data key="d6"></data>
+</node>
+<node id="Plain Wall">
+  <data key="d0">Plain Wall</data>
+  <data key="d1">artifact</data>
+  <data key="d2">The plain wall serving as the background behind the desk.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878975</data>
+  <data key="d6"></data>
+</node>
+<node id="Curved Monitor">
+  <data key="d0">Curved Monitor</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A curved monitor used in later entries showing code and text files.&lt;SEP&gt;A curved monitor that is part of the dual‑monitor workstation.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894&lt;SEP&gt;chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878975</data>
+  <data key="d6"></data>
+</node>
+<node id="Flat Monitor">
+  <data key="d0">Flat Monitor</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A flat monitor that is part of the dual‑monitor workstation.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878976</data>
+  <data key="d6"></data>
+</node>
+<node id="macOS Dock">
+  <data key="d0">macOS Dock</data>
+  <data key="d1">concept</data>
+  <data key="d2">The macOS Dock UI element displayed on one of the monitors.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878976</data>
+  <data key="d6"></data>
+</node>
+<node id="Code Editor">
+  <data key="d0">Code Editor</data>
+  <data key="d1">artifact</data>
+  <data key="d2">The code editor application shown on the main screen of the workstation.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878976</data>
+  <data key="d6"></data>
+</node>
+<node id="File Manager">
+  <data key="d0">File Manager</data>
+  <data key="d1">artifact</data>
+  <data key="d2">The file manager program displayed on a secondary monitor.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878976</data>
+  <data key="d6"></data>
+</node>
+<node id="Code/Text Editing">
+  <data key="d0">Code/Text Editing</data>
+  <data key="d1">concept</data>
+  <data key="d2">The activity of coding and text editing displayed on the monitors.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878976</data>
+  <data key="d6"></data>
+</node>
+<node id="Circular Green-Patterned Object">
+  <data key="d0">Circular Green-Patterned Object</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A circular object with a green pattern observed on the desk.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878976</data>
+  <data key="d6"></data>
+</node>
+<node id="Circular Artwork">
+  <data key="d0">Circular Artwork</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A circular artwork piece placed on the desk.</data>
+  <data key="d3">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d4"></data>
+  <data key="d5">1769878976</data>
+  <data key="d6"></data>
+</node>
+<node id="Unknown Male">
+  <data key="d0">Unknown Male</data>
+  <data key="d1">person</data>
+  <data key="d2">An unidentified male voice that greets someone in an indoor office setting.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878976</data>
+  <data key="d6"></data>
+</node>
+<node id="Unknown Female">
+  <data key="d0">Unknown Female</data>
+  <data key="d1">person</data>
+  <data key="d2">An unidentified female voice commenting on the nice weather while looking outside.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878976</data>
+  <data key="d6"></data>
+</node>
+<node id="SPK_0001">
+  <data key="d0">SPK_0001</data>
+  <data key="d1">person</data>
+  <data key="d2">Speaker identified as SPK_0001 who says “我的电信。 不しな。” in a desk setup containing a monitor, figurine, and model airplane.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878976</data>
+  <data key="d6"></data>
+</node>
+<node id="SPK_0002">
+  <data key="d0">SPK_0002</data>
+  <data key="d1">person</data>
+  <data key="d2">Speaker identified as SPK_0002 who says “hello. hello.” while testing audio in a desk setup.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878977</data>
+  <data key="d6"></data>
+</node>
+<node id="SPK_0003">
+  <data key="d0">SPK_0003</data>
+  <data key="d1">person</data>
+  <data key="d2">Speaker identified as SPK_0003 who asks “can you hear me?” with no visible person present.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878977</data>
+  <data key="d6"></data>
+</node>
+<node id="SPK_0006">
+  <data key="d0">SPK_0006</data>
+  <data key="d1">person</data>
+  <data key="d2">Speaker identified as SPK_0006 who asks “自己在说什么？” while recording with a microphone at a tech‑focused desk.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878977</data>
+  <data key="d6"></data>
+</node>
+<node id="SPK_0008">
+  <data key="d0">SPK_0008</data>
+  <data key="d1">person</data>
+  <data key="d2">Speaker identified as SPK_0008 who asks “做呢？” in a workspace with dual monitors and tech gear.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878977</data>
+  <data key="d6"></data>
+</node>
+<node id="SPK_0009">
+  <data key="d0">SPK_0009</data>
+  <data key="d1">person</data>
+  <data key="d2">Speaker identified as SPK_0009 who discusses lag with the phrase “你感觉好慢？ 他延迟。” while using dual monitors.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878977</data>
+  <data key="d6"></data>
+</node>
+<node id="SPK_0010">
+  <data key="d0">SPK_0010</data>
+  <data key="d1">person</data>
+  <data key="d2">Speaker identified as SPK_0010 who expresses frustration about delay with “延迟感觉。 很长。”</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878977</data>
+  <data key="d6"></data>
+</node>
+<node id="SPK_0011">
+  <data key="d0">SPK_0011</data>
+  <data key="d1">person</data>
+  <data key="d2">Speaker identified as SPK_0011 who questions “不知道为什么？” while working on code.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878977</data>
+  <data key="d6"></data>
+</node>
+<node id="Indoor Office Setting">
+  <data key="d0">Indoor Office Setting</data>
+  <data key="d1">location</data>
+  <data key="d2">An indoor office environment featuring a desk where greetings and weather comments occur.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878977</data>
+  <data key="d6"></data>
+</node>
+<node id="Window View">
+  <data key="d0">Window View</data>
+  <data key="d1">location</data>
+  <data key="d2">A view through a window showing a sunny day with trees, observed by the unknown female speaker.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878977</data>
+  <data key="d6"></data>
+</node>
+<node id="Desk Setup">
+  <data key="d0">Desk Setup</data>
+  <data key="d1">location</data>
+  <data key="d2">A workstation desk containing monitors, figurines, model airplanes, and various tech accessories.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878977</data>
+  <data key="d6"></data>
+</node>
+<node id="Samsung Monitor">
+  <data key="d0">Samsung Monitor</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A Samsung brand monitor displaying data tables, code, or spreadsheets in multiple entries.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878978</data>
+  <data key="d6"></data>
+</node>
+<node id="White Fox Figurine">
+  <data key="d0">White Fox Figurine</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A white figurine of a fox placed on the desk.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878978</data>
+  <data key="d6"></data>
+</node>
+<node id="Air France Model Airplane">
+  <data key="d0">Air France Model Airplane</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A model airplane branded with Air France displayed on the desk.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878978</data>
+  <data key="d6"></data>
+</node>
+<node id="White Electronic Device With Dial">
+  <data key="d0">White Electronic Device With Dial</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A small white electronic device featuring a dial, partially visible on the desk.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878978</data>
+  <data key="d6"></data>
+</node>
+<node id="Partial CD Drive">
+  <data key="d0">Partial CD Drive</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A partially visible CD drive component on the desk.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878978</data>
+  <data key="d6"></data>
+</node>
+<node id="Circular Map‑Like Object">
+  <data key="d0">Circular Map‑Like Object</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A circular decorative object resembling a map, located on the desk.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878978</data>
+  <data key="d6"></data>
+</node>
+<node id="Exposed Hard Drive">
+  <data key="d0">Exposed Hard Drive</data>
+  <data key="d1">artifact</data>
+  <data key="d2">An exposed hard drive component visible on the desk.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878978</data>
+  <data key="d6"></data>
+</node>
+<node id="Dual Monitors">
+  <data key="d0">Dual Monitors</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Two monitors positioned side‑by‑side displaying code or documents.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878978</data>
+  <data key="d6"></data>
+</node>
+<node id="Small Bottles">
+  <data key="d0">Small Bottles</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Small bottles placed on the desk.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878978</data>
+  <data key="d6"></data>
+</node>
+<node id="Patterned Container">
+  <data key="d0">Patterned Container</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A patterned container on the desk.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878978</data>
+  <data key="d6"></data>
+</node>
+<node id="Cables">
+  <data key="d0">Cables</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Tangled cables visible behind the desk.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878979</data>
+  <data key="d6"></data>
+</node>
+<node id="Data Table">
+  <data key="d0">Data Table</data>
+  <data key="d1">content</data>
+  <data key="d2">A data table displayed on the Samsung monitor in the desk setup.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878979</data>
+  <data key="d6"></data>
+</node>
+<node id="List Interface">
+  <data key="d0">List Interface</data>
+  <data key="d1">content</data>
+  <data key="d2">A list interface shown on the Samsung monitor during audio testing.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878979</data>
+  <data key="d6"></data>
+</node>
+<node id="Spreadsheet/Chat">
+  <data key="d0">Spreadsheet/Chat</data>
+  <data key="d1">content</data>
+  <data key="d2">A spreadsheet or chat view displayed on the Samsung monitor in later entries.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878979</data>
+  <data key="d6"></data>
+</node>
+<node id="Code Document">
+  <data key="d0">Code Document</data>
+  <data key="d1">content</data>
+  <data key="d2">Code or document content displayed on dual monitors or curved monitor.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878979</data>
+  <data key="d6"></data>
+</node>
+<node id="Wall">
+  <data key="d0">Wall</data>
+  <data key="d1">location</data>
+  <data key="d2">The plain wall background visible behind the desk setups.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878979</data>
+  <data key="d6"></data>
+</node>
+<node id="Planet‑Like Decorative Object">
+  <data key="d0">Planet‑Like Decorative Object</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A circular decorative object resembling a planet on the desk.</data>
+  <data key="d3">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d4"></data>
+  <data key="d5">1769878979</data>
+  <data key="d6"></data>
+</node>
 <edge source="John" target="Kitchen">
   <data key="d7">1.0</data>
   <data key="d8">John was seen in the kitchen making coffee at 2pm.</data>
@@ -281,6 +803,645 @@
   <data key="d10">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
   <data key="d11"></data>
   <data key="d12">1769870729</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0012" target="Dual-Monitor Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0012 spoke while working at a dual‑monitor setup.</data>
+  <data key="d9">speech,workstation</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878979</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0012" target="Desk">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0012 was positioned at the desk during the utterance.</data>
+  <data key="d9">location,workstation</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878979</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0012" target="Desk Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0012 is present at the desk setup and asks where an item was sourced.</data>
+  <data key="d9">presence,source inquiry</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878984</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0013" target="Dual-Monitor Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0013 made statements while using a dual‑monitor workstation.</data>
+  <data key="d9">speech,workstation</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878979</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0013" target="Desk">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0013 was situated at the desk.</data>
+  <data key="d9">location,workstation</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878980</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0014" target="Dual-Monitor Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0014 uttered phrases while at a dual‑monitor setup.</data>
+  <data key="d9">speech,workstation</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878980</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0014" target="Desk">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0014 was present at the desk.</data>
+  <data key="d9">location,workstation</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878980</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0015" target="White Cat">
+  <data key="d7">1.0</data>
+  <data key="d8">A white cat was on the desk at the time SPK_0015 spoke.</data>
+  <data key="d9">co-location,presence</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878979</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0015" target="Dual-Monitor Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0015 asked a question while working at a dual‑monitor workstation.</data>
+  <data key="d9">speech,workstation</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878980</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0015" target="Desk">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0015 was positioned at the desk where a white cat was present.</data>
+  <data key="d9">location,workstation</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878980</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0016" target="Desk">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0016 was at the desk during the transcription about a model.</data>
+  <data key="d9">location,workstation</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878980</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0016" target="Model Airplane">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0016 mentioned the model in the transcription, likely referring to the model airplane.</data>
+  <data key="d9">comment,reference</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878982</data>
+  <data key="d13"></data>
+</edge>
+<edge source="TEMP_SPEAKER_01" target="Desk">
+  <data key="d7">1.0</data>
+  <data key="d8">TEMP_SPEAKER_01 was present at the desk in the same transcription.</data>
+  <data key="d9">location,workstation</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878981</data>
+  <data key="d13"></data>
+</edge>
+<edge source="TEMP_SPEAKER_01" target="Model Airplane">
+  <data key="d7">1.0</data>
+  <data key="d8">TEMP_SPEAKER_01 also referred to the model in the transcription, likely the model airplane.</data>
+  <data key="d9">comment,reference</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878983</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0017" target="Dual-Monitor Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0017 discussed a repetition while using a dual‑monitor setup.</data>
+  <data key="d9">speech,workstation</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878980</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0017" target="Desk">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0017 was situated at the desk.</data>
+  <data key="d9">location,workstation</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878981</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0019" target="Dual-Monitor Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0019’s utterance occurred in front of a dual‑monitor setup.</data>
+  <data key="d9">speech,workstation</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878980</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0019" target="Desk">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0019 spoke while the desk with various items was shown.</data>
+  <data key="d9">location,workstation</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878981</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0020" target="Dual-Monitor Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0020’s comments were made while using a dual‑monitor workstation.</data>
+  <data key="d9">speech,workstation</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878981</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0020" target="Desk">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0020 mentioned timing while seated at the desk.</data>
+  <data key="d9">location,workstation</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878981</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Dual-Monitor Setup" target="Curved Monitor">
+  <data key="d7">1.0</data>
+  <data key="d8">The curved monitor is a component of the dual‑monitor setup.</data>
+  <data key="d9">component,hardware</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878982</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Dual-Monitor Setup" target="Flat Monitor">
+  <data key="d7">1.0</data>
+  <data key="d8">The flat monitor is a component of the dual‑monitor setup.</data>
+  <data key="d9">component,hardware</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878982</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Dual-Monitor Setup" target="macOS Dock">
+  <data key="d7">1.0</data>
+  <data key="d8">The macOS Dock is displayed on one of the monitors in the dual‑monitor setup.</data>
+  <data key="d9">UI,displayed_on</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878982</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Dual-Monitor Setup" target="Code Editor">
+  <data key="d7">1.0</data>
+  <data key="d8">The code editor runs on the main screen of the dual‑monitor workstation.</data>
+  <data key="d9">displayed_on,software</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878982</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Dual-Monitor Setup" target="File Manager">
+  <data key="d7">1.0</data>
+  <data key="d8">The file manager is shown on a secondary monitor of the dual‑monitor setup.</data>
+  <data key="d9">displayed_on,software</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878982</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Dual-Monitor Setup" target="Code/Text Editing">
+  <data key="d7">1.0</data>
+  <data key="d8">Coding and text editing activity is presented on the monitors of the dual‑monitor setup.</data>
+  <data key="d9">activity,content_of</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878983</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk" target="Model Airplane">
+  <data key="d7">1.0</data>
+  <data key="d8">The model airplane is placed on the desk.</data>
+  <data key="d9">artifact,placement</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878981</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk" target="Colorful Circular Object">
+  <data key="d7">1.0</data>
+  <data key="d8">The colorful circular object sits on the desk.</data>
+  <data key="d9">artifact,placement</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878981</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk" target="Essential Oil Bottles">
+  <data key="d7">1.0</data>
+  <data key="d8">The essential oil bottles are positioned on the desk.</data>
+  <data key="d9">artifact,placement</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878982</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk" target="Hard Drive">
+  <data key="d7">1.0</data>
+  <data key="d8">The hard drive is located on the desk.</data>
+  <data key="d9">artifact,placement</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878982</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk" target="Microphone Arm">
+  <data key="d7">1.0</data>
+  <data key="d8">The microphone arm rests on the desk.</data>
+  <data key="d9">artifact,placement</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878982</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk" target="White Cat">
+  <data key="d7">1.0</data>
+  <data key="d8">The white cat rests on the desk.</data>
+  <data key="d9">creature,presence</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878982</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk" target="White Dog Figurine">
+  <data key="d7">1.0</data>
+  <data key="d8">The white dog figurine is placed on the desk.</data>
+  <data key="d9">artifact,placement</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878982</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk" target="Circular Digital Device">
+  <data key="d7">1.0</data>
+  <data key="d8">The circular digital device sits on the desk.</data>
+  <data key="d9">artifact,placement</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878983</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk" target="Plain Wall">
+  <data key="d7">1.0</data>
+  <data key="d8">The desk is positioned against a plain wall.</data>
+  <data key="d9">background,location</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878983</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk" target="Circular Green-Patterned Object">
+  <data key="d7">1.0</data>
+  <data key="d8">The circular green‑patterned object is placed on the desk.</data>
+  <data key="d9">artifact,placement</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878983</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk" target="Circular Artwork">
+  <data key="d7">1.0</data>
+  <data key="d8">The circular artwork is placed on the desk.</data>
+  <data key="d9">artifact,placement</data>
+  <data key="d10">chunk-4fb7ec00e62a92d73236ccc41d0b8894</data>
+  <data key="d11"></data>
+  <data key="d12">1769878983</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Model Airplane" target="Desk Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">A model airplane is present on the desk setup.</data>
+  <data key="d9">decor,object</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878985</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Colorful Circular Object" target="Desk Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">The colorful circular object decorates the desk setup.</data>
+  <data key="d9">decor,object</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878987</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Microphone Arm" target="Desk Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">The microphone arm is positioned on the desk setup for audio capture.</data>
+  <data key="d9">audio,equipment</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878986</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Curved Monitor" target="Desk Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">The curved monitor is part of the desk setup showing code/text files.</data>
+  <data key="d9">display,equipment</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878986</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Curved Monitor" target="Code Document">
+  <data key="d7">1.0</data>
+  <data key="d8">The curved monitor displays code or text files.</data>
+  <data key="d9">content,display</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878987</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Unknown Male" target="Indoor Office Setting">
+  <data key="d7">1.0</data>
+  <data key="d8">The unknown male is present in the indoor office setting where he greets someone.</data>
+  <data key="d9">greeting,presence</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878983</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Unknown Female" target="Window View">
+  <data key="d7">1.0</data>
+  <data key="d8">The unknown female observes the sunny window view while speaking.</data>
+  <data key="d9">environment,observation</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878983</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Unknown Female" target="Indoor Office Setting">
+  <data key="d7">1.0</data>
+  <data key="d8">The unknown female is present in the indoor office setting while commenting on the weather.</data>
+  <data key="d9">presence,weather comment</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878983</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0001" target="Desk Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0001 is present at the desk setup and speaks about telecom.</data>
+  <data key="d9">presence,speech</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878983</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0002" target="Desk Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0002 is present at the desk setup and tests audio with “hello. hello.”</data>
+  <data key="d9">presence,speech</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878983</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0003" target="Desk Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0003 is present at the desk setup and asks “can you hear me?”</data>
+  <data key="d9">inquiry,presence</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878984</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0006" target="Desk Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0006 is present at the desk setup and asks “自己在说什么？” while recording.</data>
+  <data key="d9">presence,self‑question</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878984</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0008" target="Desk Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0008 is present at the desk setup and asks “做呢？” in a casual tone.</data>
+  <data key="d9">inquiry,presence</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878984</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0009" target="Desk Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0009 is present at the desk setup and discusses lag with “你感觉好慢？ 他延迟。”</data>
+  <data key="d9">lag discussion,presence</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878984</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0010" target="Desk Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0010 is present at the desk setup and expresses frustration about delay.</data>
+  <data key="d9">frustration,presence</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878984</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SPK_0011" target="Desk Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">SPK_0011 is present at the desk setup and asks “不知道为什么？” while coding.</data>
+  <data key="d9">confusion,presence</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878984</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Indoor Office Setting" target="Desk Setup">
+  <data key="d7">1.0</data>
+  <data key="d8">The desk setup is located within the indoor office setting.</data>
+  <data key="d9">containment,location</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878985</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk Setup" target="Samsung Monitor">
+  <data key="d7">1.0</data>
+  <data key="d8">The Samsung monitor is placed on the desk setup and displays data, code, or spreadsheets.</data>
+  <data key="d9">display,equipment</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878985</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk Setup" target="White Fox Figurine">
+  <data key="d7">1.0</data>
+  <data key="d8">The white fox figurine is positioned on the desk setup.</data>
+  <data key="d9">decor,object</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878985</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk Setup" target="Air France Model Airplane">
+  <data key="d7">1.0</data>
+  <data key="d8">The Air France model airplane is positioned on the desk setup.</data>
+  <data key="d9">decor,object</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878985</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk Setup" target="White Electronic Device With Dial">
+  <data key="d7">1.0</data>
+  <data key="d8">The white electronic device with a dial is located on the desk setup.</data>
+  <data key="d9">device,equipment</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878985</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk Setup" target="Partial CD Drive">
+  <data key="d7">1.0</data>
+  <data key="d8">The partial CD drive is visible on the desk setup.</data>
+  <data key="d9">component,equipment</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878985</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk Setup" target="Circular Map‑Like Object">
+  <data key="d7">1.0</data>
+  <data key="d8">The circular map‑like object decorates the desk setup.</data>
+  <data key="d9">decor,object</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878986</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk Setup" target="Exposed Hard Drive">
+  <data key="d7">1.0</data>
+  <data key="d8">The exposed hard drive is visible on the desk setup.</data>
+  <data key="d9">component,equipment</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878986</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk Setup" target="Dual Monitors">
+  <data key="d7">1.0</data>
+  <data key="d8">Dual monitors are arranged on the desk setup displaying code or documents.</data>
+  <data key="d9">display,equipment</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878986</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk Setup" target="Small Bottles">
+  <data key="d7">1.0</data>
+  <data key="d8">Small bottles are placed on the desk setup.</data>
+  <data key="d9">accessory,object</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878986</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk Setup" target="Patterned Container">
+  <data key="d7">1.0</data>
+  <data key="d8">The patterned container is located on the desk setup.</data>
+  <data key="d9">accessory,object</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878987</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk Setup" target="Cables">
+  <data key="d7">1.0</data>
+  <data key="d8">Cables are tangled and visible behind the desk setup.</data>
+  <data key="d9">infrastructure,visible</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878987</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk Setup" target="Wall">
+  <data key="d7">1.0</data>
+  <data key="d8">The desk setup has a plain wall as its background.</data>
+  <data key="d9">background,location</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878987</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Desk Setup" target="Planet‑Like Decorative Object">
+  <data key="d7">1.0</data>
+  <data key="d8">The desk setup contains a planet‑like decorative object.</data>
+  <data key="d9">artifact,contains</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878987</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Samsung Monitor" target="Data Table">
+  <data key="d7">1.0</data>
+  <data key="d8">The Samsung monitor displays a data table in the desk setup.</data>
+  <data key="d9">content,display</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878986</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Samsung Monitor" target="List Interface">
+  <data key="d7">1.0</data>
+  <data key="d8">The Samsung monitor displays a list interface during audio testing.</data>
+  <data key="d9">content,display</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878986</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Samsung Monitor" target="Spreadsheet/Chat">
+  <data key="d7">1.0</data>
+  <data key="d8">The Samsung monitor displays a spreadsheet or chat view.</data>
+  <data key="d9">content,display</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878986</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Dual Monitors" target="Code Document">
+  <data key="d7">1.0</data>
+  <data key="d8">The dual monitors display code or document content.</data>
+  <data key="d9">content,display</data>
+  <data key="d10">chunk-f04e4aded1a6f7de143f260b063f4a38</data>
+  <data key="d11"></data>
+  <data key="d12">1769878986</data>
   <data key="d13"></data>
 </edge>
 </graph></graphml>

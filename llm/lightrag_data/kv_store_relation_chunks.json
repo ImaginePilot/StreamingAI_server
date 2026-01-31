@@ -142,5 +142,644 @@
     "create_time": 1769870730,
     "update_time": 1769870730,
     "_id": "2:30 PM<SEP>John Smith"
+  },
+  "Dual-Monitor Setup<SEP>SPK_0012": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878979,
+    "update_time": 1769878979,
+    "_id": "Dual-Monitor Setup<SEP>SPK_0012"
+  },
+  "Desk<SEP>SPK_0012": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878979,
+    "update_time": 1769878979,
+    "_id": "Desk<SEP>SPK_0012"
+  },
+  "Dual-Monitor Setup<SEP>SPK_0013": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878979,
+    "update_time": 1769878979,
+    "_id": "Dual-Monitor Setup<SEP>SPK_0013"
+  },
+  "SPK_0015<SEP>White Cat": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878979,
+    "update_time": 1769878979,
+    "_id": "SPK_0015<SEP>White Cat"
+  },
+  "Desk<SEP>SPK_0013": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878980,
+    "update_time": 1769878980,
+    "_id": "Desk<SEP>SPK_0013"
+  },
+  "Dual-Monitor Setup<SEP>SPK_0014": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878980,
+    "update_time": 1769878980,
+    "_id": "Dual-Monitor Setup<SEP>SPK_0014"
+  },
+  "Desk<SEP>SPK_0014": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878980,
+    "update_time": 1769878980,
+    "_id": "Desk<SEP>SPK_0014"
+  },
+  "Dual-Monitor Setup<SEP>SPK_0015": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878980,
+    "update_time": 1769878980,
+    "_id": "Dual-Monitor Setup<SEP>SPK_0015"
+  },
+  "Desk<SEP>SPK_0015": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878980,
+    "update_time": 1769878980,
+    "_id": "Desk<SEP>SPK_0015"
+  },
+  "Dual-Monitor Setup<SEP>SPK_0017": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878980,
+    "update_time": 1769878980,
+    "_id": "Dual-Monitor Setup<SEP>SPK_0017"
+  },
+  "Desk<SEP>SPK_0016": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878980,
+    "update_time": 1769878980,
+    "_id": "Desk<SEP>SPK_0016"
+  },
+  "Dual-Monitor Setup<SEP>SPK_0019": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878980,
+    "update_time": 1769878980,
+    "_id": "Dual-Monitor Setup<SEP>SPK_0019"
+  },
+  "Desk<SEP>TEMP_SPEAKER_01": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878981,
+    "update_time": 1769878981,
+    "_id": "Desk<SEP>TEMP_SPEAKER_01"
+  },
+  "Dual-Monitor Setup<SEP>SPK_0020": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878981,
+    "update_time": 1769878981,
+    "_id": "Dual-Monitor Setup<SEP>SPK_0020"
+  },
+  "Desk<SEP>SPK_0017": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878981,
+    "update_time": 1769878981,
+    "_id": "Desk<SEP>SPK_0017"
+  },
+  "Desk<SEP>SPK_0019": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878981,
+    "update_time": 1769878981,
+    "_id": "Desk<SEP>SPK_0019"
+  },
+  "Desk<SEP>SPK_0020": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878981,
+    "update_time": 1769878981,
+    "_id": "Desk<SEP>SPK_0020"
+  },
+  "Desk<SEP>Model Airplane": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878981,
+    "update_time": 1769878981,
+    "_id": "Desk<SEP>Model Airplane"
+  },
+  "Colorful Circular Object<SEP>Desk": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878981,
+    "update_time": 1769878981,
+    "_id": "Colorful Circular Object<SEP>Desk"
+  },
+  "Desk<SEP>Essential Oil Bottles": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878982,
+    "update_time": 1769878982,
+    "_id": "Desk<SEP>Essential Oil Bottles"
+  },
+  "Curved Monitor<SEP>Dual-Monitor Setup": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878982,
+    "update_time": 1769878982,
+    "_id": "Curved Monitor<SEP>Dual-Monitor Setup"
+  },
+  "Desk<SEP>Hard Drive": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878982,
+    "update_time": 1769878982,
+    "_id": "Desk<SEP>Hard Drive"
+  },
+  "Dual-Monitor Setup<SEP>Flat Monitor": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878982,
+    "update_time": 1769878982,
+    "_id": "Dual-Monitor Setup<SEP>Flat Monitor"
+  },
+  "Desk<SEP>Microphone Arm": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878982,
+    "update_time": 1769878982,
+    "_id": "Desk<SEP>Microphone Arm"
+  },
+  "Dual-Monitor Setup<SEP>macOS Dock": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878982,
+    "update_time": 1769878982,
+    "_id": "Dual-Monitor Setup<SEP>macOS Dock"
+  },
+  "Desk<SEP>White Cat": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878982,
+    "update_time": 1769878982,
+    "_id": "Desk<SEP>White Cat"
+  },
+  "Code Editor<SEP>Dual-Monitor Setup": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878982,
+    "update_time": 1769878982,
+    "_id": "Code Editor<SEP>Dual-Monitor Setup"
+  },
+  "Desk<SEP>White Dog Figurine": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878982,
+    "update_time": 1769878982,
+    "_id": "Desk<SEP>White Dog Figurine"
+  },
+  "Dual-Monitor Setup<SEP>File Manager": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878982,
+    "update_time": 1769878982,
+    "_id": "Dual-Monitor Setup<SEP>File Manager"
+  },
+  "Model Airplane<SEP>SPK_0016": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878982,
+    "update_time": 1769878982,
+    "_id": "Model Airplane<SEP>SPK_0016"
+  },
+  "Circular Digital Device<SEP>Desk": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878983,
+    "update_time": 1769878983,
+    "_id": "Circular Digital Device<SEP>Desk"
+  },
+  "Code/Text Editing<SEP>Dual-Monitor Setup": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878983,
+    "update_time": 1769878983,
+    "_id": "Code/Text Editing<SEP>Dual-Monitor Setup"
+  },
+  "Model Airplane<SEP>TEMP_SPEAKER_01": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878983,
+    "update_time": 1769878983,
+    "_id": "Model Airplane<SEP>TEMP_SPEAKER_01"
+  },
+  "Indoor Office Setting<SEP>Unknown Male": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878983,
+    "update_time": 1769878983,
+    "_id": "Indoor Office Setting<SEP>Unknown Male"
+  },
+  "Desk<SEP>Plain Wall": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878983,
+    "update_time": 1769878983,
+    "_id": "Desk<SEP>Plain Wall"
+  },
+  "Unknown Female<SEP>Window View": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878983,
+    "update_time": 1769878983,
+    "_id": "Unknown Female<SEP>Window View"
+  },
+  "Desk Setup<SEP>SPK_0001": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878983,
+    "update_time": 1769878983,
+    "_id": "Desk Setup<SEP>SPK_0001"
+  },
+  "Circular Green-Patterned Object<SEP>Desk": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878983,
+    "update_time": 1769878983,
+    "_id": "Circular Green-Patterned Object<SEP>Desk"
+  },
+  "Indoor Office Setting<SEP>Unknown Female": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878983,
+    "update_time": 1769878983,
+    "_id": "Indoor Office Setting<SEP>Unknown Female"
+  },
+  "Desk Setup<SEP>SPK_0002": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878983,
+    "update_time": 1769878983,
+    "_id": "Desk Setup<SEP>SPK_0002"
+  },
+  "Circular Artwork<SEP>Desk": {
+    "chunk_ids": [
+      "chunk-4fb7ec00e62a92d73236ccc41d0b8894"
+    ],
+    "count": 1,
+    "create_time": 1769878983,
+    "update_time": 1769878983,
+    "_id": "Circular Artwork<SEP>Desk"
+  },
+  "Desk Setup<SEP>SPK_0003": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878984,
+    "update_time": 1769878984,
+    "_id": "Desk Setup<SEP>SPK_0003"
+  },
+  "Desk Setup<SEP>SPK_0006": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878984,
+    "update_time": 1769878984,
+    "_id": "Desk Setup<SEP>SPK_0006"
+  },
+  "Desk Setup<SEP>SPK_0008": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878984,
+    "update_time": 1769878984,
+    "_id": "Desk Setup<SEP>SPK_0008"
+  },
+  "Desk Setup<SEP>SPK_0009": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878984,
+    "update_time": 1769878984,
+    "_id": "Desk Setup<SEP>SPK_0009"
+  },
+  "Desk Setup<SEP>SPK_0010": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878984,
+    "update_time": 1769878984,
+    "_id": "Desk Setup<SEP>SPK_0010"
+  },
+  "Desk Setup<SEP>SPK_0011": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878984,
+    "update_time": 1769878984,
+    "_id": "Desk Setup<SEP>SPK_0011"
+  },
+  "Desk Setup<SEP>SPK_0012": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878984,
+    "update_time": 1769878984,
+    "_id": "Desk Setup<SEP>SPK_0012"
+  },
+  "Desk Setup<SEP>Indoor Office Setting": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878985,
+    "update_time": 1769878985,
+    "_id": "Desk Setup<SEP>Indoor Office Setting"
+  },
+  "Desk Setup<SEP>Samsung Monitor": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878985,
+    "update_time": 1769878985,
+    "_id": "Desk Setup<SEP>Samsung Monitor"
+  },
+  "Desk Setup<SEP>White Fox Figurine": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878985,
+    "update_time": 1769878985,
+    "_id": "Desk Setup<SEP>White Fox Figurine"
+  },
+  "Air France Model Airplane<SEP>Desk Setup": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878985,
+    "update_time": 1769878985,
+    "_id": "Air France Model Airplane<SEP>Desk Setup"
+  },
+  "Desk Setup<SEP>White Electronic Device With Dial": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878985,
+    "update_time": 1769878985,
+    "_id": "Desk Setup<SEP>White Electronic Device With Dial"
+  },
+  "Desk Setup<SEP>Partial CD Drive": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878985,
+    "update_time": 1769878985,
+    "_id": "Desk Setup<SEP>Partial CD Drive"
+  },
+  "Desk Setup<SEP>Model Airplane": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878985,
+    "update_time": 1769878985,
+    "_id": "Desk Setup<SEP>Model Airplane"
+  },
+  "Circular Map‑Like Object<SEP>Desk Setup": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878986,
+    "update_time": 1769878986,
+    "_id": "Circular Map‑Like Object<SEP>Desk Setup"
+  },
+  "Desk Setup<SEP>Exposed Hard Drive": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878986,
+    "update_time": 1769878986,
+    "_id": "Desk Setup<SEP>Exposed Hard Drive"
+  },
+  "Desk Setup<SEP>Microphone Arm": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878986,
+    "update_time": 1769878986,
+    "_id": "Desk Setup<SEP>Microphone Arm"
+  },
+  "Data Table<SEP>Samsung Monitor": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878986,
+    "update_time": 1769878986,
+    "_id": "Data Table<SEP>Samsung Monitor"
+  },
+  "Desk Setup<SEP>Dual Monitors": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878986,
+    "update_time": 1769878986,
+    "_id": "Desk Setup<SEP>Dual Monitors"
+  },
+  "List Interface<SEP>Samsung Monitor": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878986,
+    "update_time": 1769878986,
+    "_id": "List Interface<SEP>Samsung Monitor"
+  },
+  "Curved Monitor<SEP>Desk Setup": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878986,
+    "update_time": 1769878986,
+    "_id": "Curved Monitor<SEP>Desk Setup"
+  },
+  "Code Document<SEP>Dual Monitors": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878986,
+    "update_time": 1769878986,
+    "_id": "Code Document<SEP>Dual Monitors"
+  },
+  "Samsung Monitor<SEP>Spreadsheet/Chat": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878986,
+    "update_time": 1769878986,
+    "_id": "Samsung Monitor<SEP>Spreadsheet/Chat"
+  },
+  "Desk Setup<SEP>Small Bottles": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878986,
+    "update_time": 1769878986,
+    "_id": "Desk Setup<SEP>Small Bottles"
+  },
+  "Code Document<SEP>Curved Monitor": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878987,
+    "update_time": 1769878987,
+    "_id": "Code Document<SEP>Curved Monitor"
+  },
+  "Desk Setup<SEP>Patterned Container": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878987,
+    "update_time": 1769878987,
+    "_id": "Desk Setup<SEP>Patterned Container"
+  },
+  "Colorful Circular Object<SEP>Desk Setup": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878987,
+    "update_time": 1769878987,
+    "_id": "Colorful Circular Object<SEP>Desk Setup"
+  },
+  "Cables<SEP>Desk Setup": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878987,
+    "update_time": 1769878987,
+    "_id": "Cables<SEP>Desk Setup"
+  },
+  "Desk Setup<SEP>Wall": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878987,
+    "update_time": 1769878987,
+    "_id": "Desk Setup<SEP>Wall"
+  },
+  "Desk Setup<SEP>Planet‑Like Decorative Object": {
+    "chunk_ids": [
+      "chunk-f04e4aded1a6f7de143f260b063f4a38"
+    ],
+    "count": 1,
+    "create_time": 1769878987,
+    "update_time": 1769878987,
+    "_id": "Desk Setup<SEP>Planet‑Like Decorative Object"
   }
 }

@@ -32,9 +32,9 @@ LANCEDB_PATH = LLM_DIR / "memory_db"
 LIGHTRAG_WORKING_DIR = LLM_DIR / "lightrag_data"
 
 # LanceDB Configuration
-MAX_SHORT_TERM_ITEMS = int(os.getenv("MEMORY_MAX_ITEMS", "100"))  # Max items before rotation
+MAX_SHORT_TERM_ITEMS = int(os.getenv("MEMORY_MAX_ITEMS", "2000"))  # Max items before rotation
 SHORT_TERM_TTL_HOURS = int(os.getenv("MEMORY_TTL_HOURS", "24"))   # Hours before rotation
-ROTATION_BATCH_SIZE = int(os.getenv("MEMORY_ROTATION_BATCH", "20"))  # Items to rotate at once
+ROTATION_BATCH_SIZE = int(os.getenv("MEMORY_ROTATION_BATCH", "50"))  # Items to rotate at once
 
 # LightRAG Configuration
 LIGHTRAG_URL = os.getenv("LIGHTRAG_URL", "http://localhost:9621")
@@ -131,7 +131,7 @@ class EmbeddingService:
         try:
             response = requests.post(
                 f"{self.ollama_url}/api/embeddings",
-                json={"model": self.model, "prompt": text},
+                json={"model": self.model, "prompt": text, "keep_alive": -1},
                 timeout=30
             )
             response.raise_for_status()

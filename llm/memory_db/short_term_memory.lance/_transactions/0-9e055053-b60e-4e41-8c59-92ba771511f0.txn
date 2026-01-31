@@ -1,6 +1,0 @@
-$9e055053-b60e-4e41-8c59-92ba771511f0²‡id ÿÿÿÿÿÿÿÿÿ*string08$	timestamp ÿÿÿÿÿÿÿÿÿ*double08%
-entry_type ÿÿÿÿÿÿÿÿÿ*string08$	clip_path ÿÿÿÿÿÿÿÿÿ*string08(transcription ÿÿÿÿÿÿÿÿÿ*string08 scene ÿÿÿÿÿÿÿÿÿ*string08!speech ÿÿÿÿÿÿÿÿÿ*string08"summary ÿÿÿÿÿÿÿÿÿ*string08'llm_response ÿÿÿÿÿÿÿÿÿ*string08#speakers	 ÿÿÿÿÿÿÿÿÿ*string08#duration
- ÿÿÿÿÿÿÿÿÿ*double08 model ÿÿÿÿÿÿÿÿÿ*string088	embedding ÿÿÿÿÿÿÿÿÿ*fixed_size_list:float:102408 rotated ÿÿÿÿÿÿÿÿÿ*bool08%
-rotated_at ÿÿÿÿÿÿÿÿÿ*double08"!
-lance.auto_cleanup.interval20"'
-lance.auto_cleanup.older_than14days
