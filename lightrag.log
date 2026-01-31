@@ -1,0 +1,265 @@
+2026-01-31 14:29:10,355 - lightrag - INFO - Ollama LLM Options: {'num_ctx': 8192}
+2026-01-31 14:29:10,355 - lightrag - INFO - Ollama Embedding Options: {}
+2026-01-31 14:29:10,397 - lightrag - WARNING - Could not import provider function for ollama: No module named 'ollama'
+2026-01-31 14:29:10,397 - lightrag - INFO - Embedding config: binding=ollama model=qwen3-embedding:0.6b embedding_dim=1024 max_token_size=None
+2026-01-31 14:29:10,398 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1024, has_param=True, binding=ollama)
+2026-01-31 14:29:10,398 - lightrag - INFO - Embedding max_token_size: None (Embedding token limit is disabled).
+2026-01-31 14:29:10,398 - lightrag - INFO - Reranking is disabled
+2026-01-31 14:29:10,436 - lightrag - ERROR - Failed to initialize LightRAG: Failed to import ollama LLM binding: No module named 'ollama'
+2026-01-31 14:29:56,437 - lightrag - INFO - Ollama LLM Options: {'num_ctx': 8192}
+2026-01-31 14:29:56,437 - lightrag - INFO - Ollama Embedding Options: {}
+2026-01-31 14:29:56,725 - lightrag - INFO - Embedding config: binding=ollama model=qwen3-embedding:0.6b embedding_dim=1024 max_token_size=8192
+2026-01-31 14:29:56,725 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1024, has_param=True, binding=ollama)
+2026-01-31 14:29:56,726 - lightrag - INFO - Embedding max_token_size: 8192 (from ollama provider default)
+2026-01-31 14:29:56,726 - lightrag - INFO - Reranking is disabled
+2026-01-31 14:29:59,199 - lightrag - INFO - [] Created new empty graph file: /home/ling/main/llm/lightrag_data/graph_chunk_entity_relation.graphml
+2026-01-31 14:29:59,550 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-31 14:29:59,627 - uvicorn.error - INFO - Started server process [2510361]
+2026-01-31 14:29:59,627 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-31 14:29:59,628 - lightrag - INFO - [] Process 2510361 KV load full_docs with 0 records
+2026-01-31 14:29:59,628 - lightrag - INFO - [] Process 2510361 KV load text_chunks with 0 records
+2026-01-31 14:29:59,629 - lightrag - INFO - [] Process 2510361 KV load full_entities with 0 records
+2026-01-31 14:29:59,630 - lightrag - INFO - [] Process 2510361 KV load full_relations with 0 records
+2026-01-31 14:29:59,631 - lightrag - INFO - [] Process 2510361 KV load entity_chunks with 0 records
+2026-01-31 14:29:59,631 - lightrag - INFO - [] Process 2510361 KV load relation_chunks with 0 records
+2026-01-31 14:29:59,632 - lightrag - INFO - [] Process 2510361 KV load llm_response_cache with 0 records
+2026-01-31 14:29:59,632 - lightrag - INFO - [] Process 2510361 doc status load doc_status with 0 records
+2026-01-31 14:29:59,633 - uvicorn.error - INFO - Application startup complete.
+2026-01-31 14:29:59,633 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-31 14:30:47,172 - uvicorn.error - INFO - Shutting down
+2026-01-31 14:30:47,273 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-01-31 14:30:47,274 - lightrag - INFO - Successfully finalized 12 storages
+2026-01-31 14:30:47,274 - uvicorn.error - INFO - Application shutdown complete.
+2026-01-31 14:30:47,274 - uvicorn.error - INFO - Finished server process [2510361]
+2026-01-31 14:31:57,051 - lightrag - INFO - Ollama LLM Options: {'num_ctx': 8192}
+2026-01-31 14:31:57,051 - lightrag - INFO - Ollama Embedding Options: {}
+2026-01-31 14:31:57,246 - lightrag - INFO - Embedding config: binding=ollama model=qwen3-embedding:0.6b embedding_dim=1024 max_token_size=8192
+2026-01-31 14:31:57,246 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1024, has_param=True, binding=ollama)
+2026-01-31 14:31:57,246 - lightrag - INFO - Embedding max_token_size: 8192 (from ollama provider default)
+2026-01-31 14:31:57,247 - lightrag - INFO - Reranking is disabled
+2026-01-31 14:31:57,962 - lightrag - INFO - [] Created new empty graph file: /home/ling/main/llm/lightrag_data/graph_chunk_entity_relation.graphml
+2026-01-31 14:31:58,238 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-31 14:31:58,261 - uvicorn.error - INFO - Started server process [2511173]
+2026-01-31 14:31:58,261 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-31 14:31:58,263 - lightrag - INFO - [] Process 2511173 KV load full_docs with 0 records
+2026-01-31 14:31:58,263 - lightrag - INFO - [] Process 2511173 KV load text_chunks with 0 records
+2026-01-31 14:31:58,264 - lightrag - INFO - [] Process 2511173 KV load full_entities with 0 records
+2026-01-31 14:31:58,264 - lightrag - INFO - [] Process 2511173 KV load full_relations with 0 records
+2026-01-31 14:31:58,265 - lightrag - INFO - [] Process 2511173 KV load entity_chunks with 0 records
+2026-01-31 14:31:58,265 - lightrag - INFO - [] Process 2511173 KV load relation_chunks with 0 records
+2026-01-31 14:31:58,266 - lightrag - INFO - [] Process 2511173 KV load llm_response_cache with 0 records
+2026-01-31 14:31:58,266 - lightrag - INFO - [] Process 2511173 doc status load doc_status with 0 records
+2026-01-31 14:31:58,267 - uvicorn.error - INFO - Application startup complete.
+2026-01-31 14:31:58,267 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-31 14:32:10,477 - uvicorn.error - INFO - Shutting down
+2026-01-31 14:32:10,578 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-01-31 14:32:10,579 - lightrag - INFO - Successfully finalized 12 storages
+2026-01-31 14:32:10,579 - uvicorn.error - INFO - Application shutdown complete.
+2026-01-31 14:32:10,579 - uvicorn.error - INFO - Finished server process [2511173]
+2026-01-31 14:33:22,742 - lightrag - INFO - Ollama LLM Options: {'num_ctx': 8192}
+2026-01-31 14:33:22,743 - lightrag - INFO - Ollama Embedding Options: {}
+2026-01-31 14:33:22,935 - lightrag - INFO - Embedding config: binding=ollama model=qwen3-embedding:0.6b embedding_dim=1024 max_token_size=8192
+2026-01-31 14:33:22,936 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1024, has_param=True, binding=ollama)
+2026-01-31 14:33:22,936 - lightrag - INFO - Embedding max_token_size: 8192 (from ollama provider default)
+2026-01-31 14:33:22,936 - lightrag - INFO - Reranking is disabled
+2026-01-31 14:33:23,651 - lightrag - INFO - [] Created new empty graph file: /home/ling/main/llm/lightrag_data/graph_chunk_entity_relation.graphml
+2026-01-31 14:33:23,921 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-31 14:33:23,944 - uvicorn.error - INFO - Started server process [2511483]
+2026-01-31 14:33:23,944 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-31 14:33:23,945 - lightrag - INFO - [] Process 2511483 KV load full_docs with 0 records
+2026-01-31 14:33:23,946 - lightrag - INFO - [] Process 2511483 KV load text_chunks with 0 records
+2026-01-31 14:33:23,946 - lightrag - INFO - [] Process 2511483 KV load full_entities with 0 records
+2026-01-31 14:33:23,947 - lightrag - INFO - [] Process 2511483 KV load full_relations with 0 records
+2026-01-31 14:33:23,947 - lightrag - INFO - [] Process 2511483 KV load entity_chunks with 0 records
+2026-01-31 14:33:23,948 - lightrag - INFO - [] Process 2511483 KV load relation_chunks with 0 records
+2026-01-31 14:33:23,948 - lightrag - INFO - [] Process 2511483 KV load llm_response_cache with 0 records
+2026-01-31 14:33:23,949 - lightrag - INFO - [] Process 2511483 doc status load doc_status with 0 records
+2026-01-31 14:33:23,949 - uvicorn.error - INFO - Application startup complete.
+2026-01-31 14:33:23,950 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-31 14:34:01,543 - uvicorn.access - INFO - 127.0.0.1:59498 - "POST /insert HTTP/1.1" 404
+2026-01-31 14:34:01,733 - lightrag - INFO - LLM func: 4 new workers initialized (Timeouts: Func: 180s, Worker: 360s, Health Check: 375s)
+2026-01-31 14:34:15,491 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 14:34:15,491 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 14:34:15,491 - lightrag - WARNING - Forced low_level_keywords to origin query: Who was in the kitchen?
+2026-01-31 14:34:15,492 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-01-31 14:34:15,681 - lightrag - INFO - Query nodes: Who was in the kitchen? (top_k:40, cosine:0.2)
+2026-01-31 14:34:15,821 - lightrag - INFO - Raw search results: 0 entities, 0 relations, 0 vector chunks
+2026-01-31 14:34:15,822 - lightrag - INFO - [kg_query] No query context could be built; returning no-result.
+2026-01-31 14:34:15,822 - uvicorn.access - INFO - 127.0.0.1:59514 - "POST /query HTTP/1.1" 200
+2026-01-31 14:34:24,050 - uvicorn.access - INFO - 127.0.0.1:49946 - "GET /docs HTTP/1.1" 200
+2026-01-31 14:34:28,988 - uvicorn.access - INFO - 127.0.0.1:41314 - "GET /openapi.json HTTP/1.1" 200
+2026-01-31 14:34:34,460 - uvicorn.access - INFO - 127.0.0.1:41316 - "GET /openapi.json HTTP/1.1" 200
+2026-01-31 14:34:55,410 - uvicorn.access - INFO - 127.0.0.1:44006 - "POST /documents/text HTTP/1.1" 200
+2026-01-31 14:34:55,414 - lightrag - INFO - Processing 1 document(s)
+2026-01-31 14:34:55,414 - lightrag - INFO - Extracting stage 1/1: None
+2026-01-31 14:34:55,415 - lightrag - INFO - Processing d-id: doc-90f3289c39b6e849369d6ec88f58687d
+2026-01-31 14:36:20,419 - lightrag - INFO -  == LLM cache == saving: default:extract:81a310b40feb77586e5e62809a872899
+2026-01-31 14:37:40,447 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 14:37:40,447 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 14:37:40,448 - lightrag - WARNING - Forced low_level_keywords to origin query: Who was in the kitchen?
+2026-01-31 14:37:40,618 - lightrag - INFO - Query nodes: Who was in the kitchen? (top_k:40, cosine:0.2)
+2026-01-31 14:37:40,799 - lightrag - INFO - Raw search results: 0 entities, 0 relations, 0 vector chunks
+2026-01-31 14:37:40,800 - lightrag - INFO - [kg_query] No query context could be built; returning no-result.
+2026-01-31 14:38:39,318 - lightrag - INFO -  == LLM cache == saving: default:extract:99fa1b920b3019d3ccbd47be4a2a1c8c
+2026-01-31 14:38:39,318 - lightrag - INFO - Chunk 1 of 1 extracted 2 Ent + 1 Rel chunk-90f3289c39b6e849369d6ec88f58687d
+2026-01-31 14:38:39,319 - lightrag - INFO - Merging stage 1/1: None
+2026-01-31 14:38:39,320 - lightrag - INFO - Phase 1: Processing 2 entities from doc-90f3289c39b6e849369d6ec88f58687d (async: 8)
+2026-01-31 14:38:39,629 - lightrag - INFO - Phase 2: Processing 1 relations from doc-90f3289c39b6e849369d6ec88f58687d (async: 8)
+2026-01-31 14:38:39,802 - lightrag - INFO - Phase 3: Updating final 2(2+0) entities and  1 relations from doc-90f3289c39b6e849369d6ec88f58687d
+2026-01-31 14:38:39,803 - lightrag - INFO - Completed merging: 2 entities, 0 extra entities, 1 relations
+2026-01-31 14:38:39,810 - lightrag - INFO - [] Writing graph with 2 nodes, 1 edges
+2026-01-31 14:38:39,826 - lightrag - INFO - In memory DB persist to disk
+2026-01-31 14:38:39,826 - lightrag - INFO - Completed processing file 1/1: None
+2026-01-31 14:38:39,827 - lightrag - INFO - Enqueued document processing pipeline stopped
+2026-01-31 14:38:44,935 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 14:38:44,935 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 14:38:44,936 - lightrag - WARNING - Forced low_level_keywords to origin query: Who was in the kitchen?
+2026-01-31 14:38:45,114 - lightrag - INFO - Query nodes: Who was in the kitchen? (top_k:40, cosine:0.2)
+2026-01-31 14:38:45,260 - lightrag - INFO - Local query: 2 entites, 1 relations
+2026-01-31 14:38:45,260 - lightrag - INFO - Raw search results: 2 entities, 1 relations, 0 vector chunks
+2026-01-31 14:38:45,261 - lightrag - INFO - After truncation: 2 entities, 1 relations
+2026-01-31 14:38:45,261 - lightrag - INFO - Selecting 1 from 1 entity-related chunks by vector similarity
+2026-01-31 14:38:45,262 - lightrag - INFO - Find no additional relations-related chunks from 1 relations
+2026-01-31 14:38:45,262 - lightrag - INFO - Round-robin merged chunks: 1 -> 1 (deduplicated 0)
+2026-01-31 14:38:45,264 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 14:38:45,264 - lightrag - INFO - Final context: 2 entities, 1 relations, 1 chunks
+2026-01-31 14:38:45,264 - lightrag - INFO - Final chunks S+F/O: E2/1
+2026-01-31 14:39:53,171 - lightrag - ERROR - LLM func: Error in decorated function for task 139984964714560_1181262.55768512: 
+2026-01-31 14:39:53,172 - lightrag - ERROR - Query failed: 
+2026-01-31 14:41:14,016 - uvicorn.error - INFO - Shutting down
+2026-01-31 14:41:14,117 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-01-31 14:41:14,118 - lightrag - INFO - Successfully finalized 12 storages
+2026-01-31 14:41:14,118 - uvicorn.error - INFO - Application shutdown complete.
+2026-01-31 14:41:14,119 - uvicorn.error - INFO - Finished server process [2511483]
+2026-01-31 14:42:50,740 - lightrag - INFO - Ollama LLM Options: {'num_ctx': 65536}
+2026-01-31 14:42:50,740 - lightrag - INFO - Ollama Embedding Options: {}
+2026-01-31 14:42:50,929 - lightrag - INFO - Embedding config: binding=ollama model=qwen3-embedding:0.6b embedding_dim=1024 max_token_size=8192
+2026-01-31 14:42:50,930 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1024, has_param=True, binding=ollama)
+2026-01-31 14:42:50,930 - lightrag - INFO - Embedding max_token_size: 8192 (from ollama provider default)
+2026-01-31 14:42:50,930 - lightrag - INFO - Reranking is disabled
+2026-01-31 14:42:51,641 - lightrag - INFO - [] Loaded graph from /home/ling/main/llm/lightrag_data/graph_chunk_entity_relation.graphml with 2 nodes, 1 edges
+2026-01-31 14:42:51,915 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-31 14:42:51,939 - uvicorn.error - INFO - Started server process [2513839]
+2026-01-31 14:42:51,939 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-31 14:42:51,947 - lightrag - INFO - [] Process 2513839 KV load full_docs with 1 records
+2026-01-31 14:42:51,948 - lightrag - INFO - [] Process 2513839 KV load text_chunks with 1 records
+2026-01-31 14:42:51,948 - lightrag - INFO - [] Process 2513839 KV load full_entities with 1 records
+2026-01-31 14:42:51,949 - lightrag - INFO - [] Process 2513839 KV load full_relations with 1 records
+2026-01-31 14:42:51,950 - lightrag - INFO - [] Process 2513839 KV load entity_chunks with 2 records
+2026-01-31 14:42:51,950 - lightrag - INFO - [] Process 2513839 KV load relation_chunks with 1 records
+2026-01-31 14:42:51,951 - lightrag - INFO - [] Process 2513839 KV load llm_response_cache with 2 records
+2026-01-31 14:42:51,951 - lightrag - INFO - [] Process 2513839 doc status load doc_status with 1 records
+2026-01-31 14:42:51,953 - uvicorn.error - INFO - Application startup complete.
+2026-01-31 14:42:51,953 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-31 14:43:30,923 - uvicorn.access - INFO - 127.0.0.1:36150 - "POST /documents/text HTTP/1.1" 200
+2026-01-31 14:43:30,926 - lightrag - INFO - Processing 1 document(s)
+2026-01-31 14:43:30,926 - lightrag - INFO - Extracting stage 1/1: None
+2026-01-31 14:43:30,926 - lightrag - INFO - Processing d-id: doc-43efde6574fed7ab9dc475b04f942e5e
+2026-01-31 14:43:30,939 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-01-31 14:43:31,211 - lightrag - INFO - LLM func: 4 new workers initialized (Timeouts: Func: 180s, Worker: 360s, Health Check: 375s)
+2026-01-31 14:43:52,700 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 14:43:52,700 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 14:43:52,700 - lightrag - WARNING - Forced low_level_keywords to origin query: Who was in the kitchen?
+2026-01-31 14:43:52,905 - lightrag - INFO - Query nodes: Who was in the kitchen? (top_k:40, cosine:0.2)
+2026-01-31 14:43:53,104 - lightrag - INFO - Local query: 2 entites, 1 relations
+2026-01-31 14:43:53,104 - lightrag - INFO - Raw search results: 2 entities, 1 relations, 0 vector chunks
+2026-01-31 14:43:53,105 - lightrag - INFO - After truncation: 2 entities, 1 relations
+2026-01-31 14:43:53,106 - lightrag - INFO - Selecting 1 from 1 entity-related chunks by vector similarity
+2026-01-31 14:43:53,106 - lightrag - INFO - Find no additional relations-related chunks from 1 relations
+2026-01-31 14:43:53,107 - lightrag - INFO - Round-robin merged chunks: 1 -> 1 (deduplicated 0)
+2026-01-31 14:43:53,118 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 14:43:53,118 - lightrag - INFO - Final context: 2 entities, 1 relations, 1 chunks
+2026-01-31 14:43:53,118 - lightrag - INFO - Final chunks S+F/O: E2/1
+2026-01-31 14:44:49,405 - lightrag - INFO -  == LLM cache == saving: default:extract:99c7a9ce40c14596067df05d644e17a0
+2026-01-31 14:44:57,618 - lightrag - INFO -  == LLM cache == saving: hybrid:query:6008d6977a369867d0a0cd3c9dff2f80
+2026-01-31 14:45:27,854 - lightrag - INFO -  == LLM cache == saving: default:extract:311dab4decf3ebb353171d12728a87a3
+2026-01-31 14:45:27,856 - lightrag - INFO - Chunk 1 of 1 extracted 13 Ent + 15 Rel chunk-43efde6574fed7ab9dc475b04f942e5e
+2026-01-31 14:45:27,857 - lightrag - INFO - Merging stage 1/1: None
+2026-01-31 14:45:27,858 - lightrag - INFO - Phase 1: Processing 13 entities from doc-43efde6574fed7ab9dc475b04f942e5e (async: 8)
+2026-01-31 14:45:27,862 - lightrag - INFO - Merged: `Kitchen` | 1+1
+2026-01-31 14:45:28,887 - lightrag - INFO - Phase 2: Processing 15 relations from doc-43efde6574fed7ab9dc475b04f942e5e (async: 8)
+2026-01-31 14:45:30,396 - lightrag - INFO - Phase 3: Updating final 13(13+0) entities and  15 relations from doc-43efde6574fed7ab9dc475b04f942e5e
+2026-01-31 14:45:30,397 - lightrag - INFO - Completed merging: 13 entities, 0 extra entities, 15 relations
+2026-01-31 14:45:30,410 - lightrag - INFO - [] Writing graph with 14 nodes, 16 edges
+2026-01-31 14:45:30,447 - lightrag - INFO - In memory DB persist to disk
+2026-01-31 14:45:30,447 - lightrag - INFO - Completed processing file 1/1: None
+2026-01-31 14:45:30,448 - lightrag - INFO - Enqueued document processing pipeline stopped
+2026-01-31 14:56:01,477 - lightrag - INFO -  == LLM cache == saving: hybrid:keywords:9b0884bd063a00758ba05bae8d94a8ac
+2026-01-31 14:56:01,642 - lightrag - INFO - Query nodes: white t-shirt, kitchen, hands behind back, SPK_0002, 몰라울라울라 (top_k:40, cosine:0.2)
+2026-01-31 14:56:01,802 - lightrag - INFO - Local query: 14 entites, 16 relations
+2026-01-31 14:56:01,802 - lightrag - INFO - Query edges: visual scene description, Korean phrase spoken, speaker posture, speech tone ambiguity (top_k:40, cosine:0.2)
+2026-01-31 14:56:01,960 - lightrag - INFO - Global query: 14 entites, 15 relations
+2026-01-31 14:56:01,960 - lightrag - INFO - Raw search results: 14 entities, 16 relations, 0 vector chunks
+2026-01-31 14:56:01,962 - lightrag - INFO - After truncation: 14 entities, 16 relations
+2026-01-31 14:56:01,963 - lightrag - INFO - Selecting 2 from 2 entity-related chunks by vector similarity
+2026-01-31 14:56:01,964 - lightrag - INFO - Find no additional relations-related chunks from 16 relations
+2026-01-31 14:56:01,964 - lightrag - INFO - Round-robin merged chunks: 2 -> 2 (deduplicated 0)
+2026-01-31 14:56:01,966 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 14:56:01,967 - lightrag - INFO - Final context: 14 entities, 16 relations, 2 chunks
+2026-01-31 14:56:01,967 - lightrag - INFO - Final chunks S+F/O: E2/1 E13/2
+2026-01-31 14:56:01,970 - uvicorn.access - INFO - 127.0.0.1:51318 - "POST /query HTTP/1.1" 200
+2026-01-31 14:57:39,449 - lightrag - INFO - Query nodes: white t-shirt, kitchen, hands behind back, SPK_0002, 몰라울라울라 (top_k:40, cosine:0.2)
+2026-01-31 14:57:39,598 - lightrag - INFO - Local query: 14 entites, 16 relations
+2026-01-31 14:57:39,598 - lightrag - INFO - Query edges: visual scene description, Korean phrase spoken, speaker posture, speech tone ambiguity (top_k:40, cosine:0.2)
+2026-01-31 14:57:39,753 - lightrag - INFO - Global query: 14 entites, 15 relations
+2026-01-31 14:57:39,753 - lightrag - INFO - Raw search results: 14 entities, 16 relations, 0 vector chunks
+2026-01-31 14:57:39,755 - lightrag - INFO - After truncation: 14 entities, 16 relations
+2026-01-31 14:57:39,756 - lightrag - INFO - Selecting 2 from 2 entity-related chunks by vector similarity
+2026-01-31 14:57:39,757 - lightrag - INFO - Find no additional relations-related chunks from 16 relations
+2026-01-31 14:57:39,757 - lightrag - INFO - Round-robin merged chunks: 2 -> 2 (deduplicated 0)
+2026-01-31 14:57:39,759 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 14:57:39,760 - lightrag - INFO - Final context: 14 entities, 16 relations, 2 chunks
+2026-01-31 14:57:39,760 - lightrag - INFO - Final chunks S+F/O: E2/1 E13/2
+2026-01-31 14:57:39,761 - uvicorn.access - INFO - 127.0.0.1:58026 - "POST /query HTTP/1.1" 200
+2026-01-31 14:58:16,667 - lightrag - INFO - Query nodes: white t-shirt, kitchen, hands behind back, SPK_0002, 몰라울라울라 (top_k:40, cosine:0.2)
+2026-01-31 14:58:16,836 - lightrag - INFO - Local query: 14 entites, 16 relations
+2026-01-31 14:58:16,836 - lightrag - INFO - Query edges: visual scene description, Korean phrase spoken, speaker posture, speech tone ambiguity (top_k:40, cosine:0.2)
+2026-01-31 14:58:16,993 - lightrag - INFO - Global query: 14 entites, 15 relations
+2026-01-31 14:58:16,993 - lightrag - INFO - Raw search results: 14 entities, 16 relations, 0 vector chunks
+2026-01-31 14:58:16,995 - lightrag - INFO - After truncation: 14 entities, 16 relations
+2026-01-31 14:58:16,996 - lightrag - INFO - Selecting 2 from 2 entity-related chunks by vector similarity
+2026-01-31 14:58:16,997 - lightrag - INFO - Find no additional relations-related chunks from 16 relations
+2026-01-31 14:58:16,997 - lightrag - INFO - Round-robin merged chunks: 2 -> 2 (deduplicated 0)
+2026-01-31 14:58:16,999 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 14:58:17,000 - lightrag - INFO - Final context: 14 entities, 16 relations, 2 chunks
+2026-01-31 14:58:17,000 - lightrag - INFO - Final chunks S+F/O: E2/1 E13/2
+2026-01-31 14:58:17,001 - uvicorn.access - INFO - 127.0.0.1:35062 - "POST /query HTTP/1.1" 200
+2026-01-31 14:58:59,893 - lightrag - INFO - Query nodes: white t-shirt, kitchen, hands behind back, SPK_0002, 몰라울라울라 (top_k:40, cosine:0.2)
+2026-01-31 14:59:00,062 - lightrag - INFO - Local query: 14 entites, 16 relations
+2026-01-31 14:59:00,062 - lightrag - INFO - Query edges: visual scene description, Korean phrase spoken, speaker posture, speech tone ambiguity (top_k:40, cosine:0.2)
+2026-01-31 14:59:00,225 - lightrag - INFO - Global query: 14 entites, 15 relations
+2026-01-31 14:59:00,225 - lightrag - INFO - Raw search results: 14 entities, 16 relations, 0 vector chunks
+2026-01-31 14:59:00,227 - lightrag - INFO - After truncation: 14 entities, 16 relations
+2026-01-31 14:59:00,228 - lightrag - INFO - Selecting 2 from 2 entity-related chunks by vector similarity
+2026-01-31 14:59:00,229 - lightrag - INFO - Find no additional relations-related chunks from 16 relations
+2026-01-31 14:59:00,229 - lightrag - INFO - Round-robin merged chunks: 2 -> 2 (deduplicated 0)
+2026-01-31 14:59:00,232 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 14:59:00,232 - lightrag - INFO - Final context: 14 entities, 16 relations, 2 chunks
+2026-01-31 14:59:00,233 - lightrag - INFO - Final chunks S+F/O: E2/1 E13/2
+2026-01-31 14:59:00,233 - uvicorn.access - INFO - 127.0.0.1:35530 - "POST /query HTTP/1.1" 200
+2026-01-31 15:02:38,303 - lightrag - INFO - Query nodes: white t-shirt, kitchen, hands behind back, SPK_0002, 몰라울라울라 (top_k:40, cosine:0.2)
+2026-01-31 15:02:38,483 - lightrag - INFO - Local query: 14 entites, 16 relations
+2026-01-31 15:02:38,483 - lightrag - INFO - Query edges: visual scene description, Korean phrase spoken, speaker posture, speech tone ambiguity (top_k:40, cosine:0.2)
+2026-01-31 15:02:38,633 - lightrag - INFO - Global query: 14 entites, 15 relations
+2026-01-31 15:02:38,633 - lightrag - INFO - Raw search results: 14 entities, 16 relations, 0 vector chunks
+2026-01-31 15:02:38,636 - lightrag - INFO - After truncation: 14 entities, 16 relations
+2026-01-31 15:02:38,637 - lightrag - INFO - Selecting 2 from 2 entity-related chunks by vector similarity
+2026-01-31 15:02:38,637 - lightrag - INFO - Find no additional relations-related chunks from 16 relations
+2026-01-31 15:02:38,637 - lightrag - INFO - Round-robin merged chunks: 2 -> 2 (deduplicated 0)
+2026-01-31 15:02:38,640 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 15:02:38,640 - lightrag - INFO - Final context: 14 entities, 16 relations, 2 chunks
+2026-01-31 15:02:38,641 - lightrag - INFO - Final chunks S+F/O: E2/1 E13/2
+2026-01-31 15:02:38,641 - uvicorn.access - INFO - 127.0.0.1:42092 - "POST /query HTTP/1.1" 200
+2026-01-31 15:03:05,556 - lightrag - INFO - Query nodes: white t-shirt, kitchen, hands behind back, SPK_0002, 몰라울라울라 (top_k:40, cosine:0.2)
+2026-01-31 15:03:05,724 - lightrag - INFO - Local query: 14 entites, 16 relations
+2026-01-31 15:03:05,724 - lightrag - INFO - Query edges: visual scene description, Korean phrase spoken, speaker posture, speech tone ambiguity (top_k:40, cosine:0.2)
+2026-01-31 15:03:05,882 - lightrag - INFO - Global query: 14 entites, 15 relations
+2026-01-31 15:03:05,882 - lightrag - INFO - Raw search results: 14 entities, 16 relations, 0 vector chunks
+2026-01-31 15:03:05,884 - lightrag - INFO - After truncation: 14 entities, 16 relations
+2026-01-31 15:03:05,885 - lightrag - INFO - Selecting 2 from 2 entity-related chunks by vector similarity
+2026-01-31 15:03:05,886 - lightrag - INFO - Find no additional relations-related chunks from 16 relations
+2026-01-31 15:03:05,886 - lightrag - INFO - Round-robin merged chunks: 2 -> 2 (deduplicated 0)
+2026-01-31 15:03:05,888 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 15:03:05,889 - lightrag - INFO - Final context: 14 entities, 16 relations, 2 chunks
+2026-01-31 15:03:05,889 - lightrag - INFO - Final chunks S+F/O: E2/1 E13/2
+2026-01-31 15:03:05,890 - uvicorn.access - INFO - 127.0.0.1:38400 - "POST /query HTTP/1.1" 200

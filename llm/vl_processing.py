@@ -31,6 +31,14 @@ from typing import Any, Dict, List, Optional
 
 import requests
 
+# Import memory module for LanceDB storage
+try:
+    from memory import get_memory, MemoryManager
+    MEMORY_AVAILABLE = True
+except ImportError:
+    MEMORY_AVAILABLE = False
+    print("[WARN] Memory module not available, skipping LanceDB storage")
+
 # Paths
 BASE_DIR = Path(__file__).resolve().parent.parent
 STREAMING_DIR = BASE_DIR / "streaming"
@@ -404,15 +412,30 @@ def process_clip_with_vl(clip: ClipData, verbose: bool = True) -> Optional[VLRes
                 pass
 
 
-def process_new_clips(verbose: bool = True) -> int:
+def process_new_clips(verbose: bool = True, use_memory: bool = True) -> int:
     """
     Process all unprocessed clips from data.json.
+    
+    Args:
+        verbose: Whether to print progress
+        use_memory: Whether to save to LanceDB memory
     
     Returns:
         Number of clips processed
     """
     # Load existing processed results
     processed = load_vl_processed()
+    
+    # Get memory manager if available
+    memory = None
+    if use_memory and MEMORY_AVAILABLE:
+        try:
+            memory = get_memory()
+            if verbose:
+                print(f"[VL] Memory system enabled (LanceDB)")
+        except Exception as e:
+            if verbose:
+                print(f"[WARN] Memory system unavailable: {e}")
     
     # Get all clips
     clips = get_clips()
@@ -431,6 +454,25 @@ def process_new_clips(verbose: bool = True) -> int:
         if result:
             processed[clip_id] = result
             save_vl_processed(processed)
+            
+            # Save to memory (LanceDB)
+            if memory:
+                try:
+                    memory.add_vl_result(
+                        clip_path=result.clip_path,
+                        transcription=result.transcription,
+                        scene=result.scene,
+                        speech=result.speech,
+                        summary=result.summary,
+                        speakers=result.speakers,
+                        duration=result.duration,
+                        model=result.model,
+                        timestamp=result.start_ts,
+                    )
+                except Exception as e:
+                    if verbose:
+                        print(f"[WARN] Failed to save to memory: {e}")
+            
             new_count += 1
             if verbose:
                 print(f"[VL] Saved result for: {clip_id}")
@@ -438,17 +480,29 @@ def process_new_clips(verbose: bool = True) -> int:
     return new_count
 
 
-def continuous_process(interval: float = 2.0, verbose: bool = True) -> None:
+def continuous_process(interval: float = 2.0, verbose: bool = True, use_memory: bool = True) -> None:
     """
     Continuously watch for and process new clips.
     
     Args:
         interval: Polling interval in seconds
         verbose: Whether to print progress
+        use_memory: Whether to save to LanceDB memory
     """
     print(f"[VL] Starting continuous processing (interval={interval}s)")
     print(f"[VL] Model: {OLLAMA_MODEL}")
     print(f"[VL] Output: {VL_PROCESSED_JSON}")
+    
+    # Get memory manager if available
+    memory = None
+    if use_memory and MEMORY_AVAILABLE:
+        try:
+            memory = get_memory()
+            stats = memory.get_stats()
+            print(f"[VL] Memory: LanceDB ({stats['short_term']['active_count']} entries)")
+        except Exception as e:
+            print(f"[WARN] Memory system unavailable: {e}")
+    
     print("[VL] Press Ctrl+C to stop\n")
     
     # Check Ollama health
@@ -475,6 +529,25 @@ def continuous_process(interval: float = 2.0, verbose: bool = True) -> None:
                 if result:
                     processed[clip_id] = result
                     save_vl_processed(processed)
+                    
+                    # Save to memory (LanceDB)
+                    if memory:
+                        try:
+                            memory.add_vl_result(
+                                clip_path=result.clip_path,
+                                transcription=result.transcription,
+                                scene=result.scene,
+                                speech=result.speech,
+                                summary=result.summary,
+                                speakers=result.speakers,
+                                duration=result.duration,
+                                model=result.model,
+                                timestamp=result.start_ts,
+                            )
+                        except Exception as e:
+                            if verbose:
+                                print(f"[WARN] Failed to save to memory: {e}")
+                    
                     if verbose:
                         print(f"[VL] ✓ Processed and saved")
                         print(f"[VL] Summary: {result.summary}")
@@ -484,24 +557,44 @@ def continuous_process(interval: float = 2.0, verbose: bool = True) -> None:
     except KeyboardInterrupt:
         print("\n[VL] Stopped continuous processing")
         print(f"[VL] Total processed: {len(processed)}")
+        if memory:
+            stats = memory.get_stats()
+            print(f"[VL] Memory entries: {stats['short_term']['active_count']}")
 
 
-def run_testrun(verbose: bool = True) -> None:
+def run_testrun(verbose: bool = True, use_memory: bool = True) -> None:
     """Run a single test with the latest clip."""
     print("=" * 60)
     print("VL Processing Test Run")
     print("=" * 60)
     
     # Check Ollama
-    print("\n[1/3] Checking Ollama...")
+    print("\n[1/4] Checking Ollama...")
     if not check_ollama_health():
         print(f"[ERROR] Cannot connect to Ollama at {OLLAMA_BASE_URL}")
         sys.exit(1)
     print(f"[OK] Ollama healthy at {OLLAMA_BASE_URL}")
     print(f"[OK] Model: {OLLAMA_MODEL}")
     
+    # Check memory
+    memory = None
+    if use_memory and MEMORY_AVAILABLE:
+        print("\n[2/4] Checking memory system...")
+        try:
+            memory = get_memory()
+            stats = memory.get_stats()
+            print(f"[OK] LanceDB connected ({stats['short_term']['active_count']} entries)")
+            if stats['embedding']['available']:
+                print(f"[OK] Embeddings: {stats['embedding']['model']}")
+            else:
+                print(f"[WARN] Embeddings unavailable (install {stats['embedding']['model']})")
+        except Exception as e:
+            print(f"[WARN] Memory unavailable: {e}")
+    else:
+        print("\n[2/4] Memory system: disabled")
+    
     # Get latest clip
-    print("\n[2/3] Loading latest clip...")
+    print("\n[3/4] Loading latest clip...")
     clips = get_clips()
     if not clips:
         print("[ERROR] No clips found in data.json")
@@ -514,7 +607,7 @@ def run_testrun(verbose: bool = True) -> None:
     print(f"     Transcription: {clip.text[:50]}..." if len(clip.text) > 50 else f"     Transcription: {clip.text}")
     
     # Process
-    print("\n[3/3] Processing with VL model...")
+    print("\n[4/4] Processing with VL model...")
     start_time = time.time()
     result = process_clip_with_vl(clip, verbose=False)
     elapsed = time.time() - start_time
@@ -527,12 +620,31 @@ def run_testrun(verbose: bool = True) -> None:
         print(f"Summary: {result.summary}")
         print("-" * 40)
         
-        # Save result
+        # Save to JSON
         processed = load_vl_processed()
         clip_id = get_clip_id(clip)
         processed[clip_id] = result
         save_vl_processed(processed)
         print(f"\n[OK] Saved to {VL_PROCESSED_JSON}")
+        
+        # Save to memory
+        if memory:
+            try:
+                memory.add_vl_result(
+                    clip_path=result.clip_path,
+                    transcription=result.transcription,
+                    scene=result.scene,
+                    speech=result.speech,
+                    summary=result.summary,
+                    speakers=result.speakers,
+                    duration=result.duration,
+                    model=result.model,
+                    timestamp=result.start_ts,
+                )
+                stats = memory.get_stats()
+                print(f"[OK] Saved to LanceDB ({stats['short_term']['active_count']} entries)")
+            except Exception as e:
+                print(f"[WARN] Failed to save to memory: {e}")
     else:
         print("[ERROR] Processing failed")
         sys.exit(1)

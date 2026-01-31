@@ -1,0 +1,82 @@
+{
+  "doc-90f3289c39b6e849369d6ec88f58687d": {
+    "relation_pairs": [
+      [
+        "John",
+        "Kitchen"
+      ]
+    ],
+    "count": 1,
+    "create_time": 1769870319,
+    "update_time": 1769870319,
+    "_id": "doc-90f3289c39b6e849369d6ec88f58687d"
+  },
+  "doc-43efde6574fed7ab9dc475b04f942e5e": {
+    "relation_pairs": [
+      [
+        "Meeting",
+        "Tomorrow"
+      ],
+      [
+        "John Smith",
+        "Meeting"
+      ],
+      [
+        "John Smith",
+        "Sarah"
+      ],
+      [
+        "10 AM",
+        "Meeting"
+      ],
+      [
+        "Coffee",
+        "John Smith"
+      ],
+      [
+        "Friday",
+        "Quarterly Report"
+      ],
+      [
+        "Quarterly Report",
+        "Sarah"
+      ],
+      [
+        "John Smith",
+        "Kitchen"
+      ],
+      [
+        "Sarah",
+        "Upcoming Project Deadline"
+      ],
+      [
+        "Conference Room",
+        "Meeting"
+      ],
+      [
+        "Friday",
+        "Sarah"
+      ],
+      [
+        "Meeting",
+        "Sarah"
+      ],
+      [
+        "2:30 PM",
+        "John Smith"
+      ],
+      [
+        "John Smith",
+        "Upcoming Project Deadline"
+      ],
+      [
+        "Blue Shirt",
+        "John Smith"
+      ]
+    ],
+    "count": 15,
+    "create_time": 1769870730,
+    "update_time": 1769870730,
+    "_id": "doc-43efde6574fed7ab9dc475b04f942e5e"
+  }
+}

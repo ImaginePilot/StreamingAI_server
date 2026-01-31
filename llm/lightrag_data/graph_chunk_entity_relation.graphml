@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="truncate" attr.type="string"/>
+<key id="d12" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d11" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d10" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d9" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d8" for="edge" attr.name="description" attr.type="string"/>
+<key id="d7" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d6" for="node" attr.name="truncate" attr.type="string"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="John">
+  <data key="d0">John</data>
+  <data key="d1">person</data>
+  <data key="d2">John is a person seen in the kitchen making coffee at 2pm and wearing a blue shirt.</data>
+  <data key="d3">chunk-90f3289c39b6e849369d6ec88f58687d</data>
+  <data key="d4"></data>
+  <data key="d5">1769870319</data>
+  <data key="d6"></data>
+</node>
+<node id="Kitchen">
+  <data key="d0">Kitchen</data>
+  <data key="d1">location</data>
+  <data key="d2">The kitchen is the location where coffee was made at 2pm.&lt;SEP&gt;The kitchen is where John Smith entered and made coffee.</data>
+  <data key="d3">chunk-90f3289c39b6e849369d6ec88f58687d&lt;SEP&gt;chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d4"></data>
+  <data key="d5">1769870727</data>
+  <data key="d6"></data>
+</node>
+<node id="John Smith">
+  <data key="d0">John Smith</data>
+  <data key="d1">person</data>
+  <data key="d2">John Smith entered the kitchen wearing a blue shirt at 2:30 PM.</data>
+  <data key="d3">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d4"></data>
+  <data key="d5">1769870727</data>
+  <data key="d6"></data>
+</node>
+<node id="Sarah">
+  <data key="d0">Sarah</data>
+  <data key="d1">person</data>
+  <data key="d2">Sarah talked with John Smith about the upcoming project deadline and mentioned needing to finish the quarterly report by Friday.</data>
+  <data key="d3">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d4"></data>
+  <data key="d5">1769870727</data>
+  <data key="d6"></data>
+</node>
+<node id="Blue Shirt">
+  <data key="d0">Blue Shirt</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A blue shirt worn by John Smith.</data>
+  <data key="d3">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d4"></data>
+  <data key="d5">1769870728</data>
+  <data key="d6"></data>
+</node>
+<node id="Coffee">
+  <data key="d0">Coffee</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Coffee made by John Smith in the kitchen.</data>
+  <data key="d3">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d4"></data>
+  <data key="d5">1769870728</data>
+  <data key="d6"></data>
+</node>
+<node id="Upcoming Project Deadline">
+  <data key="d0">Upcoming Project Deadline</data>
+  <data key="d1">concept</data>
+  <data key="d2">The deadline for the upcoming project discussed by John Smith and Sarah.</data>
+  <data key="d3">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d4"></data>
+  <data key="d5">1769870728</data>
+  <data key="d6"></data>
+</node>
+<node id="Quarterly Report">
+  <data key="d0">Quarterly Report</data>
+  <data key="d1">content</data>
+  <data key="d2">A quarterly report that Sarah needs to finish by Friday.</data>
+  <data key="d3">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d4"></data>
+  <data key="d5">1769870728</data>
+  <data key="d6"></data>
+</node>
+<node id="Friday">
+  <data key="d0">Friday</data>
+  <data key="d1">concept</data>
+  <data key="d2">The day by which the quarterly report must be finished.</data>
+  <data key="d3">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d4"></data>
+  <data key="d5">1769870728</data>
+  <data key="d6"></data>
+</node>
+<node id="Conference Room">
+  <data key="d0">Conference Room</data>
+  <data key="d1">location</data>
+  <data key="d2">The location where John Smith and Sarah agreed to meet tomorrow at 10 AM.</data>
+  <data key="d3">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d4"></data>
+  <data key="d5">1769870728</data>
+  <data key="d6"></data>
+</node>
+<node id="Meeting">
+  <data key="d0">Meeting</data>
+  <data key="d1">event</data>
+  <data key="d2">A meeting scheduled for tomorrow at 10 AM in the conference room between John Smith and Sarah.</data>
+  <data key="d3">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d4"></data>
+  <data key="d5">1769870728</data>
+  <data key="d6"></data>
+</node>
+<node id="2:30 PM">
+  <data key="d0">2:30 PM</data>
+  <data key="d1">data</data>
+  <data key="d2">The time when John Smith entered the kitchen.</data>
+  <data key="d3">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d4"></data>
+  <data key="d5">1769870728</data>
+  <data key="d6"></data>
+</node>
+<node id="10 AM">
+  <data key="d0">10 AM</data>
+  <data key="d1">data</data>
+  <data key="d2">The scheduled time for the meeting tomorrow.</data>
+  <data key="d3">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d4"></data>
+  <data key="d5">1769870728</data>
+  <data key="d6"></data>
+</node>
+<node id="Tomorrow">
+  <data key="d0">Tomorrow</data>
+  <data key="d1">concept</data>
+  <data key="d2">The day after the current entry when the meeting is scheduled.</data>
+  <data key="d3">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d4"></data>
+  <data key="d5">1769870728</data>
+  <data key="d6"></data>
+</node>
+<edge source="John" target="Kitchen">
+  <data key="d7">1.0</data>
+  <data key="d8">John was seen in the kitchen making coffee at 2pm.</data>
+  <data key="d9">activity,location</data>
+  <data key="d10">chunk-90f3289c39b6e849369d6ec88f58687d</data>
+  <data key="d11"></data>
+  <data key="d12">1769870319</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Kitchen" target="John Smith">
+  <data key="d7">1.0</data>
+  <data key="d8">John Smith entered the kitchen.</data>
+  <data key="d9">entry,location</data>
+  <data key="d10">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d11"></data>
+  <data key="d12">1769870728</data>
+  <data key="d13"></data>
+</edge>
+<edge source="John Smith" target="Blue Shirt">
+  <data key="d7">1.0</data>
+  <data key="d8">John Smith was wearing a blue shirt.</data>
+  <data key="d9">apparel,wearing</data>
+  <data key="d10">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d11"></data>
+  <data key="d12">1769870729</data>
+  <data key="d13"></data>
+</edge>
+<edge source="John Smith" target="Coffee">
+  <data key="d7">1.0</data>
+  <data key="d8">John Smith made coffee in the kitchen.</data>
+  <data key="d9">beverage,preparation</data>
+  <data key="d10">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d11"></data>
+  <data key="d12">1769870729</data>
+  <data key="d13"></data>
+</edge>
+<edge source="John Smith" target="Sarah">
+  <data key="d7">1.0</data>
+  <data key="d8">John Smith talked with Sarah about the upcoming project deadline.</data>
+  <data key="d9">communication,discussion</data>
+  <data key="d10">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d11"></data>
+  <data key="d12">1769870729</data>
+  <data key="d13"></data>
+</edge>
+<edge source="John Smith" target="Upcoming Project Deadline">
+  <data key="d7">1.0</data>
+  <data key="d8">The conversation concerned the upcoming project deadline.</data>
+  <data key="d9">discussion,topic</data>
+  <data key="d10">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d11"></data>
+  <data key="d12">1769870729</data>
+  <data key="d13"></data>
+</edge>
+<edge source="John Smith" target="Meeting">
+  <data key="d7">1.0</data>
+  <data key="d8">John Smith agreed to meet tomorrow at 10 AM.</data>
+  <data key="d9">attendance,participation</data>
+  <data key="d10">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d11"></data>
+  <data key="d12">1769870730</data>
+  <data key="d13"></data>
+</edge>
+<edge source="John Smith" target="2:30 PM">
+  <data key="d7">1.0</data>
+  <data key="d8">John Smith entered the kitchen at 2:30 PM.</data>
+  <data key="d9">entry,timestamp</data>
+  <data key="d10">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d11"></data>
+  <data key="d12">1769870730</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Sarah" target="Upcoming Project Deadline">
+  <data key="d7">1.0</data>
+  <data key="d8">Sarah discussed the upcoming project deadline with John Smith.</data>
+  <data key="d9">discussion,topic</data>
+  <data key="d10">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d11"></data>
+  <data key="d12">1769870728</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Sarah" target="Quarterly Report">
+  <data key="d7">1.0</data>
+  <data key="d8">Sarah needs to finish the quarterly report.</data>
+  <data key="d9">responsibility,task</data>
+  <data key="d10">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d11"></data>
+  <data key="d12">1769870729</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Sarah" target="Meeting">
+  <data key="d7">1.0</data>
+  <data key="d8">Sarah agreed to meet tomorrow at 10 AM.</data>
+  <data key="d9">attendance,participation</data>
+  <data key="d10">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d11"></data>
+  <data key="d12">1769870729</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Sarah" target="Friday">
+  <data key="d7">1.0</data>
+  <data key="d8">Sarah needs to finish the quarterly report by Friday.</data>
+  <data key="d9">deadline,due</data>
+  <data key="d10">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d11"></data>
+  <data key="d12">1769870729</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Quarterly Report" target="Friday">
+  <data key="d7">1.0</data>
+  <data key="d8">The quarterly report must be finished by Friday.</data>
+  <data key="d9">deadline,due</data>
+  <data key="d10">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d11"></data>
+  <data key="d12">1769870729</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Conference Room" target="Meeting">
+  <data key="d7">1.0</data>
+  <data key="d8">The meeting is scheduled to take place in the conference room.</data>
+  <data key="d9">location,venue</data>
+  <data key="d10">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d11"></data>
+  <data key="d12">1769870729</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Meeting" target="10 AM">
+  <data key="d7">1.0</data>
+  <data key="d8">The meeting is scheduled for 10 AM.</data>
+  <data key="d9">appointment,scheduled time</data>
+  <data key="d10">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d11"></data>
+  <data key="d12">1769870729</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Meeting" target="Tomorrow">
+  <data key="d7">1.0</data>
+  <data key="d8">The meeting is set for tomorrow.</data>
+  <data key="d9">date,relative</data>
+  <data key="d10">chunk-43efde6574fed7ab9dc475b04f942e5e</data>
+  <data key="d11"></data>
+  <data key="d12">1769870729</data>
+  <data key="d13"></data>
+</edge>
+</graph></graphml>

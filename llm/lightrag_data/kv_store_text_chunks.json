@@ -1,0 +1,30 @@
+{
+  "chunk-90f3289c39b6e849369d6ec88f58687d": {
+    "tokens": 27,
+    "content": "Test memory entry: A person named John was seen in the kitchen making coffee at 2pm. He was wearing a blue shirt.",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-90f3289c39b6e849369d6ec88f58687d",
+    "file_path": null,
+    "llm_cache_list": [
+      "default:extract:81a310b40feb77586e5e62809a872899",
+      "default:extract:99fa1b920b3019d3ccbd47be4a2a1c8c"
+    ],
+    "create_time": 1769870095,
+    "update_time": 1769870319,
+    "_id": "chunk-90f3289c39b6e849369d6ec88f58687d"
+  },
+  "chunk-43efde6574fed7ab9dc475b04f942e5e": {
+    "tokens": 62,
+    "content": "Memory Archive Entry:\nAt 2:30 PM, John Smith entered the kitchen wearing a blue shirt. He made coffee and talked with Sarah about the upcoming project deadline. \nSarah mentioned she needed to finish the quarterly report by Friday.\nThey both agreed to meet tomorrow at 10 AM in the conference room.",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-43efde6574fed7ab9dc475b04f942e5e",
+    "file_path": null,
+    "llm_cache_list": [
+      "default:extract:99c7a9ce40c14596067df05d644e17a0",
+      "default:extract:311dab4decf3ebb353171d12728a87a3"
+    ],
+    "create_time": 1769870610,
+    "update_time": 1769870727,
+    "_id": "chunk-43efde6574fed7ab9dc475b04f942e5e"
+  }
+}

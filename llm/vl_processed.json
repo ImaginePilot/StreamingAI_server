@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-31T13:58:27.213500",
+  "last_updated": "2026-01-31T14:11:26.346540",
   "count": 1,
   "results": {
     "/home/ling/main/streaming/cache/clip_1767940581_1767940586.mp4:1767940581.6223207": {
@@ -11,11 +11,11 @@
         "SPK_0002"
       ],
       "transcription": "몰라울라울라。",
-      "vl_analysis": "**Scene**: Person in white t-shirt stands with hands behind back in a room with slanted ceiling, warm lighting, and kitchen items (red can, cabinets) visible in background. Posture relaxed, room has mix of white and warm-toned walls.  \n**Speech**: SPK_0002 says \"몰라울라울라\" (I don't know ulala) in casual tone.  \n**Summary**: A person in a home interior speaks a casual phrase while standing with hands behind their back.",
-      "scene": "Person in white t-shirt stands with hands behind back in a room with slanted ceiling, warm lighting, and kitchen items (red can, cabinets) visible in background. Posture relaxed, room has mix of white and warm-toned walls.",
-      "speech": "SPK_0002 says \"몰라울라울라\" (I don't know ulala) in casual tone.",
-      "summary": "A person in a home interior speaks a casual phrase while standing with hands behind their back.",
-      "processed_at": "2026-01-31T13:58:27.212912",
+      "vl_analysis": "**Scene**: Indoor kitchen area with cabinets, countertop items (e.g., red bottle, containers), ceiling light fixture; person in white t-shirt with hands behind back, slight upward gaze, warm lighting.  \n**Speech**: SPK_0002 says \"몰라울라울라\" (Korean phrase, tone unclear from visual cues).  \n**Summary**: A person in a white t-shirt stands in a kitchen, hands behind back, speaking a Korean phrase.",
+      "scene": "Indoor kitchen area with cabinets, countertop items (e.g., red bottle, containers), ceiling light fixture; person in white t-shirt with hands behind back, slight upward gaze, warm lighting.",
+      "speech": "SPK_0002 says \"몰라울라울라\" (Korean phrase, tone unclear from visual cues).",
+      "summary": "A person in a white t-shirt stands in a kitchen, hands behind back, speaking a Korean phrase.",
+      "processed_at": "2026-01-31T14:11:26.345921",
       "model": "qwen3-vl:30b"
     }
   }
