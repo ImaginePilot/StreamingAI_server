@@ -437,7 +437,6 @@ Keep replies SHORT (1-2 sentences), warm and natural. Talk like a friend, not a 
                     "model": self.model,
                     "messages": messages,
                     "stream": False,
-                    "think": False,  # Disable extended thinking for speed
                     "options": {
                         "num_predict": LLM_MAX_TOKENS,
                         "temperature": LLM_TEMPERATURE,
@@ -445,7 +444,7 @@ Keep replies SHORT (1-2 sentences), warm and natural. Talk like a friend, not a 
                     },
                     "keep_alive": -1,
                 },
-                timeout=120  # Reduced timeout without thinking
+                timeout=180
             )
             response.raise_for_status()
             result = response.json()

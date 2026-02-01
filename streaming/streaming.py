@@ -32,6 +32,7 @@ This will:
 import os
 import json
 import time
+import queue
 import threading
 import tempfile
 from pathlib import Path
@@ -47,11 +48,21 @@ from werkzeug.serving import make_server
 
 # Rolling data limits
 MAX_CLIPS = 50
+MIN_CLIP_DURATION = 5.0  # Minimum clip duration (merge shorter ones)
+MAX_CLIP_DURATION = 15.0  # Maximum clip duration
 
 # Local module imports (reuse existing components)
-from audiostream.audio_to_text import AudioTranscriber, get_pyannote_pipeline, get_funasr_model, get_whisper_model
 from videostream.opencv import YOLO11Detector
 from videostream.facial_recognition import CompreFaceProcessor
+
+# Import streaming ASR module for real-time transcription with timestamps
+try:
+    from audiostream import streaming_asr
+    STREAMING_ASR_AVAILABLE = True
+    print("[INFO] Streaming ASR module available")
+except ImportError:
+    STREAMING_ASR_AVAILABLE = False
+    print("[WARN] Streaming ASR module not available")
 
 BASE_DIR = Path(__file__).resolve().parent
 AUDIO_DIR = BASE_DIR / "audiostream"
@@ -75,19 +86,17 @@ audio_app = Flask(__name__)
 
 def warm_models():
     """Load all heavy models once before serving."""
-    print("[WARM] Loading diarization pipeline...")
-    get_pyannote_pipeline()
-    print("[WARM] Loading FunASR/Whisper...")
-    cfg = json.load(open(AUDIO_DIR / "audio_env.json"))
-    backend = cfg.get("models", {}).get("asr_backend", "funasr")
-    if backend == "funasr":
-        get_funasr_model()
-    else:
-        get_whisper_model(cfg.get("models", {}).get("whisper_model", "base"))
     print("[WARM] Loading YOLO11...")
     _ = YOLO11Detector("yolo11n")
     print("[WARM] Connecting CompreFace...")
     _ = CompreFaceProcessor()
+    if STREAMING_ASR_AVAILABLE:
+        print("[WARM] Initializing streaming ASR (all models)...")
+        streaming_asr.preload_all_models()  # Preload both streaming and offline models
+        print("[WARM] Starting ASR processing thread...")
+        _start_asr_thread()  # Start background ASR thread
+    print("[WARM] Starting clip processing thread...")
+    _start_clip_thread()  # Start background clip processing thread
     print("[WARM] All models ready")
 
 # ---------------------------------------------------------------------------
@@ -98,47 +107,517 @@ def warm_models():
 # Frames/bytes are appended to the existing caches and metadata files so that
 # existing receivers stay usable.
 
-AUDIO_FRAGMENT_SECONDS = 5
+# Sentence-based segmentation: 5-15 seconds based on speech boundaries
+MIN_SEGMENT_SECONDS = 5   # Minimum segment duration
+MAX_SEGMENT_SECONDS = 15  # Maximum segment duration (force flush)
 VIDEO_FRAGMENT_SECONDS = 10
 
+# Audio buffer for sentence-based segmentation
 _audio_buffer = bytearray()
 _audio_meta = []
 _audio_last_flush = time.time()
 _audio_idx = 0
+_audio_segment_start_time = time.time()  # When current segment started
+_audio_pending_text = ""  # Accumulated text from streaming ASR
+_audio_last_speech_time = time.time()  # Last time we detected speech
+_audio_silence_threshold = 1.5  # Seconds of silence to trigger flush (increased for stability)
+
+# ASR processing thread and queue (non-blocking audio reception)
+_asr_queue: queue.Queue = queue.Queue(maxsize=1000)  # Large queue to prevent drops
+_asr_thread: Optional[threading.Thread] = None
+_asr_running = False
+_asr_lock = threading.Lock()
+_asr_chunk_counter = 0  # Count received chunks
+_asr_processed_counter = 0  # Count processed chunks
 
 _video_frames: List[np.ndarray] = []
 _video_last_flush = time.time()
 _video_idx = 0
 
+# Clip processing queue and thread (non-blocking clip creation)
+_clip_queue: queue.Queue = queue.Queue(maxsize=100)
+_clip_thread: Optional[threading.Thread] = None
+_clip_running = False
+_clip_lock = threading.Lock()
+_pending_clips: List[Dict] = []  # Clips waiting to be merged
+_clip_stats = {"created": 0, "merged": 0, "errors": 0, "processing_time": 0.0}
 
-def _flush_audio():
-    global _audio_buffer, _audio_idx, _audio_last_flush
+# Finalization thread pool for async offline ASR processing
+from concurrent.futures import ThreadPoolExecutor
+_finalization_executor = ThreadPoolExecutor(max_workers=2, thread_name_prefix="ASR-Final")
+
+
+def _asr_processing_thread():
+    """Background thread that processes audio through ASR without blocking reception."""
+    global _audio_pending_text, _audio_last_speech_time, _asr_processed_counter
+    
+    print("[ASR-Thread] Started ASR processing thread")
+    
+    # Accumulate samples for larger chunks (process every ~1 second of audio)
+    sample_buffer = np.array([], dtype=np.int16)
+    TARGET_SAMPLES = 44100  # ~1 second at 44100Hz for more stable processing
+    
+    while _asr_running:
+        try:
+            # Get audio data from queue with timeout
+            try:
+                chunk_data = _asr_queue.get(timeout=0.1)
+            except queue.Empty:
+                # Process any remaining buffer if we have enough
+                if len(sample_buffer) >= TARGET_SAMPLES // 2:
+                    _process_asr_buffer(sample_buffer)
+                    sample_buffer = np.array([], dtype=np.int16)
+                continue
+            
+            # Accumulate samples
+            samples = np.frombuffer(chunk_data, dtype=np.int16)
+            sample_buffer = np.concatenate([sample_buffer, samples])
+            _asr_processed_counter += 1
+            
+            # Process when we have enough samples
+            if len(sample_buffer) >= TARGET_SAMPLES:
+                _process_asr_buffer(sample_buffer)
+                sample_buffer = np.array([], dtype=np.int16)
+                
+        except Exception as e:
+            print(f"[ASR-Thread] Error: {e}")
+            import traceback
+            traceback.print_exc()
+    
+    # Process any remaining samples
+    if len(sample_buffer) > 0:
+        _process_asr_buffer(sample_buffer)
+    
+    print("[ASR-Thread] Stopped ASR processing thread")
+
+
+def _process_asr_buffer(samples: np.ndarray):
+    """Process accumulated audio samples through ASR."""
+    global _audio_pending_text, _audio_last_speech_time
+    
+    if not STREAMING_ASR_AVAILABLE or len(samples) == 0:
+        return
+    
+    try:
+        segments = streaming_asr.process_audio_realtime(samples)
+        
+        if segments:
+            with _asr_lock:
+                _audio_last_speech_time = time.time()
+                for seg in segments:
+                    if seg.text.strip():
+                        _audio_pending_text += seg.text + " "
+    except Exception as e:
+        print(f"[ASR-Thread] Processing error: {e}")
+
+
+def _start_asr_thread():
+    """Start the ASR processing thread if not already running."""
+    global _asr_thread, _asr_running
+    
+    if _asr_thread is not None and _asr_thread.is_alive():
+        return
+    
+    _asr_running = True
+    _asr_thread = threading.Thread(target=_asr_processing_thread, daemon=True)
+    _asr_thread.start()
+
+
+def _stop_asr_thread():
+    """Stop the ASR processing thread."""
+    global _asr_running
+    _asr_running = False
+    if _asr_thread is not None:
+        _asr_thread.join(timeout=2.0)
+
+
+# ---------------------------------------------------------------------------
+# Clip Processing Thread - Handles heavy clip creation off main thread
+# ---------------------------------------------------------------------------
+
+def _clip_processing_thread():
+    """Background thread that processes clip creation without blocking the main loop."""
+    global _clip_stats, _pending_clips
+    
+    print("[CLIP-Thread] Started clip processing thread")
+    
+    # Initialize detectors once per thread
+    yolo = YOLO11Detector("yolo11n")
+    compreface = CompreFaceProcessor()
+    
+    while _clip_running:
+        try:
+            # Get clip job from queue with timeout
+            try:
+                job = _clip_queue.get(timeout=0.5)
+            except queue.Empty:
+                # Check if we have pending clips to merge/flush
+                _check_and_flush_pending_clips(yolo, compreface)
+                continue
+            
+            start_time = time.time()
+            
+            # Unpack job
+            conv_start = job["conv_start"]
+            conv_end = job["conv_end"]
+            conv_segments = job["conv_segments"]
+            candidates = job["candidates"]
+            audio_entry = job["audio_entry"]
+            
+            duration = conv_end - conv_start
+            
+            # Check if this should be merged with pending clips
+            if duration < MIN_CLIP_DURATION:
+                with _clip_lock:
+                    # Check if we can merge with previous pending clip
+                    if _pending_clips:
+                        last_pending = _pending_clips[-1]
+                        # Merge if consecutive (gap < 2s) and combined duration < MAX_CLIP_DURATION
+                        if (conv_start - last_pending["conv_end"]) < 2.0:
+                            combined_duration = conv_end - last_pending["conv_start"]
+                            if combined_duration <= MAX_CLIP_DURATION:
+                                # Merge with previous
+                                last_pending["conv_end"] = conv_end
+                                last_pending["conv_segments"].extend(conv_segments)
+                                last_pending["candidates"] = list({c.get("filename"): c for c in (last_pending["candidates"] + candidates)}.values())
+                                print(f"[CLIP-Thread] Merged short clip ({duration:.1f}s) with previous, combined: {combined_duration:.1f}s")
+                                _clip_stats["merged"] += 1
+                                continue
+                    
+                    # Add to pending for potential future merge
+                    _pending_clips.append(job)
+                    print(f"[CLIP-Thread] Queued short clip ({duration:.1f}s) for merging")
+                    continue
+            
+            # Process the clip (either standalone or flush pending)
+            _process_clip_job(job, yolo, compreface)
+            
+            processing_time = time.time() - start_time
+            _clip_stats["processing_time"] += processing_time
+            
+        except Exception as e:
+            print(f"[CLIP-Thread] Error: {e}")
+            import traceback
+            traceback.print_exc()
+            _clip_stats["errors"] += 1
+    
+    # Flush any remaining pending clips
+    _flush_all_pending_clips(yolo, compreface)
+    
+    print(f"[CLIP-Thread] Stopped. Stats: {_clip_stats}")
+
+
+def _check_and_flush_pending_clips(yolo, compreface):
+    """Check and flush pending clips if they've been waiting too long."""
+    with _clip_lock:
+        if not _pending_clips:
+            return
+        
+        # Flush if oldest pending clip is > 5 seconds old
+        oldest = _pending_clips[0]
+        age = time.time() - oldest.get("queued_at", time.time())
+        if age > 5.0:
+            # Merge all pending into one clip if possible
+            if len(_pending_clips) > 1:
+                merged = _merge_pending_clips(_pending_clips)
+                _pending_clips.clear()
+                _pending_clips.append(merged)
+            
+            job = _pending_clips.pop(0)
+            _process_clip_job(job, yolo, compreface)
+
+
+def _merge_pending_clips(clips: List[Dict]) -> Dict:
+    """Merge multiple pending clips into one."""
+    if not clips:
+        return None
+    if len(clips) == 1:
+        return clips[0]
+    
+    merged = clips[0].copy()
+    for clip in clips[1:]:
+        merged["conv_end"] = clip["conv_end"]
+        merged["conv_segments"].extend(clip["conv_segments"])
+        # Deduplicate candidates by filename
+        all_candidates = merged["candidates"] + clip["candidates"]
+        merged["candidates"] = list({c.get("filename"): c for c in all_candidates}.values())
+    
+    return merged
+
+
+def _flush_all_pending_clips(yolo, compreface):
+    """Flush all remaining pending clips on shutdown."""
+    global _pending_clips
+    
+    with _clip_lock:
+        if not _pending_clips:
+            return
+        
+        # Merge all if possible
+        if len(_pending_clips) > 1:
+            merged = _merge_pending_clips(_pending_clips)
+            _pending_clips.clear()
+            if merged:
+                _pending_clips.append(merged)
+        
+        for job in _pending_clips:
+            _process_clip_job(job, yolo, compreface)
+        
+        _pending_clips.clear()
+
+
+def _process_clip_job(job: Dict, yolo, compreface):
+    """Actually process a clip job - create video, run detectors, save to data.json."""
+    global _clip_stats
+    
+    conv_start = job["conv_start"]
+    conv_end = job["conv_end"]
+    conv_segments = job["conv_segments"]
+    candidates = job["candidates"]
+    audio_entry = job["audio_entry"]
+    
+    duration = conv_end - conv_start
+    
+    try:
+        clip_id = f"clip_{int(conv_start)}_{int(conv_end)}"
+        clip_video_tmp = MAIN_CACHE / f"{clip_id}_tmp.avi"
+        clip_audio_tmp = MAIN_CACHE / f"{clip_id}_tmp.wav"
+        clip_path = MAIN_CACHE / f"{clip_id}.mp4"
+        
+        print(f"[CLIP-Thread] Processing clip: {duration:.1f}s, {len(conv_segments)} segments")
+        
+        # Process the clip
+        result = process_single_conversation((
+            conv_start, conv_end, conv_segments, candidates, audio_entry,
+            clip_video_tmp, clip_audio_tmp, clip_path, yolo, compreface
+        ))
+        
+        if result:
+            # Save to data.json
+            data = load_data_json()
+            data.setdefault("clips", []).append(result)
+            save_data_json(data)
+            _clip_stats["created"] += 1
+            print(f"[CLIP-Thread] ✓ Saved clip: {clip_id}.mp4 ({duration:.1f}s)")
+        else:
+            _clip_stats["errors"] += 1
+            print(f"[CLIP-Thread] ✗ Failed to create clip: {clip_id}")
+            
+    except Exception as e:
+        print(f"[CLIP-Thread] Error processing clip: {e}")
+        import traceback
+        traceback.print_exc()
+        _clip_stats["errors"] += 1
+
+
+def _start_clip_thread():
+    """Start the clip processing thread if not already running."""
+    global _clip_thread, _clip_running
+    
+    if _clip_thread is not None and _clip_thread.is_alive():
+        return
+    
+    _clip_running = True
+    _clip_thread = threading.Thread(target=_clip_processing_thread, daemon=True)
+    _clip_thread.start()
+
+
+def _stop_clip_thread():
+    """Stop the clip processing thread."""
+    global _clip_running
+    _clip_running = False
+    if _clip_thread is not None:
+        _clip_thread.join(timeout=5.0)
+
+
+def _queue_clip_job(conv_start: float, conv_end: float, conv_segments: List[Dict], 
+                    candidates: List[Dict], audio_entry: Dict):
+    """Queue a clip job for background processing."""
+    job = {
+        "conv_start": conv_start,
+        "conv_end": conv_end,
+        "conv_segments": conv_segments,
+        "candidates": candidates,
+        "audio_entry": audio_entry,
+        "queued_at": time.time(),
+    }
+    
+    try:
+        _clip_queue.put_nowait(job)
+        return True
+    except queue.Full:
+        print("[WARN] Clip queue full, dropping job")
+        return False
+
+
+def _should_flush_audio() -> Tuple[bool, str]:
+    """
+    Determine if we should flush the audio buffer based on sentence boundaries.
+    
+    Returns:
+        (should_flush, reason) tuple
+    """
+    global _audio_buffer, _audio_segment_start_time, _audio_last_speech_time, _audio_pending_text
+    
+    if not _audio_buffer:
+        return False, "empty"
+    
+    current_duration = len(_audio_buffer) / 2 / 44100.0  # bytes to seconds
+    time_since_speech = time.time() - _audio_last_speech_time
+    
+    # Force flush if max duration exceeded
+    if current_duration >= MAX_SEGMENT_SECONDS:
+        return True, f"max_duration ({current_duration:.1f}s >= {MAX_SEGMENT_SECONDS}s)"
+    
+    # Don't flush if below minimum duration
+    if current_duration < MIN_SEGMENT_SECONDS:
+        return False, f"below_min ({current_duration:.1f}s < {MIN_SEGMENT_SECONDS}s)"
+    
+    # Flush if silence detected (sentence boundary)
+    if time_since_speech >= _audio_silence_threshold:
+        return True, f"silence ({time_since_speech:.1f}s >= {_audio_silence_threshold}s)"
+    
+    return False, "waiting"
+
+
+def _flush_audio_with_finalization():
+    """
+    Flush audio buffer with ASR finalization for complete sentences.
+    
+    This:
+    1. Saves the audio file immediately
+    2. Resets ASR stream for new audio (non-blocking)
+    3. Queues offline finalization to run in background thread
+    """
+    global _audio_buffer, _audio_idx, _audio_last_flush, _audio_segment_start_time
+    global _audio_pending_text, _audio_last_speech_time
+    
     if not _audio_buffer:
         return None
+    
     ts = datetime.utcnow()
-    fname = f"fragment_{ts.strftime('%Y%m%d_%H%M%S')}_{_audio_idx:04d}.wav"
+    fname = f"segment_{ts.strftime('%Y%m%d_%H%M%S')}_{_audio_idx:04d}.wav"
     fpath = AUDIO_CACHE / fname
     data = bytes(_audio_buffer)
-    # Save wav
+    duration = len(data) / 2 / 44100.0
+    segment_start = _audio_segment_start_time
+    segment_idx = _audio_idx
+    
+    print(f"╔══════════════════════════════════════════════════════════════════")
+    print(f"║ [SEGMENT] Flushing segment {segment_idx}: {duration:.1f}s")
+    
+    # Save wav file immediately
     import wave
     with wave.open(str(fpath), "wb") as wf:
         wf.setnchannels(1)
         wf.setsampwidth(2)
         wf.setframerate(44100)
         wf.writeframes(data)
-    duration = len(data) / 2 / 44100.0
-    meta_entry = {
+    
+    print(f"║ [SEGMENT] Saved: {fname}")
+    print(f"║ [STATS] Chunks received: {_asr_chunk_counter}, processed: {_asr_processed_counter}")
+    
+    # Reset for next segment IMMEDIATELY (don't wait for finalization)
+    _audio_buffer = bytearray()
+    with _asr_lock:
+        _audio_pending_text = ""
+    _audio_segment_start_time = time.time()
+    _audio_last_speech_time = time.time()
+    _audio_idx += 1
+    _audio_last_flush = time.time()
+    
+    # Reset ASR stream for next segment - do this BEFORE finalization starts
+    if STREAMING_ASR_AVAILABLE:
+        try:
+            streaming_asr.reset_stream()
+            print(f"║ [ASR] Stream reset - ready for new audio")
+        except Exception as e:
+            print(f"║ [WARN] Failed to reset ASR stream: {e}")
+    
+    print(f"╚══════════════════════════════════════════════════════════════════")
+    
+    # Queue offline finalization to background thread (non-blocking)
+    if STREAMING_ASR_AVAILABLE:
+        _finalization_executor.submit(
+            _async_finalize_segment,
+            fname, fpath, data, segment_start, duration, ts
+        )
+    else:
+        # No ASR, just save metadata with empty transcript
+        meta_entry = _create_segment_metadata(fname, fpath, ts, duration, "", [])
+        _audio_meta.append(meta_entry)
+        _append_audio_fragment_metadata(meta_entry)
+    
+    return {"filename": fname, "duration": duration}
+
+
+def _async_finalize_segment(fname: str, fpath: Path, data: bytes, 
+                             segment_start: float, duration: float, ts: datetime):
+    """
+    Background task to finalize ASR with offline model.
+    
+    This runs in a separate thread so it doesn't block new audio processing.
+    """
+    try:
+        print(f"[ASR-Final] Starting offline processing for {fname}...")
+        start_time = time.time()
+        
+        # Get finalized result with offline model (VAD + punctuation)
+        result = streaming_asr.finalize_and_get_transcript(data, segment_start)
+        
+        final_text = ""
+        final_segments = []
+        
+        if result:
+            final_text = result.get('full_text', '')
+            final_segments = result.get('segments', [])
+        
+        # Save to transcript cache
+        streaming_asr.save_fragment_transcript(
+            filename=fname,
+            segments=final_segments,
+            start_timestamp=segment_start,
+            duration=duration,
+            full_text=final_text
+        )
+        
+        # Create and save metadata
+        meta_entry = _create_segment_metadata(fname, fpath, ts, duration, final_text, final_segments)
+        _audio_meta.append(meta_entry)
+        _append_audio_fragment_metadata(meta_entry)
+        
+        elapsed = time.time() - start_time
+        print(f"[ASR-Final] Completed {fname} in {elapsed:.1f}s: \"{final_text[:60]}{'...' if len(final_text) > 60 else ''}\"")
+        
+    except Exception as e:
+        print(f"[ASR-Final] Error processing {fname}: {e}")
+        import traceback
+        traceback.print_exc()
+        
+        # Still save metadata with empty transcript on error
+        meta_entry = _create_segment_metadata(fname, fpath, ts, duration, "", [])
+        _audio_meta.append(meta_entry)
+        _append_audio_fragment_metadata(meta_entry)
+
+
+def _create_segment_metadata(fname: str, fpath: Path, ts: datetime, 
+                              duration: float, final_text: str, final_segments: list) -> Dict:
+    """Create metadata dict for a segment."""
+    return {
         "filename": fname,
         "filepath": str(fpath),
         "start_time": ts.isoformat(),
         "end_time": (ts + timedelta(seconds=duration)).isoformat() if duration else ts.isoformat(),
         "duration_seconds": duration,
         "timestamp": ts.timestamp(),
+        "transcript": final_text,
+        "segment_count": len(final_segments),
     }
-    _audio_meta.append(meta_entry)
-    _audio_buffer = bytearray()
-    _audio_idx += 1
-    _audio_last_flush = time.time()
+
+
+# Keep old function name for compatibility
+def _flush_audio():
+    return _flush_audio_with_finalization()
     _append_audio_fragment_metadata(meta_entry)
     return meta_entry
 
@@ -233,6 +712,37 @@ def audio_health():
     })
 
 
+@audio_app.route("/stats", methods=["GET"])
+def audio_stats():
+    """Get detailed stats for debugging latency and clip processing issues."""
+    data = load_data_json()
+    clips = data.get("clips", [])
+    
+    # Analyze clip durations
+    durations = [c.get("duration", 0) for c in clips]
+    duration_buckets = {}
+    for d in durations:
+        bucket = int(d)
+        duration_buckets[bucket] = duration_buckets.get(bucket, 0) + 1
+    
+    return jsonify({
+        'timestamp': datetime.utcnow().isoformat(),
+        'asr_stats': {
+            'chunks_received': _asr_chunk_counter,
+            'chunks_processed': _asr_processed_counter,
+            'queue_size': _asr_queue.qsize(),
+        },
+        'clip_stats': _clip_stats,
+        'clip_queue_size': _clip_queue.qsize(),
+        'pending_clips': len(_pending_clips),
+        'total_clips': len(clips),
+        'duration_distribution': duration_buckets,
+        'avg_duration': sum(durations) / len(durations) if durations else 0,
+        'min_duration': min(durations) if durations else 0,
+        'max_duration': max(durations) if durations else 0,
+    })
+
+
 @audio_app.route("/fragments", methods=["GET"])
 def audio_fragments():
     meta_path = AUDIO_CACHE / "fragments.json"
@@ -244,21 +754,53 @@ def audio_fragments():
 @audio_app.route("/stream/start", methods=["POST"])
 def audio_stream_start():
     global _audio_buffer, _audio_idx, _audio_last_flush
+    global _audio_segment_start_time, _audio_pending_text, _audio_last_speech_time
+    global _asr_chunk_counter, _asr_processed_counter
+    
     data = request.get_json(silent=True) or {}
     sample_rate = data.get('sample_rate', 44100)
     channels = data.get('channels', 1)
     sample_width = data.get('sample_width', 2)
     session_id = data.get('session_id', datetime.utcnow().strftime('%Y%m%d_%H%M%S'))
+    
+    # Reset all audio state
     _audio_buffer = bytearray()
+    _audio_pending_text = ""
+    _audio_segment_start_time = time.time()
+    _audio_last_speech_time = time.time()
     _audio_last_flush = time.time()
+    _asr_chunk_counter = 0
+    _asr_processed_counter = 0
+    
+    # Clear ASR queue
+    while not _asr_queue.empty():
+        try:
+            _asr_queue.get_nowait()
+        except queue.Empty:
+            break
+    
+    # Start ASR processing thread
+    _start_asr_thread()
+    
+    # Reset ASR state for new stream
+    if STREAMING_ASR_AVAILABLE:
+        try:
+            streaming_asr.reset_stream()
+        except Exception as e:
+            print(f"[WARN] Failed to reset ASR stream: {e}")
+    
+    print(f"[STREAM] Audio stream started - threaded ASR, sentence-based segmentation ({MIN_SEGMENT_SECONDS}-{MAX_SEGMENT_SECONDS}s)")
+    
     return jsonify({
         'status': 'started',
         'session_id': session_id,
         'sample_rate': sample_rate,
         'channels': channels,
         'sample_width': sample_width,
-        'fragment_duration': AUDIO_FRAGMENT_SECONDS,
-        'message': 'Audio stream session started'
+        'min_segment_duration': MIN_SEGMENT_SECONDS,
+        'max_segment_duration': MAX_SEGMENT_SECONDS,
+        'silence_threshold': _audio_silence_threshold,
+        'message': 'Audio stream session started (sentence-based segmentation)'
     })
 
 
@@ -276,22 +818,49 @@ def audio_stream_stop():
 
 @audio_app.route("/audio/chunk", methods=["POST"])
 def ingest_audio():
-    global _audio_buffer
+    global _audio_buffer, _asr_chunk_counter
+    
     chunk = request.data
     if not chunk:
         return jsonify({'error': 'No data received'}), 400
+    
+    # Always buffer the audio immediately (non-blocking)
     _audio_buffer.extend(chunk)
+    _asr_chunk_counter += 1
+    
+    # Queue audio for ASR processing (non-blocking)
+    if STREAMING_ASR_AVAILABLE:
+        try:
+            _asr_queue.put_nowait(chunk)
+        except queue.Full:
+            print(f"[WARN] ASR queue full, dropping chunk (queue size: {_asr_queue.qsize()})")
+    
+    # Check if we should flush based on sentence boundaries
+    # Use lock to safely read ASR state
+    with _asr_lock:
+        pending_text = _audio_pending_text
+    
+    should_flush, reason = _should_flush_audio()
     flushed = False
-    if len(_audio_buffer) > 2 * 44100 * AUDIO_FRAGMENT_SECONDS:
-        _flush_audio()
+    if should_flush:
+        print(f"[FLUSH] Triggering flush: {reason}")
+        _flush_audio_with_finalization()
         flushed = True
+    
+    current_duration = len(_audio_buffer) / 2 / 44100.0
+    queue_size = _asr_queue.qsize()
+    
     return jsonify({
         'status': 'received',
         'bytes': len(chunk),
-        'chunk_count': _audio_idx,
-        'fragment': _audio_idx,
-        'queued': True,
-        'flushed': flushed
+        'segment_idx': _audio_idx,
+        'current_duration': round(current_duration, 2),
+        'pending_text': pending_text[:100] if pending_text else "",
+        'chunks_received': _asr_chunk_counter,
+        'chunks_processed': _asr_processed_counter,
+        'queue_size': queue_size,
+        'flushed': flushed,
+        'flush_reason': reason if flushed else None
     })
 
 
@@ -496,25 +1065,117 @@ def list_unprocessed_video(min_ts: float = None):
     return [v for v in items if v.get("timestamp", 0) >= min_ts]
 
 
-def transcribe_fragment(transcriber: AudioTranscriber, audio_entry: Dict):
-    path = AUDIO_CACHE / audio_entry["filename"]
+# Thread-local storage for transcriber instances (each thread gets its own)
+import threading
+_thread_local = threading.local()
+
+
+def transcribe_fragment(audio_entry: Dict):
+    """
+    Get transcript for an audio fragment from streaming ASR cache.
+    
+    Streaming ASR processes audio in real-time as it arrives.
+    This function just retrieves the cached results.
+    """
+    filename = audio_entry.get("filename")
+    path = AUDIO_CACHE / filename
     if not path.exists():
         return None
-    res = transcriber.process_file(str(path), force=True)
-    if not res:
-        return None
+    
+    # Get the start timestamp for absolute time calculation
     start_ts = datetime.fromisoformat(audio_entry.get("start_time")).timestamp() if audio_entry.get("start_time") else audio_entry.get("timestamp", time.time())
-    enriched_segments = []
-    for seg in res.segments:
-        enriched_segments.append({
-            "abs_start": start_ts + seg.start_time,
-            "abs_end": start_ts + seg.end_time,
-            "speaker": seg.speaker_id,
-            "text": seg.text,
-            "language": seg.language,
-            "emotion": seg.emotion,
-        })
-    return enriched_segments, res
+    
+    # Get cached transcript from streaming ASR
+    if not STREAMING_ASR_AVAILABLE:
+        print(f"[WARN] Streaming ASR not available, skipping {filename}")
+        return None
+    
+    cached_segments = streaming_asr.get_cached_segments_for_fragment(filename, start_ts)
+    if not cached_segments or len(cached_segments) == 0:
+        print(f"[WARN] No cached transcript for {filename}")
+        return None
+    
+    print(f"[INFO] Using cached streaming ASR transcript for {filename}: {len(cached_segments)} segments")
+    
+    # Create a minimal result object for compatibility
+    class CachedResult:
+        def __init__(self, segments):
+            self.segments = segments
+            self.full_text = " ".join(s.get("text", "") for s in segments)
+    
+    return cached_segments, CachedResult(cached_segments)
+
+
+# ============================================================================
+# Streaming ASR Integration - Get video markers from real-time transcription
+# ============================================================================
+
+def get_streaming_video_markers(min_gap: float = 1.5, min_duration: float = 5.0) -> List[Tuple[float, float, str]]:
+    """
+    Get video cutting markers from streaming ASR.
+    
+    These markers are based on real-time transcription with timestamps and can
+    be used to cut video clips at speech boundaries.
+    
+    Args:
+        min_gap: Minimum silence gap (seconds) to split segments
+        min_duration: Minimum segment duration (seconds)
+        
+    Returns:
+        List of (start_time, end_time, text) tuples
+    """
+    if not STREAMING_ASR_AVAILABLE:
+        return []
+    
+    try:
+        processor = streaming_asr.get_stream_processor()
+        markers = processor.asr.get_timestamps_for_video_cutting(
+            min_segment_gap=min_gap,
+            min_segment_duration=min_duration
+        )
+        return markers
+    except Exception as e:
+        print(f"[WARN] Failed to get streaming video markers: {e}")
+        return []
+
+
+def get_streaming_conversations(min_len: float = 5.0, max_gap: float = 1.5) -> List[Tuple[float, float, List[Dict]]]:
+    """
+    Get conversations from streaming ASR for video processing.
+    
+    Similar to group_conversations but uses streaming ASR data.
+    
+    Returns:
+        List of (start_time, end_time, segments) tuples
+    """
+    if not STREAMING_ASR_AVAILABLE:
+        return []
+    
+    try:
+        processor = streaming_asr.get_stream_processor()
+        if not processor.asr or not processor.asr.all_segments:
+            return []
+        
+        # Convert streaming segments to the format expected by group_conversations
+        segments = []
+        for seg in processor.asr.all_segments:
+            # Use absolute timestamps (stream_start_time + relative time)
+            abs_start = processor.stream_start_time + seg.start_time
+            abs_end = processor.stream_start_time + seg.end_time
+            segments.append({
+                "abs_start": abs_start,
+                "abs_end": abs_end,
+                "speaker": "stream",  # Streaming ASR doesn't have speaker diarization
+                "text": seg.text,
+                "language": "auto",
+                "emotion": None,
+            })
+        
+        # Group into conversations
+        return group_conversations(segments, min_len=min_len, max_gap=max_gap)
+    except Exception as e:
+        print(f"[WARN] Failed to get streaming conversations: {e}")
+        return []
 
 
 def group_conversations(segments: List[Dict], min_len=5.0, max_gap=1.5):
@@ -763,14 +1424,10 @@ def process_single_conversation(args_tuple):
 
 
 def processing_loop(stop_event: threading.Event):
-    transcriber = AudioTranscriber()
-    yolo = YOLO11Detector("yolo11n")
-    compreface = CompreFaceProcessor()
+    """Main processing loop - queues clip jobs to background thread using cached ASR results."""
     processed_audio = set()
-    data = load_data_json()
     
-    # Use thread pool for parallel processing
-    max_workers = min(4, (os.cpu_count() or 2))
+    print("[INFO] Processing loop started (using streaming ASR cache + async clip processing)")
     
     while not stop_event.is_set():
         new_audio = list_unprocessed_audio(processed_audio)
@@ -778,52 +1435,44 @@ def processing_loop(stop_event: threading.Event):
             time.sleep(2.0)
             continue
         
+        # Process audio fragments sequentially (but clip creation is async)
         for entry in new_audio:
+            filename = entry.get("filename")
+            processed_audio.add(filename)
+            
             try:
-                out = transcribe_fragment(transcriber, entry)
+                # Get transcript from streaming ASR cache
+                out = transcribe_fragment(entry)
                 if not out:
-                    processed_audio.add(entry.get("filename"))
                     continue
+                
                 segments, res = out
                 conversations = group_conversations(segments)
                 
                 if not conversations:
-                    processed_audio.add(entry.get("filename"))
                     continue
                 
                 # Gather relevant video fragments that overlap
                 video_meta = list_unprocessed_video()
                 
-                # Prepare tasks for parallel processing
-                tasks = []
+                # Queue each conversation for async clip processing
                 for conv_start, conv_end, conv_segments in conversations:
-                    clip_id = f"clip_{int(conv_start)}_{int(conv_end)}"
-                    clip_video_tmp = MAIN_CACHE / f"{clip_id}_tmp.avi"
-                    clip_audio_tmp = MAIN_CACHE / f"{clip_id}_tmp.wav"
-                    clip_path = MAIN_CACHE / f"{clip_id}.mp4"
+                    try:
+                        candidates = [v for v in video_meta 
+                                      if (v.get("timestamp",0) + v.get("duration",0)) >= conv_start 
+                                      and v.get("timestamp",0) <= conv_end]
+                        
+                        # Queue clip job (non-blocking)
+                        duration = conv_end - conv_start
+                        _queue_clip_job(conv_start, conv_end, conv_segments, candidates, entry)
+                        print(f"[QUEUE] Queued clip: {duration:.1f}s, queue size: {_clip_queue.qsize()}")
                     
-                    candidates = [v for v in video_meta 
-                                  if (v.get("timestamp",0) + v.get("duration",0)) >= conv_start 
-                                  and v.get("timestamp",0) <= conv_end]
-                    
-                    tasks.append((
-                        conv_start, conv_end, conv_segments, candidates, entry,
-                        clip_video_tmp, clip_audio_tmp, clip_path, yolo, compreface
-                    ))
-                
-                # Process conversations in parallel
-                with ThreadPoolExecutor(max_workers=max_workers) as executor:
-                    futures = [executor.submit(process_single_conversation, t) for t in tasks]
-                    for future in as_completed(futures):
-                        result = future.result()
-                        if result:
-                            data.setdefault("clips", []).append(result)
-                            save_data_json(data)
-                
-                processed_audio.add(entry.get("filename"))
+                    except Exception as e:
+                        print(f"[ERROR] conversation queuing failed: {e}")
+                        continue
                 
             except Exception as e:
-                print(f"[ERROR] pipeline failed for {entry.get('filename')}: {e}")
+                print(f"[ERROR] pipeline failed for {filename}: {e}")
                 import traceback
                 traceback.print_exc()
                 continue
@@ -863,7 +1512,6 @@ def clear_all_data():
     import shutil
     
     # Define paths based on existing constants
-    # Note: AudioTranscriber uses relative paths from CWD, so main/transcripts/ is also used
     main_transcript_dir = BASE_DIR / "transcripts"
     transcript_dir = AUDIO_DIR / "transcripts"
     face_cache_dir = VIDEO_DIR / "face_cache"
@@ -984,8 +1632,14 @@ def main():
     except KeyboardInterrupt:
         pass
     finally:
+        print("[SHUTDOWN] Stopping threads...")
         stop_event.set()
         worker.join(timeout=2.0)
+        _stop_asr_thread()
+        _stop_clip_thread()
+        print(f"[SHUTDOWN] Clip stats: {_clip_stats}")
+        print("[SHUTDOWN] Waiting for pending ASR finalizations...")
+        _finalization_executor.shutdown(wait=True, cancel_futures=False)
         video_server.shutdown()
         audio_server.shutdown()
 

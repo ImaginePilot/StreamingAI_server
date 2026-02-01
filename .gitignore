@@ -40,3 +40,10 @@ cache/
 # OS
 .DS_Store
 Thumbs.db
+
+#data
+llm/lightrag_data
+llm/memory_db
+streaming/cache
+streaming/audiostream/cache
+streaming/videostream/cache

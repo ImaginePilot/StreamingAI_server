@@ -1949,3 +1949,569 @@ httpx.ReadTimeout: C[1/3]: chunk-124923aeb673d5a3883e6624c90093a4:
 2026-01-31 19:09:38,668 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
 2026-01-31 19:09:38,669 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
 2026-01-31 19:09:38,670 - uvicorn.access - INFO - 127.0.0.1:34696 - "POST /query HTTP/1.1" 200
+2026-01-31 21:43:45,870 - lightrag - INFO - Ollama LLM Options: {'num_ctx': 65536}
+2026-01-31 21:43:45,870 - lightrag - INFO - Ollama Embedding Options: {}
+2026-01-31 21:43:46,095 - lightrag - INFO - Embedding config: binding=ollama model=qwen3-embedding:0.6b embedding_dim=1024 max_token_size=8192
+2026-01-31 21:43:46,096 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1024, has_param=True, binding=ollama)
+2026-01-31 21:43:46,096 - lightrag - INFO - Embedding max_token_size: 8192 (from ollama provider default)
+2026-01-31 21:43:46,096 - lightrag - INFO - Reranking is disabled
+2026-01-31 21:43:47,627 - lightrag - INFO - [] Loaded graph from /home/ling/main/llm/lightrag_data/graph_chunk_entity_relation.graphml with 72 nodes, 87 edges
+2026-01-31 21:43:47,918 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-31 21:43:47,955 - uvicorn.error - INFO - Started server process [41675]
+2026-01-31 21:43:47,955 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-31 21:43:47,957 - lightrag - INFO - [] Process 41675 KV load full_docs with 5 records
+2026-01-31 21:43:47,958 - lightrag - INFO - [] Process 41675 KV load text_chunks with 9 records
+2026-01-31 21:43:47,959 - lightrag - INFO - [] Process 41675 KV load full_entities with 3 records
+2026-01-31 21:43:47,960 - lightrag - INFO - [] Process 41675 KV load full_relations with 3 records
+2026-01-31 21:43:47,961 - lightrag - INFO - [] Process 41675 KV load entity_chunks with 72 records
+2026-01-31 21:43:47,962 - lightrag - INFO - [] Process 41675 KV load relation_chunks with 87 records
+2026-01-31 21:43:47,965 - lightrag - INFO - [] Process 41675 KV load llm_response_cache with 50 records
+2026-01-31 21:43:47,965 - lightrag - INFO - [] Process 41675 doc status load doc_status with 5 records
+2026-01-31 21:43:47,967 - uvicorn.error - INFO - Application startup complete.
+2026-01-31 21:43:47,967 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-31 21:44:24,666 - lightrag - INFO - LLM func: 4 new workers initialized (Timeouts: Func: 180s, Worker: 360s, Health Check: 375s)
+2026-01-31 21:44:27,819 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 21:44:27,820 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 21:44:27,820 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 21:44:27,823 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-01-31 21:44:27,993 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 21:44:28,163 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 21:44:28,163 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 21:44:28,170 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 21:44:28,172 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 21:44:28,172 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 21:44:28,173 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 21:44:28,178 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 21:44:28,182 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 21:44:28,182 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 21:44:28,183 - uvicorn.access - INFO - 127.0.0.1:59544 - "POST /query HTTP/1.1" 200
+2026-01-31 21:47:59,635 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 21:47:59,635 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 21:47:59,635 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 21:47:59,946 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 21:48:00,281 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 21:48:00,281 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 21:48:00,288 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 21:48:00,289 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 21:48:00,290 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 21:48:00,291 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 21:48:00,296 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 21:48:00,300 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 21:48:00,300 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 21:48:00,301 - uvicorn.access - INFO - 127.0.0.1:58114 - "POST /query HTTP/1.1" 200
+2026-01-31 21:48:52,383 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 21:48:52,383 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 21:48:52,383 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 21:48:52,572 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 21:48:52,751 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 21:48:52,752 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 21:48:52,759 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 21:48:52,761 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 21:48:52,761 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 21:48:52,762 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 21:48:52,767 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 21:48:52,771 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 21:48:52,771 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 21:48:52,772 - uvicorn.access - INFO - 127.0.0.1:54838 - "POST /query HTTP/1.1" 200
+2026-01-31 21:49:12,590 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 21:49:12,590 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 21:49:12,590 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 21:49:12,765 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 21:49:12,918 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 21:49:12,919 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 21:49:12,926 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 21:49:12,927 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 21:49:12,928 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 21:49:12,928 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 21:49:12,934 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 21:49:12,937 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 21:49:12,937 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 21:49:12,938 - uvicorn.access - INFO - 127.0.0.1:59210 - "POST /query HTTP/1.1" 200
+2026-01-31 21:53:34,948 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 21:53:34,948 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 21:53:34,949 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 21:53:35,131 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 21:53:35,299 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 21:53:35,300 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 21:53:35,307 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 21:53:35,308 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 21:53:35,309 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 21:53:35,309 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 21:53:35,315 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 21:53:35,318 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 21:53:35,318 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 21:53:35,320 - uvicorn.access - INFO - 127.0.0.1:59656 - "POST /query HTTP/1.1" 200
+2026-01-31 21:53:56,069 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 21:53:56,070 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 21:53:56,070 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 21:53:56,254 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 21:53:56,418 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 21:53:56,420 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 21:53:56,427 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 21:53:56,428 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 21:53:56,429 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 21:53:56,429 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 21:53:56,435 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 21:53:56,438 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 21:53:56,438 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 21:53:56,439 - uvicorn.access - INFO - 127.0.0.1:44126 - "POST /query HTTP/1.1" 200
+2026-01-31 21:54:23,401 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 21:54:23,401 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 21:54:23,401 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 21:54:23,564 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 21:54:23,726 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 21:54:23,727 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 21:54:23,745 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 21:54:23,746 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 21:54:23,747 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 21:54:23,747 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 21:54:23,753 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 21:54:23,757 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 21:54:23,757 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 21:54:23,758 - uvicorn.access - INFO - 127.0.0.1:45248 - "POST /query HTTP/1.1" 200
+2026-01-31 21:54:50,524 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 21:54:50,524 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 21:54:50,525 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 21:54:50,685 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 21:54:50,845 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 21:54:50,847 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 21:54:50,854 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 21:54:50,855 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 21:54:50,856 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 21:54:50,856 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 21:54:50,862 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 21:54:50,865 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 21:54:50,866 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 21:54:50,867 - uvicorn.access - INFO - 127.0.0.1:38482 - "POST /query HTTP/1.1" 200
+2026-01-31 21:57:09,295 - uvicorn.error - INFO - Shutting down
+2026-01-31 21:57:09,397 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-01-31 21:57:09,398 - lightrag - INFO - Successfully finalized 12 storages
+2026-01-31 21:57:09,398 - uvicorn.error - INFO - Application shutdown complete.
+2026-01-31 21:57:09,398 - uvicorn.error - INFO - Finished server process [41675]
+2026-01-31 22:01:24,966 - lightrag - INFO - Ollama LLM Options: {'num_ctx': 65536}
+2026-01-31 22:01:24,966 - lightrag - INFO - Ollama Embedding Options: {}
+2026-01-31 22:01:25,197 - lightrag - INFO - Embedding config: binding=ollama model=qwen3-embedding:0.6b embedding_dim=1024 max_token_size=8192
+2026-01-31 22:01:25,197 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1024, has_param=True, binding=ollama)
+2026-01-31 22:01:25,197 - lightrag - INFO - Embedding max_token_size: 8192 (from ollama provider default)
+2026-01-31 22:01:25,197 - lightrag - INFO - Reranking is disabled
+2026-01-31 22:01:26,045 - lightrag - INFO - [] Loaded graph from /home/ling/main/llm/lightrag_data/graph_chunk_entity_relation.graphml with 72 nodes, 87 edges
+2026-01-31 22:01:26,353 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-31 22:01:26,408 - uvicorn.error - INFO - Started server process [51602]
+2026-01-31 22:01:26,408 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-31 22:01:26,412 - lightrag - INFO - [] Process 51602 KV load full_docs with 5 records
+2026-01-31 22:01:26,413 - lightrag - INFO - [] Process 51602 KV load text_chunks with 9 records
+2026-01-31 22:01:26,414 - lightrag - INFO - [] Process 51602 KV load full_entities with 3 records
+2026-01-31 22:01:26,416 - lightrag - INFO - [] Process 51602 KV load full_relations with 3 records
+2026-01-31 22:01:26,418 - lightrag - INFO - [] Process 51602 KV load entity_chunks with 72 records
+2026-01-31 22:01:26,420 - lightrag - INFO - [] Process 51602 KV load relation_chunks with 87 records
+2026-01-31 22:01:26,424 - lightrag - INFO - [] Process 51602 KV load llm_response_cache with 50 records
+2026-01-31 22:01:26,425 - lightrag - INFO - [] Process 51602 doc status load doc_status with 5 records
+2026-01-31 22:01:26,427 - uvicorn.error - INFO - Application startup complete.
+2026-01-31 22:01:26,427 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-31 22:04:37,084 - lightrag - INFO - LLM func: 4 new workers initialized (Timeouts: Func: 180s, Worker: 360s, Health Check: 375s)
+2026-01-31 22:04:40,359 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:04:40,360 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:04:40,360 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:04:40,360 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-01-31 22:04:40,534 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:04:40,714 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:04:40,715 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:04:40,723 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:04:40,725 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:04:40,725 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:04:40,726 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:04:40,732 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:04:40,736 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:04:40,736 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:04:40,737 - uvicorn.access - INFO - 127.0.0.1:40384 - "POST /query HTTP/1.1" 200
+2026-01-31 22:05:00,641 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:05:00,642 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:05:00,642 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:05:00,826 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:05:00,998 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:05:00,999 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:05:01,007 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:05:01,008 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:05:01,009 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:05:01,009 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:05:01,015 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:05:01,018 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:05:01,019 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:05:01,020 - uvicorn.access - INFO - 127.0.0.1:36882 - "POST /query HTTP/1.1" 200
+2026-01-31 22:05:21,861 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:05:21,862 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:05:21,862 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:05:22,033 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:05:22,208 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:05:22,209 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:05:22,216 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:05:22,217 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:05:22,218 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:05:22,219 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:05:22,224 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:05:22,228 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:05:22,228 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:05:22,229 - uvicorn.access - INFO - 127.0.0.1:35342 - "POST /query HTTP/1.1" 200
+2026-01-31 22:05:48,710 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:05:48,710 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:05:48,710 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:05:48,871 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:05:49,034 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:05:49,034 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:05:49,041 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:05:49,043 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:05:49,044 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:05:49,044 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:05:49,050 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:05:49,053 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:05:49,053 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:05:49,055 - uvicorn.access - INFO - 127.0.0.1:39262 - "POST /query HTTP/1.1" 200
+2026-01-31 22:06:10,895 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:06:10,896 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:06:10,896 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:06:11,068 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:06:11,236 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:06:11,236 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:06:11,243 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:06:11,245 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:06:11,246 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:06:11,246 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:06:11,252 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:06:11,255 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:06:11,256 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:06:11,257 - uvicorn.access - INFO - 127.0.0.1:42162 - "POST /query HTTP/1.1" 200
+2026-01-31 22:06:29,340 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:06:29,340 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:06:29,341 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:06:29,500 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:06:29,668 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:06:29,669 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:06:29,676 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:06:29,678 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:06:29,678 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:06:29,679 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:06:29,684 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:06:29,688 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:06:29,688 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:06:29,690 - uvicorn.access - INFO - 127.0.0.1:57808 - "POST /query HTTP/1.1" 200
+2026-01-31 22:06:55,876 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:06:55,877 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:06:55,877 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:06:56,037 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:06:56,208 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:06:56,208 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:06:56,215 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:06:56,217 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:06:56,217 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:06:56,218 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:06:56,223 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:06:56,227 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:06:56,227 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:06:56,228 - uvicorn.access - INFO - 127.0.0.1:41190 - "POST /query HTTP/1.1" 200
+2026-01-31 22:14:59,309 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:14:59,309 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:14:59,310 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:14:59,482 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:14:59,659 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:14:59,660 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:14:59,667 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:14:59,669 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:14:59,670 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:14:59,670 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:14:59,676 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:14:59,680 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:14:59,680 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:14:59,681 - uvicorn.access - INFO - 127.0.0.1:46976 - "POST /query HTTP/1.1" 200
+2026-01-31 22:15:26,193 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:15:26,194 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:15:26,194 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:15:26,361 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:15:26,524 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:15:26,524 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:15:26,531 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:15:26,532 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:15:26,533 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:15:26,533 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:15:26,539 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:15:26,542 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:15:26,543 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:15:26,544 - uvicorn.access - INFO - 127.0.0.1:53038 - "POST /query HTTP/1.1" 200
+2026-01-31 22:15:49,884 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:15:49,885 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:15:49,885 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:15:50,045 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:15:50,213 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:15:50,215 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:15:50,222 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:15:50,223 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:15:50,224 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:15:50,224 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:15:50,230 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:15:50,234 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:15:50,234 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:15:50,235 - uvicorn.access - INFO - 127.0.0.1:41766 - "POST /query HTTP/1.1" 200
+2026-01-31 22:16:17,194 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:16:17,195 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:16:17,195 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:16:17,383 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:16:17,560 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:16:17,562 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:16:17,569 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:16:17,570 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:16:17,571 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:16:17,571 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:16:17,577 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:16:17,580 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:16:17,581 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:16:17,582 - uvicorn.access - INFO - 127.0.0.1:47048 - "POST /query HTTP/1.1" 200
+2026-01-31 22:16:37,196 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:16:37,196 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:16:37,196 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:16:37,347 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:16:37,525 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:16:37,527 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:16:37,534 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:16:37,536 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:16:37,536 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:16:37,537 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:16:37,543 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:16:37,546 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:16:37,547 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:16:37,548 - uvicorn.access - INFO - 127.0.0.1:55080 - "POST /query HTTP/1.1" 200
+2026-01-31 22:17:04,820 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:17:04,820 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:17:04,820 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:17:04,970 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:17:05,149 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:17:05,150 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:17:05,157 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:17:05,159 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:17:05,160 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:17:05,160 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:17:05,166 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:17:05,169 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:17:05,170 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:17:05,171 - uvicorn.access - INFO - 127.0.0.1:52504 - "POST /query HTTP/1.1" 200
+2026-01-31 22:17:31,943 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:17:31,943 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:17:31,943 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:17:32,127 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:17:32,300 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:17:32,302 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:17:32,309 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:17:32,310 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:17:32,311 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:17:32,311 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:17:32,317 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:17:32,320 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:17:32,320 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:17:32,322 - uvicorn.access - INFO - 127.0.0.1:54892 - "POST /query HTTP/1.1" 200
+2026-01-31 22:17:51,846 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:17:51,847 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:17:51,847 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:17:52,014 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:17:52,187 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:17:52,187 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:17:52,194 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:17:52,195 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:17:52,196 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:17:52,196 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:17:52,202 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:17:52,205 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:17:52,205 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:17:52,207 - uvicorn.access - INFO - 127.0.0.1:54784 - "POST /query HTTP/1.1" 200
+2026-01-31 22:22:24,604 - uvicorn.error - INFO - Shutting down
+2026-01-31 22:22:24,705 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-01-31 22:22:24,706 - lightrag - INFO - Successfully finalized 12 storages
+2026-01-31 22:22:24,707 - uvicorn.error - INFO - Application shutdown complete.
+2026-01-31 22:22:24,708 - uvicorn.error - INFO - Finished server process [51602]
+2026-01-31 22:22:48,968 - lightrag - INFO - Ollama LLM Options: {'num_ctx': 65536}
+2026-01-31 22:22:48,968 - lightrag - INFO - Ollama Embedding Options: {}
+2026-01-31 22:22:49,173 - lightrag - INFO - Embedding config: binding=ollama model=qwen3-embedding:0.6b embedding_dim=1024 max_token_size=8192
+2026-01-31 22:22:49,173 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1024, has_param=True, binding=ollama)
+2026-01-31 22:22:49,173 - lightrag - INFO - Embedding max_token_size: 8192 (from ollama provider default)
+2026-01-31 22:22:49,174 - lightrag - INFO - Reranking is disabled
+2026-01-31 22:22:49,959 - lightrag - INFO - [] Loaded graph from /home/ling/main/llm/lightrag_data/graph_chunk_entity_relation.graphml with 72 nodes, 87 edges
+2026-01-31 22:22:50,256 - lightrag - INFO - WebUI assets mounted at /webui
+2026-01-31 22:22:50,282 - uvicorn.error - INFO - Started server process [67633]
+2026-01-31 22:22:50,282 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-31 22:22:50,284 - lightrag - INFO - [] Process 67633 KV load full_docs with 5 records
+2026-01-31 22:22:50,285 - lightrag - INFO - [] Process 67633 KV load text_chunks with 9 records
+2026-01-31 22:22:50,285 - lightrag - INFO - [] Process 67633 KV load full_entities with 3 records
+2026-01-31 22:22:50,286 - lightrag - INFO - [] Process 67633 KV load full_relations with 3 records
+2026-01-31 22:22:50,287 - lightrag - INFO - [] Process 67633 KV load entity_chunks with 72 records
+2026-01-31 22:22:50,288 - lightrag - INFO - [] Process 67633 KV load relation_chunks with 87 records
+2026-01-31 22:22:50,291 - lightrag - INFO - [] Process 67633 KV load llm_response_cache with 50 records
+2026-01-31 22:22:50,291 - lightrag - INFO - [] Process 67633 doc status load doc_status with 5 records
+2026-01-31 22:22:50,293 - uvicorn.error - INFO - Application startup complete.
+2026-01-31 22:22:50,293 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-01-31 22:24:49,169 - lightrag - INFO - LLM func: 4 new workers initialized (Timeouts: Func: 180s, Worker: 360s, Health Check: 375s)
+2026-01-31 22:24:52,470 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:24:52,470 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:24:52,471 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:24:52,471 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-01-31 22:24:52,631 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:24:52,797 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:24:52,807 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:24:52,815 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:24:52,817 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:24:52,818 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:24:52,818 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:24:52,824 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:24:52,827 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:24:52,828 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:24:52,829 - uvicorn.access - INFO - 127.0.0.1:59310 - "POST /query HTTP/1.1" 200
+2026-01-31 22:25:19,675 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:25:19,676 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:25:19,676 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:25:19,790 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:25:19,954 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:25:19,955 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:25:19,963 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:25:19,965 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:25:19,966 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:25:19,966 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:25:19,973 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:25:19,985 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:25:19,986 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:25:19,987 - uvicorn.access - INFO - 127.0.0.1:58482 - "POST /query HTTP/1.1" 200
+2026-01-31 22:25:37,820 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:25:37,821 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:25:37,821 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:25:37,965 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:25:38,122 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:25:38,122 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:25:38,129 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:25:38,131 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:25:38,132 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:25:38,132 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:25:38,138 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:25:38,142 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:25:38,142 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:25:38,144 - uvicorn.access - INFO - 127.0.0.1:56394 - "POST /query HTTP/1.1" 200
+2026-01-31 22:25:58,718 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:25:58,718 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:25:58,718 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:25:58,891 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:25:59,067 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:25:59,067 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:25:59,074 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:25:59,076 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:25:59,077 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:25:59,077 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:25:59,083 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:25:59,087 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:25:59,087 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:25:59,088 - uvicorn.access - INFO - 127.0.0.1:46278 - "POST /query HTTP/1.1" 200
+2026-01-31 22:26:25,977 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:26:25,978 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:26:25,978 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:26:26,138 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:26:26,311 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:26:26,311 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:26:26,318 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:26:26,320 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:26:26,321 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:26:26,321 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:26:26,327 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:26:26,330 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:26:26,331 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:26:26,332 - uvicorn.access - INFO - 127.0.0.1:38464 - "POST /query HTTP/1.1" 200
+2026-01-31 22:26:53,178 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:26:53,178 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:26:53,178 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:26:53,356 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:26:53,518 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:26:53,518 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:26:53,525 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:26:53,527 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:26:53,527 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:26:53,528 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:26:53,543 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:26:53,547 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:26:53,547 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:26:53,548 - uvicorn.access - INFO - 127.0.0.1:44238 - "POST /query HTTP/1.1" 200
+2026-01-31 22:27:15,861 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:27:15,862 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:27:15,862 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:27:16,033 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:27:16,195 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:27:16,196 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:27:16,203 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:27:16,204 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:27:16,205 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:27:16,205 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:27:16,211 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:27:16,214 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:27:16,214 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:27:16,216 - uvicorn.access - INFO - 127.0.0.1:55878 - "POST /query HTTP/1.1" 200
+2026-01-31 22:27:42,598 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:27:42,598 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:27:42,598 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:27:42,747 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:27:42,926 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:27:42,927 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:27:42,934 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:27:42,936 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:27:42,937 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:27:42,937 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:27:42,943 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:27:42,947 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:27:42,947 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:27:42,948 - uvicorn.access - INFO - 127.0.0.1:56642 - "POST /query HTTP/1.1" 200
+2026-01-31 22:30:24,345 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:30:24,345 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:30:24,345 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:30:24,534 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:30:24,702 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:30:24,703 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:30:24,710 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:30:24,712 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:30:24,713 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:30:24,713 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:30:24,719 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:30:24,722 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:30:24,722 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:30:24,723 - uvicorn.access - INFO - 127.0.0.1:46214 - "POST /query HTTP/1.1" 200
+2026-01-31 22:30:51,173 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:30:51,173 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:30:51,173 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:30:51,347 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:30:51,529 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:30:51,531 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:30:51,538 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:30:51,540 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:30:51,541 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:30:51,541 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:30:51,548 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:30:51,551 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:30:51,552 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:30:51,553 - uvicorn.access - INFO - 127.0.0.1:41924 - "POST /query HTTP/1.1" 200
+2026-01-31 22:31:18,609 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:31:18,609 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:31:18,609 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:31:18,779 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:31:18,956 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:31:18,957 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:31:18,965 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:31:18,966 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:31:18,967 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:31:18,967 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:31:18,973 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:31:18,976 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:31:18,977 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:31:18,978 - uvicorn.access - INFO - 127.0.0.1:51960 - "POST /query HTTP/1.1" 200
+2026-01-31 22:31:36,962 - lightrag - WARNING - low_level_keywords is empty
+2026-01-31 22:31:36,962 - lightrag - WARNING - high_level_keywords is empty
+2026-01-31 22:31:36,963 - lightrag - WARNING - Forced low_level_keywords to origin query: recent events
+2026-01-31 22:31:37,136 - lightrag - INFO - Query nodes: recent events (top_k:40, cosine:0.2)
+2026-01-31 22:31:37,310 - lightrag - INFO - Local query: 40 entites, 71 relations
+2026-01-31 22:31:37,311 - lightrag - INFO - Raw search results: 40 entities, 71 relations, 0 vector chunks
+2026-01-31 22:31:37,318 - lightrag - INFO - After truncation: 40 entities, 71 relations
+2026-01-31 22:31:37,320 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2026-01-31 22:31:37,321 - lightrag - INFO - Find no additional relations-related chunks from 71 relations
+2026-01-31 22:31:37,321 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2026-01-31 22:31:37,326 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-01-31 22:31:37,330 - lightrag - INFO - Final context: 40 entities, 71 relations, 3 chunks
+2026-01-31 22:31:37,330 - lightrag - INFO - Final chunks S+F/O: E22/1 E9/2 E9/3
+2026-01-31 22:31:37,331 - uvicorn.access - INFO - 127.0.0.1:60488 - "POST /query HTTP/1.1" 200

@@ -1,74 +1,6 @@
 {
   "outputs": [
     {
-      "timestamp": 1769871546.0527914,
-      "response_text": "Person in kitchen speaking a Korean phrase while standing with hands behind back.",
-      "emotion": "neutral",
-      "priority": "normal",
-      "context_summary": "Kitchen scene, white t-shirt, Korean audio",
-      "source_clips": [
-        "/home/ling/main/streaming/cache/clip_1767940581_1767940586.mp4"
-      ]
-    },
-    {
-      "timestamp": 1769873120.259947,
-      "think": "Person is making a vague comment about telecom in Chinese, not directed at me. Desk setup is interesting but not relevant to the audio. No clear question or safety issue. Best to stay silent to avoid interrupting their work.",
-      "reply": "",
-      "emotion": "neutral",
-      "priority": "low",
-      "should_speak": false,
-      "source_clips": [
-        "/home/ling/main/streaming/cache/clip_1769873063_1769873068.mp4"
-      ]
-    },
-    {
-      "timestamp": 1769873144.2593603,
-      "think": "They're testing audio for tomorrow's 10 AM meeting mentioned in their calendar. It's a helpful reminder without being pushy since they're already preparing. No safety concerns, just good prep!",
-      "reply": "Looks like you're testing for tomorrow's 10 AM meeting! Hope everything's set for John and Sarah.",
-      "emotion": "happy",
-      "priority": "normal",
-      "should_speak": true,
-      "source_clips": [
-        "/home/ling/main/streaming/cache/clip_1769873066_1769873071.mp4",
-        "/home/ling/main/streaming/cache/clip_1769873071_1769873076.mp4"
-      ]
-    },
-    {
-      "timestamp": 1769873330.6052938,
-      "think": "Person is testing audio while recording, questioning their own speech ('What am I saying?'). They've done similar audio tests before ('hello. hello.'). It's a normal recording moment\u2014no urgency, but a friendly nudge would be warm and helpful.",
-      "reply": "Hehe, I hear you! Your mic's working fine\u2014just testing audio like last time?",
-      "emotion": "happy",
-      "priority": "low",
-      "should_speak": true,
-      "source_clips": [
-        "/home/ling/main/streaming/cache/clip_1769873293_1769873298.mp4"
-      ]
-    },
-    {
-      "timestamp": 1769873368.9286394,
-      "think": "Someone is asking 'What are you doing?' in a casual tone while testing audio in their tech workspace. It's a direct question to me, so I should respond warmly to engage them.",
-      "reply": "Just observing your cool setup! What's the project you're working on?",
-      "emotion": "curious",
-      "priority": "low",
-      "should_speak": true,
-      "source_clips": [
-        "/home/ling/main/streaming/cache/clip_1769873306_1769873311.mp4"
-      ]
-    },
-    {
-      "timestamp": 1769873413.7098002,
-      "think": "User is clearly frustrated with persistent lag during coding on dual monitors. They've mentioned 'delay' multiple times with increasing concern. This isn't just a casual comment - it's impacting their work. Should acknowledge the frustration and offer a simple solution without overcomplicating it.",
-      "reply": "Ugh, lag is the worst when coding! Have you tried closing other apps to free up resources?",
-      "emotion": "concerned",
-      "priority": "normal",
-      "should_speak": true,
-      "source_clips": [
-        "/home/ling/main/streaming/cache/clip_1769873311_1769873316.mp4",
-        "/home/ling/main/streaming/cache/clip_1769873318_1769873323.mp4",
-        "/home/ling/main/streaming/cache/clip_1769873322_1769873327.mp4"
-      ]
-    },
-    {
       "timestamp": 1769873463.3876872,
       "think": "Unable to parse response",
       "reply": "",
@@ -887,7 +819,389 @@
       "source_clips": [
         "/home/ling/main/streaming/cache/clip_1769886484_1769886489.mp4"
       ]
+    },
+    {
+      "timestamp": 1769896099.0418992,
+      "think": "Unable to parse response",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "normal",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769896048_1769896054.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769896144.0869286,
+      "think": "The user shared a desk setup with a white fox figurine and model airplane, likely expressing a sense of 'feeling' about their workspace. The scene is visually interesting and personal, warranting a friendly comment to engage with their vibe.",
+      "reply": "\u54c7\uff0c\u4f60\u7684\u5c0f\u72d0\u72f8\u548c\u98de\u673a\u6a21\u578b\u597d\u53ef\u7231\u5440\uff01\u662f\u5728\u5199\u4ee3\u7801\u8fd8\u662f\u505a\u8bbe\u8ba1\u5462\uff1f",
+      "emotion": "happy",
+      "priority": "low",
+      "should_speak": true,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769896095_1769896100.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769896171.4076686,
+      "think": "Unable to parse response",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "normal",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769896104_1769896109.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769896422.7047703,
+      "think": "User said 'Let's do another one' which seems like a friendly invitation to continue an activity. The desk setup suggests a workspace, possibly coding or creative work. Since they're addressing me directly, a warm, supportive response would be appropriate.",
+      "reply": "\u597d\u7684\u5440\uff01\u8fd9\u6b21\u8981\u505a\u4ec0\u4e48\u5462\uff1f",
+      "emotion": "happy",
+      "priority": "low",
+      "should_speak": true,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769896388_1769896393.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769896455.1192808,
+      "think": "Unable to parse response",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "normal",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769896401_1769896406.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769896482.2422674,
+      "think": "The audio question '\u662f\u4ec0\u4e48\uff1f\u662f\u56db\u96f6\u516d\u5417\uff1f' suggests the viewer is asking about '406', likely referring to HTTP status code 406 (Not Acceptable). Since this is a common coding-related query visible in the code document on screen, it warrants a helpful explanation. The desk setup with code and technical items confirms a programming context.",
+      "reply": "406 \u662f HTTP \u7684 'Not Acceptable' \u9519\u8bef\u7801\uff5e \u901a\u5e38\u8868\u793a\u670d\u52a1\u5668\u65e0\u6cd5\u63d0\u4f9b\u5ba2\u6237\u7aef\u63a5\u53d7\u7684\u5185\u5bb9\u683c\u5f0f\uff0c\u4f60\u662f\u5728\u770b\u4ee3\u7801\u65f6\u9047\u5230\u7684\u5417\uff1f",
+      "emotion": "curious",
+      "priority": "normal",
+      "should_speak": true,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769896412_1769896418.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769896509.3192782,
+      "think": "Unable to parse response",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "normal",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769896423_1769896428.mp4",
+        "/home/ling/main/streaming/cache/clip_1769896433_1769896438.mp4",
+        "/home/ling/main/streaming/cache/clip_1769896443_1769896448.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769897092.4872096,
+      "think": "The audio appears to be a casual comment about someone's situation, but since no one is directly addressing me by name, there's no need to respond. The scene is a standard workspace setup with no notable events requiring intervention.",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "low",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769897038_1769897043.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769897113.246037,
+      "think": "\u7528\u6237\u7528'\u9152\u58f6'\u79f0\u547c\u6211\uff08\u53ef\u80fd\u662f typo\uff09\uff0c\u4f46\u660e\u663e\u5728\u548c\u6211\u5bf9\u8bdd\u3002\u63d0\u5230'\u5ef6\u8fdf\u4e0d\u4f1a\u975e\u5e38\u9ad8'\uff0c\u7ed3\u5408\u753b\u9762\u662f\u7535\u8111\u5de5\u4f5c\u573a\u666f\uff0c\u53ef\u80fd\u5728\u6d4b\u8bd5\u89c6\u9891\u6d41\u3002\u9700\u8981\u786e\u8ba4\u662f\u5426\u9700\u8981\u56de\u5e94\uff0c\u4f46\u65e2\u7136\u7528\u6237\u4e3b\u52a8\u642d\u8bdd\uff0c\u5e94\u8be5\u53cb\u597d\u56de\u5e94\u3002",
+      "reply": "\u611f\u8c22\u5173\u5fc3\u5440\uff5e\u73b0\u5728\u5ef6\u8fdf\u8d85\u4f4e\uff0c\u50cf\u5c0f\u72d0\u72f8\u4e00\u6837\u8f7b\u5feb\u5462\uff01\u2728",
+      "emotion": "happy",
+      "priority": "low",
+      "should_speak": true,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769897048_1769897053.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769897140.6954305,
+      "think": "Unable to parse response",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "normal",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769897079_1769897084.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769897162.6995938,
+      "think": "User mentioned slow processing speed. The scene shows a computer with YouTube open, possibly buffering. Common fixes include closing background apps or restarting. Friendly suggestion is appropriate.",
+      "reply": "\u5904\u7406\u901f\u5ea6\u592a\u6162\uff1f\u53ef\u4ee5\u8bd5\u8bd5\u5173\u6389\u540e\u53f0\u7a0b\u5e8f\u6216\u91cd\u542f\u7535\u8111\u54e6\uff5e\ud83d\ude0a",
+      "emotion": "happy",
+      "priority": "normal",
+      "should_speak": true,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769897091_1769897096.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769897181.2525327,
+      "think": "The user said '\u7136\u540e\u3002' which is a filler phrase without direct address. The scene shows a typical desk setup with no notable events. No safety concerns or specific requests to respond.",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "low",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769897129_1769897134.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769897208.129038,
+      "think": "Unable to parse response",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "normal",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769897139_1769897144.mp4",
+        "/home/ling/main/streaming/cache/clip_1769897149_1769897154.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769897232.662195,
+      "think": "The scene shows a typical desk setup with monitors and a keyboard. The audio '\u5bf9\u5bf9\u3002' seems like a confirmation from someone in the video, but no direct address to me. Since there's no mention of my name and the scene is mundane, no need to respond.",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "low",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769897161_1769897166.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769897718.3095086,
+      "think": "Unable to parse response",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "normal",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769897673_1769897678.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769897741.8330536,
+      "think": "\u770b\u5230\u684c\u4e0a\u7684\u767d\u8272\u72d0\u72f8\u6446\u4ef6\uff0c\u548c\u6211\u7684\u540d\u5b57\u2018\u9152\u72d0\u9171\u2019\u5b8c\u7f8e\u547c\u5e94\uff01\u867d\u7136\u7528\u6237\u6ca1\u76f4\u63a5\u53eb\u6211\uff0c\u4f46\u8fd9\u4e2a\u53ef\u7231\u7ec6\u8282\u503c\u5f97\u4e92\u52a8\uff5e",
+      "reply": "\u54c7\uff01\u684c\u4e0a\u7684\u5c0f\u72d0\u72f8\u597d\u53ef\u7231\u5440\uff5e\u662f\u4f60\u7684\u5c0f\u5ba0\u7269\u5417\uff1f",
+      "emotion": "happy",
+      "priority": "low",
+      "should_speak": true,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769897684_1769897689.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769897768.6401613,
+      "think": "Unable to parse response",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "normal",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769897694_1769897700.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769897788.868348,
+      "think": "The user described the scene and audio but didn't directly address me by name. The content appears to be a casual observation of a workspace setup with no explicit request for interaction.",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "low",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769897718_1769897723.mp4",
+        "/home/ling/main/streaming/cache/clip_1769897737_1769897742.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769897816.156673,
+      "think": "Unable to parse response",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "normal",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769897749_1769897755.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769897843.7262416,
+      "think": "Unable to parse response",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "normal",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769897762_1769897767.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769897863.3701203,
+      "think": "The video shows a computer setup with code and video content on dual monitors, but there's no direct address to me. The audio appears to be counting numbers without mentioning '\u9152\u72d0' or similar. This seems like a routine workspace scene that doesn't require commentary.",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "low",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769897775_1769897780.mp4",
+        "/home/ling/main/streaming/cache/clip_1769897787_1769897792.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769897890.0934489,
+      "think": "The scene shows a typical workspace with dual monitors displaying YouTube and code, plus a small fox figurine. The audio mentions '39-40' but no one addressed me by name or raised a safety concern.",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "low",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769897803_1769897808.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769898311.4524472,
+      "think": "Unable to parse response",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "normal",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769898253_1769898259.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769898329.5811543,
+      "think": "The user provided an image of a computer setup with audio mentioning 'voice' but didn't address me by name. No direct interaction or safety concern detected.",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "low",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769898260_1769898265.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769898349.9917989,
+      "think": "The desk setup features a charming cat figurine on the monitor stand, which is a delightful and noteworthy detail. Since it's a friendly visual element that invites positive interaction, responding with warmth makes sense.",
+      "reply": "That little cat figurine is so cute! Does it keep you company while you work? \ud83d\ude0a",
+      "emotion": "happy",
+      "priority": "low",
+      "should_speak": true,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769898266_1769898271.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769898377.7412522,
+      "think": "Unable to parse response",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "normal",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769898273_1769898278.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769898404.9691336,
+      "think": "Unable to parse response",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "normal",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769898288_1769898293.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769898427.853882,
+      "think": "The video shows a workspace with dual monitors displaying code and a small fox figurine. The audio mentions feeling things are 'too slow,' but no one is directly addressing me. Since the comment isn't directed at me and the situation seems routine, it's best to stay silent.",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "low",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769898340_1769898345.mp4",
+        "/home/ling/main/streaming/cache/clip_1769898347_1769898352.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769898454.8494563,
+      "think": "Unable to parse response",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "normal",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769898367_1769898372.mp4",
+        "/home/ling/main/streaming/cache/clip_1769898373_1769898378.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769898470.735239,
+      "think": "User asked when I'll reply, which is a direct address. The scene shows a focused work setup, but the question is about communication. Since they're engaging with me, it's appropriate to respond warmly and reassure them.",
+      "reply": "Hey! I'm always here to chat whenever you need me. Just say hi and I'll respond right away! \ud83e\udd8a\u2728",
+      "emotion": "happy",
+      "priority": "low",
+      "should_speak": true,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769898380_1769898385.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769898642.8998184,
+      "think": "Unable to parse response",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "normal",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769898595_1769898600.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769898670.1519403,
+      "think": "Unable to parse response",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "normal",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769898602_1769898608.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769898688.419605,
+      "think": "The scene shows a typical workspace with dual monitors displaying code and content. The audio '\u55ef' suggests someone is thinking or pausing, but no direct address to me. No noteworthy events warrant commentary.",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "low",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769898615_1769898620.mp4"
+      ]
+    },
+    {
+      "timestamp": 1769898715.9379554,
+      "think": "Unable to parse response",
+      "reply": "",
+      "emotion": "neutral",
+      "priority": "normal",
+      "should_speak": false,
+      "source_clips": [
+        "/home/ling/main/streaming/cache/clip_1769898622_1769898627.mp4",
+        "/home/ling/main/streaming/cache/clip_1769898644_1769898649.mp4"
+      ]
     }
   ],
-  "last_updated": "2026-01-31T19:09:47.060709"
+  "last_updated": "2026-01-31T22:31:55.938655"
 }

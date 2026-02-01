@@ -4,6 +4,8 @@ Audio Stream Receiver Server
 
 Receives streaming audio from an Android app via HTTP POST requests
 and saves the stream into 5-second fragments in the cache folder.
+
+Also integrates with FunASR streaming for real-time transcription with timestamps.
 """
 
 import os
@@ -16,6 +18,20 @@ from datetime import datetime
 from flask import Flask, request, jsonify
 
 import numpy as np
+
+# Import streaming ASR module
+try:
+    from . import streaming_asr
+    STREAMING_ASR_AVAILABLE = True
+    print("[audioreciever] Streaming ASR imported via relative import")
+except ImportError:
+    try:
+        import streaming_asr
+        STREAMING_ASR_AVAILABLE = True
+        print("[audioreciever] Streaming ASR imported via direct import")
+    except ImportError as e:
+        STREAMING_ASR_AVAILABLE = False
+        print(f"[audioreciever] WARN: Streaming ASR not available: {e}")
 
 # Configuration
 HOST = '0.0.0.0'  # Listen on all interfaces
@@ -191,6 +207,8 @@ class AudioProcessingQueue:
     
     def _process_loop(self):
         """Background thread that processes queued audio chunks."""
+        print(f"[AudioProcessingQueue] _process_loop started, STREAMING_ASR_AVAILABLE={STREAMING_ASR_AVAILABLE}")
+        
         while self.running:
             try:
                 # Get chunk with timeout to allow clean shutdown
@@ -201,6 +219,28 @@ class AudioProcessingQueue:
                 
                 # Save audio to fragment file
                 self.stream_manager.save_audio(audio_data)
+                
+                # Send to streaming ASR for real-time transcription
+                if STREAMING_ASR_AVAILABLE:
+                    try:
+                        # Convert bytes to numpy array if needed
+                        if isinstance(audio_data, bytes):
+                            samples = np.frombuffer(audio_data, dtype=np.int16)
+                        else:
+                            samples = audio_data
+                        
+                        segments = streaming_asr.process_audio_realtime(samples)
+                        if segments:
+                            for seg in segments:
+                                # Add segment to current fragment's transcript
+                                self.stream_manager.add_asr_segment(seg)
+                                if DEBUG:
+                                    print(f"[ASR] [{seg.start_time:.2f}-{seg.end_time:.2f}] {seg.text}")
+                    except Exception as e:
+                        if DEBUG:
+                            print(f"[WARN] ASR processing error: {e}")
+                            import traceback
+                            traceback.print_exc()
                 
                 self.chunks_processed += 1
                 
@@ -239,6 +279,9 @@ class AudioStreamManager:
         self.lock = threading.Lock()
         self.fragments_list = []
         self._load_fragments_metadata()
+        
+        # ASR segment tracking for current fragment
+        self.current_fragment_segments = []
     
     def _load_fragments_metadata(self):
         """Load existing fragments metadata from JSON file."""
@@ -309,10 +352,23 @@ class AudioStreamManager:
         self.current_filename = f"fragment_{timestamp}_{self.fragment_count:04d}.wav"
         self.audio_data = bytearray()
         self.fragment_start_time = time.time()
+        self.current_fragment_segments = []  # Reset ASR segments for new fragment
         
         if DEBUG:
             print(f"[DEBUG] Started new audio fragment: {self.current_filename} "
                   f"({self.sample_rate}Hz, {self.channels}ch, {self.sample_width*8}bit)")
+    
+    def add_asr_segment(self, segment):
+        """Add an ASR segment to the current fragment's transcript."""
+        with self.lock:
+            if segment:
+                self.current_fragment_segments.append({
+                    'text': segment.text,
+                    'start_time': segment.start_time,
+                    'end_time': segment.end_time,
+                    'confidence': segment.confidence,
+                    'is_final': segment.is_final
+                })
     
     def save_audio(self, audio_bytes):
         """Save audio data to the current fragment."""
@@ -373,6 +429,19 @@ class AudioStreamManager:
             
             # Save metadata
             self._save_fragments_metadata()
+            
+            # Save ASR transcript for this fragment
+            if STREAMING_ASR_AVAILABLE and self.current_fragment_segments:
+                try:
+                    streaming_asr.save_fragment_transcript(
+                        filename=self.current_filename,
+                        segments=self.current_fragment_segments,
+                        start_timestamp=self.fragment_start_time,
+                        duration=duration
+                    )
+                except Exception as e:
+                    if DEBUG:
+                        print(f"[WARN] Failed to save ASR transcript: {e}")
             
             if DEBUG:
                 print(f"[DEBUG] Audio fragment saved: {filepath} ({num_samples} samples, {duration:.1f}s)")
@@ -752,7 +821,141 @@ class AudioBufferReader:
         return len(self.buffer.buffer) > 0
 
 
+# ============================================================================
+# ASR Endpoints (Streaming Speech Recognition)
+# ============================================================================
+
+@app.route('/asr/status', methods=['GET'])
+def asr_status():
+    """Get streaming ASR status."""
+    if not STREAMING_ASR_AVAILABLE:
+        return jsonify({
+            'available': False,
+            'error': 'Streaming ASR module not available'
+        })
+    
+    try:
+        processor = streaming_asr.get_stream_processor()
+        return jsonify({
+            'available': True,
+            'is_running': processor.is_running,
+            'stream_start_time': processor.stream_start_time,
+            'segments_count': len(processor.asr.all_segments) if processor.asr else 0,
+            'sample_rate': processor.sample_rate,
+            'target_sample_rate': processor.target_sample_rate
+        })
+    except Exception as e:
+        return jsonify({
+            'available': True,
+            'error': str(e)
+        }), 500
+
+
+@app.route('/asr/transcription', methods=['GET'])
+def asr_transcription():
+    """Get current ASR transcription with timestamps."""
+    if not STREAMING_ASR_AVAILABLE:
+        return jsonify({'error': 'Streaming ASR not available'}), 503
+    
+    try:
+        processor = streaming_asr.get_stream_processor()
+        segments = []
+        
+        if processor.asr and processor.asr.all_segments:
+            for seg in processor.asr.all_segments:
+                segments.append({
+                    'text': seg.text,
+                    'start_time': seg.start_time,
+                    'end_time': seg.end_time,
+                    'confidence': seg.confidence,
+                    'is_final': seg.is_final
+                })
+        
+        # Build full text
+        full_text = " ".join(s['text'] for s in segments)
+        
+        return jsonify({
+            'segments': segments,
+            'full_text': full_text,
+            'segment_count': len(segments),
+            'stream_start_time': processor.stream_start_time,
+            'is_running': processor.is_running
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/asr/video_markers', methods=['GET'])
+def asr_video_markers():
+    """
+    Get video cutting markers from ASR.
+    
+    These timestamps can be used to cut video clips at speech boundaries.
+    """
+    if not STREAMING_ASR_AVAILABLE:
+        return jsonify({'error': 'Streaming ASR not available'}), 503
+    
+    try:
+        markers = streaming_asr.get_current_video_markers()
+        
+        result = []
+        for start, end, text in markers:
+            result.append({
+                'start_time': start,
+                'end_time': end,
+                'duration': end - start,
+                'text': text
+            })
+        
+        return jsonify({
+            'markers': result,
+            'count': len(result)
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/asr/finalize', methods=['POST'])
+def asr_finalize():
+    """Finalize ASR stream and get complete results."""
+    if not STREAMING_ASR_AVAILABLE:
+        return jsonify({'error': 'Streaming ASR not available'}), 503
+    
+    try:
+        result = streaming_asr.finalize_stream()
+        
+        return jsonify({
+            'status': 'finalized',
+            'full_text': result.full_text,
+            'duration': result.duration,
+            'timestamp': result.timestamp,
+            'segments': [s.to_dict() for s in result.segments]
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/asr/reset', methods=['POST'])
+def asr_reset():
+    """Reset ASR stream for new session."""
+    if not STREAMING_ASR_AVAILABLE:
+        return jsonify({'error': 'Streaming ASR not available'}), 503
+    
+    try:
+        processor = streaming_asr.get_stream_processor()
+        processor.start()
+        
+        return jsonify({
+            'status': 'reset',
+            'stream_start_time': processor.stream_start_time
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
 if __name__ == '__main__':
+    asr_status_msg = "✓ Streaming ASR enabled" if STREAMING_ASR_AVAILABLE else "✗ Streaming ASR not available"
+    
     print(f"""
 ╔══════════════════════════════════════════════════════════════════════╗
 ║              Audio Stream Receiver Server                            ║
@@ -761,6 +964,7 @@ if __name__ == '__main__':
 ║  Cache directory: {CACHE_DIR}
 ║  Fragment duration: {FRAGMENT_DURATION} seconds                                         ║
 ║  Max fragments: {MAX_FRAGMENTS}                                                  ║
+║  {asr_status_msg}
 ╠══════════════════════════════════════════════════════════════════════╣
 ║  Stream Endpoints:                                                   ║
 ║    GET  /health           - Health check                             ║
@@ -772,6 +976,13 @@ if __name__ == '__main__':
 ║    GET  /fragments/latest - Get latest fragment info                 ║
 ║    DELETE /fragments/<n>  - Delete a fragment                        ║
 ║    GET  /debug/stats      - Get streaming statistics                 ║
+╠══════════════════════════════════════════════════════════════════════╣
+║  ASR Endpoints (Speech Recognition):                                 ║
+║    GET  /asr/status        - ASR status                              ║
+║    GET  /asr/transcription - Current transcription with timestamps   ║
+║    GET  /asr/video_markers - Video cutting markers                   ║
+║    POST /asr/finalize      - Finalize and get complete results       ║
+║    POST /asr/reset         - Reset ASR for new session               ║
 ╚══════════════════════════════════════════════════════════════════════╝
     """)
     

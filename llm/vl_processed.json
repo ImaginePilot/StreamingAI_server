@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-31T19:09:11.710773",
-  "count": 169,
+  "last_updated": "2026-01-31T22:31:30.481766",
+  "count": 214,
   "results": {
     "/home/ling/main/streaming/cache/clip_1767940581_1767940586.mp4:1767940581.6223207": {
       "clip_path": "/home/ling/main/streaming/cache/clip_1767940581_1767940586.mp4",
@@ -2709,6 +2709,726 @@
       "speech": "",
       "summary": "",
       "processed_at": "2026-01-31T19:09:11.710387",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886668_1769886673.mp4:1769886668.495323": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886668_1769886673.mp4",
+      "start_ts": 1769886668.495323,
+      "end_ts": 1769886673.495323,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0167"
+      ],
+      "transcription": "还是想？ 下。 说完话。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T21:44:19.988389",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886674_1769886679.mp4:1769886674.0129786": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886674_1769886679.mp4",
+      "start_ts": 1769886674.0129786,
+      "end_ts": 1769886679.0129786,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0010"
+      ],
+      "transcription": "的延迟是多少？",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T21:44:26.047680",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769886775_1769886780.mp4:1769886775.3304608": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769886775_1769886780.mp4",
+      "start_ts": 1769886775.3304608,
+      "end_ts": 1769886780.3304608,
+      "duration": 5.0,
+      "speakers": [
+        "SPK_0059"
+      ],
+      "transcription": "再来测试一下。 いい。 二。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T21:44:31.892020",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769896048_1769896054.mp4:1769896048.843671": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769896048_1769896054.mp4",
+      "start_ts": 1769896048.843671,
+      "end_ts": 1769896054.3293853,
+      "duration": 5.4857141971588135,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "我真的很希望。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T21:47:54.518382",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769896095_1769896100.mp4:1769896095.01491": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769896095_1769896100.mp4",
+      "start_ts": 1769896095.01491,
+      "end_ts": 1769896100.0536401,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "感觉。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T21:48:47.013017",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769896104_1769896109.mp4:1769896104.046125": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769896104_1769896109.mp4",
+      "start_ts": 1769896104.046125,
+      "end_ts": 1769896109.084855,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "不会有什么太大的问题。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T21:48:53.069843",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769896388_1769896393.mp4:1769896388.649235": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769896388_1769896393.mp4",
+      "start_ts": 1769896388.649235,
+      "end_ts": 1769896393.6879652,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "我们再来做一个。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T21:53:27.452007",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769896401_1769896406.mp4:1769896401.096131": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769896401_1769896406.mp4",
+      "start_ts": 1769896401.096131,
+      "end_ts": 1769896406.7037501,
+      "duration": 5.607619047164917,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "还是在幺零九三九三。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T21:53:48.126234",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769896412_1769896418.mp4:1769896412.921392": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769896412_1769896418.mp4",
+      "start_ts": 1769896412.921392,
+      "end_ts": 1769896418.082027,
+      "duration": 5.160634994506836,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "是什么？是四零六吗？",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T21:54:08.457428",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769896423_1769896428.mp4:1769896423.117966": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769896423_1769896428.mp4",
+      "start_ts": 1769896423.117966,
+      "end_ts": 1769896428.156696,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "然后你就随便回我一点什么东西吧。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T21:54:30.697435",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769896433_1769896438.mp4:1769896433.426402": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769896433_1769896438.mp4",
+      "start_ts": 1769896433.426402,
+      "end_ts": 1769896438.587037,
+      "duration": 5.160634994506836,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "是多少？",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T21:54:36.636109",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769896443_1769896448.mp4:1769896443.312538": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769896443_1769896448.mp4",
+      "start_ts": 1769896443.312538,
+      "end_ts": 1769896448.351268,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "目前来说还是有点难以判断。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T21:54:42.351332",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769897038_1769897043.mp4:1769897038.41548": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769897038_1769897043.mp4",
+      "start_ts": 1769897038.41548,
+      "end_ts": 1769897043.494845,
+      "duration": 5.079365015029907,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "他不会有什么太大的问题了。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:04:33.923782",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769897048_1769897053.mp4:1769897048.138794": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769897048_1769897053.mp4",
+      "start_ts": 1769897048.138794,
+      "end_ts": 1769897053.177524,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "延迟不会非常高，酒壶。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:04:54.471778",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769897079_1769897084.mp4:1769897079.474688": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769897079_1769897084.mp4",
+      "start_ts": 1769897079.474688,
+      "end_ts": 1769897084.5134182,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "好像你知道。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:05:14.914431",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769897091_1769897096.mp4:1769897091.945982": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769897091_1769897096.mp4",
+      "start_ts": 1769897091.945982,
+      "end_ts": 1769897096.9847121,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "处理速度太慢了啊。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:05:35.211879",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769897129_1769897134.mp4:1769897129.721414": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769897129_1769897134.mp4",
+      "start_ts": 1769897129.721414,
+      "end_ts": 1769897134.7601442,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "然后。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:06:03.459676",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769897139_1769897144.mp4:1769897139.332834": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769897139_1769897144.mp4",
+      "start_ts": 1769897139.332834,
+      "end_ts": 1769897144.3715641,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "嗯嗯。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:06:09.154469",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769897149_1769897154.mp4:1769897149.175547": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769897149_1769897154.mp4",
+      "start_ts": 1769897149.175547,
+      "end_ts": 1769897154.214277,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "呃，他基本上是可以的。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:06:25.492385",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769897161_1769897166.mp4:1769897161.768912": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769897161_1769897166.mp4",
+      "start_ts": 1769897161.768912,
+      "end_ts": 1769897166.8076422,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "对对。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:06:41.815238",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769897673_1769897678.mp4:1769897673.550885": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769897673_1769897678.mp4",
+      "start_ts": 1769897673.550885,
+      "end_ts": 1769897678.589615,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "呃，ok现在。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:14:55.112323",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769897684_1769897689.mp4:1769897684.76952": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769897684_1769897689.mp4",
+      "start_ts": 1769897684.76952,
+      "end_ts": 1769897689.8082502,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "嗯。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:15:09.894094",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769897694_1769897700.mp4:1769897694.780131": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769897694_1769897700.mp4",
+      "start_ts": 1769897694.780131,
+      "end_ts": 1769897700.2658453,
+      "duration": 5.4857141971588135,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "延迟延迟一般都会超过。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:15:36.418465",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769897718_1769897723.mp4:1769897718.801866": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769897718_1769897723.mp4",
+      "start_ts": 1769897718.801866,
+      "end_ts": 1769897723.8405962,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "电视。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:15:52.625719",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769897737_1769897742.mp4:1769897737.714321": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769897737_1769897742.mp4",
+      "start_ts": 1769897737.714321,
+      "end_ts": 1769897742.874956,
+      "duration": 5.160634994506836,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "在他开始计时，我看你什么时候能回答我。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:16:12.957908",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769897749_1769897755.mp4:1769897749.986475": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769897749_1769897755.mp4",
+      "start_ts": 1769897749.986475,
+      "end_ts": 1769897755.0252051,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "像十一。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:16:33.298346",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769897762_1769897767.mp4:1769897762.623134": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769897762_1769897767.mp4",
+      "start_ts": 1769897762.623134,
+      "end_ts": 1769897767.661864,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "而且嗯。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:16:49.760938",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769897775_1769897780.mp4:1769897775.018548": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769897775_1769897780.mp4",
+      "start_ts": 1769897775.018548,
+      "end_ts": 1769897780.179183,
+      "duration": 5.160634994506836,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "二十四、二十五、二十六。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:17:04.372930",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769897787_1769897792.mp4:1769897787.599167": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769897787_1769897792.mp4",
+      "start_ts": 1769897787.599167,
+      "end_ts": 1769897792.6378973,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "十一，三十二，在。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:17:12.802214",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769897803_1769897808.mp4:1769897803.216388": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769897803_1769897808.mp4",
+      "start_ts": 1769897803.216388,
+      "end_ts": 1769897808.216388,
+      "duration": 5.0,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "那是吧，三十九四十。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:17:29.341411",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769898253_1769898259.mp4:1769898253.562012": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769898253_1769898259.mp4",
+      "start_ts": 1769898253.562012,
+      "end_ts": 1769898259.2915359,
+      "duration": 5.7295238971710205,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": " Ok啊，我们再来测试一下，现在一般来。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:24:45.139637",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769898260_1769898265.mp4:1769898260.248897": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769898260_1769898265.mp4",
+      "start_ts": 1769898260.248897,
+      "end_ts": 1769898265.2876272,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "不会再就是嗯就是语音啊。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:25:09.453404",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769898266_1769898271.mp4:1769898266.903398": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769898266_1769898271.mp4",
+      "start_ts": 1769898266.903398,
+      "end_ts": 1769898271.9421282,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "应该可以这样，就是得到，然后。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:25:19.670923",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769898273_1769898278.mp4:1769898273.706315": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769898273_1769898278.mp4",
+      "start_ts": 1769898273.706315,
+      "end_ts": 1769898278.7450452,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "小胡，怎么给我讲个笑话呗，我知道你可以。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:25:42.055053",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769898288_1769898293.mp4:1769898288.420344": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769898288_1769898293.mp4",
+      "start_ts": 1769898288.420344,
+      "end_ts": 1769898293.4590743,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "可以吗？",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:26:06.382417",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769898340_1769898345.mp4:1769898340.436196": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769898340_1769898345.mp4",
+      "start_ts": 1769898340.436196,
+      "end_ts": 1769898345.4749262,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "感觉很多时候。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:26:26.743086",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769898347_1769898352.mp4:1769898347.135193": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769898347_1769898352.mp4",
+      "start_ts": 1769898347.135193,
+      "end_ts": 1769898352.1739233,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "都还是太慢。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:26:37.212886",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769898367_1769898372.mp4:1769898367.295908": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769898367_1769898372.mp4",
+      "start_ts": 1769898367.295908,
+      "end_ts": 1769898372.334638,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "小胡，你听到我说话了。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:26:57.683118",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769898373_1769898378.mp4:1769898373.858242": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769898373_1769898378.mp4",
+      "start_ts": 1769898373.858242,
+      "end_ts": 1769898378.8969722,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "话就给个讲笑话里面，这样我就知道。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:27:09.920117",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769898380_1769898385.mp4:1769898380.298632": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769898380_1769898385.mp4",
+      "start_ts": 1769898380.298632,
+      "end_ts": 1769898385.337362,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "知道什么时候再回我吗？",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:27:28.298708",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769898595_1769898600.mp4:1769898595.84906": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769898595_1769898600.mp4",
+      "start_ts": 1769898595.84906,
+      "end_ts": 1769898600.8877902,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "嗯，小猴小猴在测试。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:30:17.154643",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769898602_1769898608.mp4:1769898602.999909": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769898602_1769898608.mp4",
+      "start_ts": 1769898602.999909,
+      "end_ts": 1769898608.038639,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "开始吧，我还想知道你的延迟大概有多少。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:30:45.523984",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769898615_1769898620.mp4:1769898615.946803": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769898615_1769898620.mp4",
+      "start_ts": 1769898615.946803,
+      "end_ts": 1769898620.9855332,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "嗯。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:31:09.946492",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769898622_1769898627.mp4:1769898622.611973": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769898622_1769898627.mp4",
+      "start_ts": 1769898622.611973,
+      "end_ts": 1769898627.6507032,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "笑点是笑点是不会很长。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:31:16.061811",
+      "model": "qwen3-vl:2b"
+    },
+    "/home/ling/main/streaming/cache/clip_1769898644_1769898649.mp4:1769898644.310505": {
+      "clip_path": "/home/ling/main/streaming/cache/clip_1769898644_1769898649.mp4",
+      "start_ts": 1769898644.310505,
+      "end_ts": 1769898649.349235,
+      "duration": 5.038730144500732,
+      "speakers": [
+        "stream"
+      ],
+      "transcription": "因为有些时候这个二b的模型不是很好用。",
+      "vl_analysis": "",
+      "scene": "",
+      "speech": "",
+      "summary": "",
+      "processed_at": "2026-01-31T22:31:30.481331",
       "model": "qwen3-vl:2b"
     }
   }

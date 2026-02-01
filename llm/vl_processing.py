@@ -369,7 +369,6 @@ def process_clip_with_vl(clip: ClipData, verbose: bool = True) -> Optional[VLRes
             "model": OLLAMA_MODEL,
             "messages": messages,
             "stream": False,
-            "think": False,  # Disable thinking for speed
             "keep_alive": -1,  # Keep model in memory indefinitely
             "options": {
                 "num_predict": FAST_MAX_TOKENS,

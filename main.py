@@ -56,6 +56,8 @@ from llm_processing import (
     LLMProcessor,
     OutputManager,
     LLM_OUTPUT_JSON,
+    OLLAMA_URL as LLM_OLLAMA_URL,
+    LLM_MODEL,
 )
 
 # Try to import memory module
@@ -71,26 +73,25 @@ LLM_PROCESS_INTERVAL = float(os.getenv("LLM_INTERVAL", "5.0"))
 STREAMING_VIDEO_PORT = int(os.getenv("STREAMING_VIDEO_PORT", "5000"))
 STREAMING_AUDIO_PORT = int(os.getenv("STREAMING_AUDIO_PORT", "5001"))
 
-# Models to preload
-PRELOAD_MODELS = [
+# Models to preload on each server
+VL_PRELOAD_MODELS = [
+    "qwen3-vl:2b",          # Fast VL pre-processing
+]
+LLM_PRELOAD_MODELS = [
     "qwen3-vl:30b",         # LLM processing (with visual frames)
-    "qwen3-vl:2b",          # Fast VL pre-processing on secondary server
     "qwen3-embedding:0.6b", # Embeddings
 ]
 
 
-def preload_ollama_models(ollama_url: str = OLLAMA_BASE_URL):
-    """
-    Preload models into Ollama memory with keep_alive=-1.
-    This prevents model reload delays during processing.
-    """
+def _preload_server(ollama_url: str, models: list, server_name: str):
+    """Preload models on a single Ollama server."""
     import requests
     
-    print("[PRELOAD] Warming up Ollama models...")
+    print(f"[PRELOAD] Warming up {server_name} server ({ollama_url})...")
     
-    for model in PRELOAD_MODELS:
+    for model in models:
         try:
-            print(f"[PRELOAD] Loading {model}...", end=" ", flush=True)
+            print(f"[PRELOAD]   Loading {model}...", end=" ", flush=True)
             
             # For embedding models, use /api/embeddings
             if "embedding" in model:
@@ -119,8 +120,35 @@ def preload_ollama_models(ollama_url: str = OLLAMA_BASE_URL):
                 print(f"✗ (status {response.status_code})")
         except Exception as e:
             print(f"✗ ({e})")
+
+
+def preload_ollama_models():
+    """
+    Preload models into Ollama memory on both VL and LLM servers.
+    Runs in parallel threads for faster warmup.
+    """
+    print("[PRELOAD] Warming up Ollama models on both servers...")
     
-    print("[PRELOAD] Model warmup complete")
+    # Preload both servers in parallel using threads
+    vl_thread = threading.Thread(
+        target=_preload_server,
+        args=(OLLAMA_BASE_URL, VL_PRELOAD_MODELS, "VL"),
+        daemon=True
+    )
+    llm_thread = threading.Thread(
+        target=_preload_server,
+        args=(LLM_OLLAMA_URL, LLM_PRELOAD_MODELS, "LLM"),
+        daemon=True
+    )
+    
+    vl_thread.start()
+    llm_thread.start()
+    
+    # Wait for both to complete
+    vl_thread.join(timeout=180)
+    llm_thread.join(timeout=180)
+    
+    print("[PRELOAD] Model warmup complete on both servers")
 
 
 @dataclass
@@ -268,6 +296,10 @@ class Pipeline:
         vl_processed = load_vl_processed()
         failed_clips = set()  # Track clips that failed to avoid retry loops
         
+        # Only process clips created after pipeline started
+        start_time = self.stats.started_at
+        self._log(f"Only processing clips with start_ts >= {start_time:.2f}", "VL")
+        
         while not self.stop_event.is_set():
             try:
                 clips = get_clips()
@@ -275,6 +307,10 @@ class Pipeline:
                 # Find first unprocessed clip (process one at a time for responsiveness)
                 new_clip = None
                 for clip in clips:
+                    # Skip clips that existed before pipeline started
+                    if clip.start_ts < start_time:
+                        continue
+                    
                     clip_id = get_clip_id(clip)
                     if clip_id not in vl_processed and clip_id not in failed_clips:
                         # Check if file exists
@@ -333,6 +369,11 @@ class Pipeline:
         """LLM processing loop - runs in thread."""
         self._log("LLM processing started", "LLM")
         self._log(f"Interval: {self.llm_interval}s", "LLM")
+        
+        # Reset reader state to only process VL results created after pipeline started
+        start_time = self.stats.started_at
+        self.vl_reader.last_processed_ts = start_time
+        self._log(f"Only processing VL results with processed_at >= {start_time:.2f}", "LLM")
         
         while not self.stop_event.is_set():
             try:

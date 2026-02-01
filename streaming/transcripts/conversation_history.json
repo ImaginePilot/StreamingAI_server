@@ -54,11 +54,103 @@
           "audio_type": null
         }
       ]
+    },
+    {
+      "file": "/home/ling/main/streaming/audiostream/cache/fragment_20260131_195725_0000.wav",
+      "hash": "0986a59f38b8b200700e1e67ebee1003",
+      "timestamp": "2026-01-31T19:58:04.905278",
+      "duration": 5.038730158730159,
+      "speakers": [
+        "SPK_0003"
+      ],
+      "segments": [
+        {
+          "start_time": 1.2122187500000001,
+          "end_time": 3.9797187500000004,
+          "speaker_id": "SPK_0003",
+          "speaker_label": null,
+          "text": "Okay, now we should start testing.",
+          "confidence": 0.841285357872645,
+          "language": null,
+          "emotion": null,
+          "audio_type": null
+        }
+      ]
+    },
+    {
+      "file": "/home/ling/main/streaming/audiostream/cache/fragment_20260131_195730_0001.wav",
+      "hash": "86f1ab708db246f95a33735173be3fbd",
+      "timestamp": "2026-01-31T19:58:43.606763",
+      "duration": 5.038730158730159,
+      "speakers": [
+        "SPK_0004"
+      ],
+      "segments": [
+        {
+          "start_time": 0.03096875,
+          "end_time": 3.18659375,
+          "speaker_id": "SPK_0004",
+          "speaker_label": null,
+          "text": "if the audio is okay.",
+          "confidence": 0.8133217394351959,
+          "language": null,
+          "emotion": null,
+          "audio_type": null
+        }
+      ]
+    },
+    {
+      "file": "/home/ling/main/streaming/audiostream/cache/fragment_20260131_200617_0000.wav",
+      "hash": "924ff8ae696ddc6633911864fb91a09a",
+      "timestamp": "2026-01-31T20:06:59.706774",
+      "duration": 5.038730158730159,
+      "speakers": [
+        "SPK_0005"
+      ],
+      "segments": [
+        {
+          "start_time": 1.3472187500000001,
+          "end_time": 5.16096875,
+          "speaker_id": "SPK_0005",
+          "speaker_label": null,
+          "text": "Hello, I want to check if currently the processing is",
+          "confidence": 0.9018589198589325,
+          "language": null,
+          "emotion": null,
+          "audio_type": null
+        }
+      ]
+    },
+    {
+      "file": "/home/ling/main/streaming/audiostream/cache/fragment_20260131_200622_0001.wav",
+      "hash": "60c30be6b89315cb16a7f6b10becfa6f",
+      "timestamp": "2026-01-31T20:07:40.257724",
+      "duration": 5.038730158730159,
+      "speakers": [
+        "SPK_0006"
+      ],
+      "segments": [
+        {
+          "start_time": 0.03096875,
+          "end_time": 1.6172187500000001,
+          "speaker_id": "SPK_0006",
+          "speaker_label": null,
+          "text": "It's smooth and fast.",
+          "confidence": 0.7374420035630465,
+          "language": null,
+          "emotion": null,
+          "audio_type": null
+        }
+      ]
     }
   ],
   "processed_hashes": [
     "cb1f522999446ad0d70362d591516be7",
-    "ff87e22465a241afbb34ec2889760ec5"
+    "ff87e22465a241afbb34ec2889760ec5",
+    "60c30be6b89315cb16a7f6b10becfa6f",
+    "924ff8ae696ddc6633911864fb91a09a",
+    "0986a59f38b8b200700e1e67ebee1003",
+    "86f1ab708db246f95a33735173be3fbd"
   ],
-  "updated": "2026-01-09T06:36:24.599567"
+  "updated": "2026-01-31T20:07:40.257815"
 }
